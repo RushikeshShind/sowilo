@@ -65,7 +65,7 @@ const Banner5 = () => {
           </div>
 
           {/* Section 3 */}
-          <div className="section mb-10" style={{fontFamily:'EditorsNote'}}>
+          <div className="section mb-10" style={{fontFamily:'GothicA1'}}>
             <h2>Who is this training for?</h2>
             <div
               className="list-container"
@@ -75,7 +75,7 @@ const Banner5 = () => {
                 gap: '10px', // Adjust the gap between the two lists if needed
               }}
             >
-              <ul style={{ listStyleType: 'disc', paddingLeft: '20px', fontFamily:'GothicA1' }}>
+              <ul style={{  listStyleType: 'disc', paddingLeft: '20px',  }}>
                 <li>Therapists</li>
                 <li>Mental Health Counsellors</li>
                 <li>Doctors</li>
@@ -403,35 +403,140 @@ Classes run from 10 am – 6 pm every day. <br/> Lunch break 1 pm - 2:30 pm.
         </div>
       </div>
 
-      <div className="row text-justify">
-        <div className="col-xl-9 mx-auto md-10 mb-2">
-          <Plyr options={{
-            loadSprite: true,
-            clickToPlay: true
-          }} source={{
-            type: 'video',
-            sources: [{
-              src: 'https://vimeo.com/469964414?autoplay=1&muted=1&stream_id=Y2xpcHN8NjI0MDMzNDd8aWQ6ZGVzY3xbXQ%3D%3D',
-              provider: 'vimeo'
-            }]
-          }}
+{/* Trainner Details 1 */}
 
-          />
-          <h3 className='col-xl-9 mb-4 mt-6'>Bodynamic Training Testimonials</h3>
-          <Plyr options={{
-            loadSprite: true,
-            clickToPlay: true
-          }} source={{
-            type: 'video',
-            sources: [{
-              src: 'https://vimeo.com/276290101?share=copy#t=0',
-              provider: 'vimeo'
-            }]
-          }}
+<div className='mb-12'
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "20px",
+        backgroundColor: "#f5f2ed",
+        fontFamily: "'Georgia', serif",
+      }}
+    >
+      {/* Left Section */}
+      <div style={{ width: "50%", paddingRight: "20px" }}>
+        <h1 style={{ fontSize: "2.5rem", fontWeight: "", marginBottom: "20px", fontFamily:"EditorsNote" }}>
+        Instructor Bios:
+        </h1>
+        <h2>Mar Barroso</h2>
+        <ul style={{ fontFamily:'GothicA1', fontWeigth:"10px", padding: 0 }}>
+          {[ 
+            " has a master’s degree in clinical and health psychology, a bachelor’s in psychology, and a bachelor’s in human resources with an associate in training management.",
+            "She has more than 13 years of experience in clinical practice.  Mar is a Bodynamic® educational therapist and part of the international training team of Bodynamic International®. She teaches Foundation Training, Practitioner Training, and Shock Trauma Training in Portugal, Spain, and Turkey.",
+            "Mar is the founder and CEO of SOMATIC—School of Body Psychotherapies (est. 2014), the senior assistant and official representative for Somatic Experiencing® in Portugal, and the Trainer for Bodynamic International® in Portugal and Spain, with more than 600 enrolled students. She is also an assistant teacher with Ditte Marcher for shock trauma.",
+            "Additionally, she is trained in other areas, such as Cognitive Behavioral Therapy (CBT), Children's Shock Trauma with Maggie Klein, Developing Trauma and Somatic Experiencing with Peter Levine, Clinical Case Studies with Stephen Porges, Spirituality, and Reorienting Birth with Lisbeth Marcher.",
+            "She lives in Portugal, is married, and is the mother of two amazing teenagers. She loves people, nature, and dancing.",
+           
+          ].map((text, index) => (
+            <li key={index} style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+              
+              <span style={{ color: "#000", fontSize: "0.8rem", lineHeight: "1.5" }}>{text}</span>
+            </li>
+          ))}
+        </ul>
+        <div style={{ marginTop: "20px" }}>
+          <h2 style={{  fontFamily:"Sevillana",fontSize: "1.5rem", fontWeight: "bold", marginBottom: "10px" }}>Contact </h2>
+         <p>@ www.somatic.pt
+e.  info@somatic.pt
+m. +351915680076
+</p>
+        </div>
+      </div>
 
+      {/* Right Section */}
+      <div style={{ width: "50%", display: "flex", justifyContent: "center" }}>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            maxWidth: "400px",
+            padding: "10px",
+            backgroundColor: "#fff",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <img
+          
+            src="/img/avatars/t6.jpg" // Replace this with the actual image path
+            
+            className={styles.image}
+          // Replace with your image URL
+            alt="Coaching setup"
+            style={{ width: "100%", borderRadius: "10px" }}
           />
         </div>
       </div>
+    </div>
+
+{/* Trainner Details 2 */}
+
+<div className='mb-12'
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "20px",
+        backgroundColor: "#f5f2ed",
+        fontFamily: "'Georgia', serif",
+      }}
+    >
+      {/* Left Section */}
+      <div style={{ width: "50%", paddingRight: "20px" }}>
+        
+        <h2>James Nicholas</h2>
+        <ul style={{ fontFamily:'GothicA1', fontWeigth:"10px", padding: 0 }}>
+          {[ 
+            " James Nicholas is a certified Bodynamic® therapist and Bodynamic® analyst serving Southern California and is one of the North American training coordinators for Bodynamic® International. He is an attorney and member in good standing of the California Bar and an associate clinical social worker licensed in California. He received his B.A. in philosophy and history from UCLA, J.D. from Northwestern University, and M.S.W. from USC.",
+            "James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral techniques, and bodywork.  His focus areas include individual therapy, trauma, attachment, couples counseling, mediation/conflict resolution, and family systems.  He also specializes in bodymapping (conducting and reading).  In addition to private practice, James works as an associate clinician at the USC Center for Work and Family Life. He lives in San Diego with his wife and 7-year-old son.",
+            
+           
+          ].map((text, index) => (
+            <li key={index} style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+              
+              <span style={{ color: "#000", fontSize: "0.8rem", lineHeight: "1.5" }}>{text}</span>
+            </li>
+          ))}
+        </ul>
+        <div style={{ marginTop: "20px" }}>
+          <h2 style={{  fontFamily:"Sevillana",fontSize: "1.5rem", fontWeight: "bold", marginBottom: "10px" }}>Contact </h2>
+         <p>James Nicholas, JD, MSW, ASW #102229 <br/>
+Certified Bodynamic Psychotherapist
+James@Bodynamic.com
+www.bodynamicinternational.com
+
+</p>
+        </div>
+      </div>
+
+      {/* Right Section */}
+      <div style={{ width: "50%", display: "flex", justifyContent: "center" }}>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            maxWidth: "400px",
+            padding: "10px",
+            backgroundColor: "#fff",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <img
+          
+            src="/img/avatars/t6.jpg" // Replace this with the actual image path
+            
+            className={styles.image}
+          // Replace with your image URL
+            alt="Coaching setup"
+            style={{ width: "100%", borderRadius: "10px" }}
+          />
+        </div>
+      </div>
+    </div>
+
+{/* video section */}
+     
     </div>
   </section>;
 };

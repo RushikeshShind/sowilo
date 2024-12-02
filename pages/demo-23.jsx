@@ -66,7 +66,7 @@ const Demo23 = () => {
         {
         /* ========== about us section ========== */
       }
-        <Hero23 />
+        {/* <Hero23 /> */}
 
         {
         /* ========== blog section ========== */

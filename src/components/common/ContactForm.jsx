@@ -1,21 +1,21 @@
 const ContactForm = () => {
   return <form className="contact-form needs-validation" method="post">
-    <div style={{ fontFamily: "'Arial', sans-serif", padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
+    <div style={{ fontFamily: "EditorNote", padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       {/* Main Heading */}
      
-           <h1 style={{ fontfamily: "Sevillana-regular", fontweight: '400', fontstyle: 'normal' }}>
+           {/* <h1 style={{ fontfamily: "Sevillana-regular", fontweight: '400', fontstyle: 'normal' }}>
         Inquire to Work with Us
-      </h1>
+      </h1> */}
 
       {/* Form */}
       <form>
         {/* Email Address */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          Email address <span style={{ color: 'red' }}>*</span>
+        <label style={{color:'black', marginBottom: '10px' }}>
+        Full name <span style={{ color: 'black' }}>*</span>
         </label>
         <input
-          type="email"
-          placeholder="Your email"
+          type="text"
+          placeholder=""
           required
           style={{
             width: '100%',
@@ -27,12 +27,12 @@ const ContactForm = () => {
         />
 
         {/* Full Name */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          Full name <span style={{ color: 'red' }}>*</span>
+        <label style={{ color:'black',display: 'block', marginBottom: '10px' }}>
+          Email Address <span style={{ color: 'black' }}>*</span>
         </label>
         <input
-          type="text"
-          placeholder="Your full name"
+          type="email"
+          placeholder=""
           required
           style={{
             width: '100%',
@@ -44,12 +44,12 @@ const ContactForm = () => {
         />
 
         {/* Name of your business */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          Name of your business
+        <label style={{color:'black', display: 'block', marginBottom: '10px' }}>
+          Name of your Company <span style={{ color: 'black' }}>*</span>
         </label>
         <input
           type="text"
-          placeholder="Your business name"
+          placeholder=""
           style={{
             width: '100%',
             padding: '10px',
@@ -60,10 +60,12 @@ const ContactForm = () => {
         />
 
         {/* Industry */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          What industry are you in?
+        <label style={{ color:'black',display: 'block', marginBottom: '10px' }}>
+          What industry are you in? <span style={{ color: 'black' }}>*</span>
         </label>
         <select
+        type="text"
+        placeholder="Select the Option"
           style={{
             width: '100%',
             padding: '10px',
@@ -72,15 +74,35 @@ const ContactForm = () => {
             borderRadius: '4px',
           }}
         >
-          <option>Select an option</option>
-          <option>Industry 1</option>
-          <option>Industry 2</option>
-          <option>Industry 3</option>
+          <option>Select the option</option>
+          <option>Therapists</option>
+          <option>Mental Health Counsellors</option>
+          <option>Doctors</option>
+          <option>Physiotherapists</option>
+          <option>Occupational Therapists</option>
+          <option>Massage Therapists</option>
+          <option>Psychiatrists</option>
+          <option>Osteopaths</option>
+          <option>Naturopaths</option>
+          <option>Cranio-sacral specialists</option>
+          <option>Yoga teachers</option>
+          <option>Dance teachers</option>
+          <option>Trainers</option>
+          <option>Social workers</option>
+          <option>Pedagogues</option>
+          <option>Teachers</option>
+          <option>Salespeople</option>
+          <option>Parents</option>
+          <option>Others (if chosen - please specify)</option>
+
+          
+
+
         </select>
 
         {/* Website */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          Link to your current website (if you have one)
+        {/* <label style={{ color:'black',display: 'block', marginBottom: '10px' }}>
+        How did you hear about Bodynamic International? 
         </label>
         <input
           type="url"
@@ -92,11 +114,11 @@ const ContactForm = () => {
             border: '1px solid #ccc',
             borderRadius: '4px',
           }}
-        />
+        /> */}
 
         {/* How did you hear */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          How did you hear about In Flow Design Co.? <span style={{ color: 'red' }}>*</span>
+        <label style={{color:'black', display: 'line', marginBottom: '10px' }}>
+        How did you hear about Bodynamic International? <span style={{ color: 'black' }}>*</span>
         </label>
         <select
           required
@@ -115,12 +137,12 @@ const ContactForm = () => {
         </select>
 
         {/* Referral */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          If you found us from a referral, who referred you? We want to thank them!
+        <label style={{ color:'black',display: 'block', marginBottom: '10px' }}>
+          If you found us from a referral, who referred you? We want to thank them! <span style={{ color: 'black' }}>*</span>
         </label>
         <input
           type="text"
-          placeholder="Referral name"
+          placeholder=""
           style={{
             width: '100%',
             padding: '10px',
@@ -131,10 +153,12 @@ const ContactForm = () => {
         />
 
         {/* Budget */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          What's your budget for our done-for-you services?
+        <label style={{color:'black', display: 'block', marginBottom: '10px' }}>
+        What brings you to the training? <span style={{ color: 'black' }}>*</span>
         </label>
-        <select
+        <input
+          type="text"
+          placeholder=""
           style={{
             width: '100%',
             padding: '10px',
@@ -142,19 +166,15 @@ const ContactForm = () => {
             border: '1px solid #ccc',
             borderRadius: '4px',
           }}
-        >
-          <option>Select an option</option>
-          <option>Less than $1,000</option>
-          <option>$1,000 - $5,000</option>
-          <option>$5,000+</option>
-        </select>
-
+        />
         {/* Services */}
-        <label style={{ display: 'block', marginBottom: '10px' }}>
-          What services are you interested in? <span style={{ color: 'red' }}>*</span>
+        <label style={{color:'black', display: 'block', marginBottom: '10px' }}>
+        Do you see yourself as a Bodynamic Therapist in the near future? <span style={{ color: 'black' }}>*</span>
         </label>
-        <select
-          required
+        
+        <input
+          type="text"
+          placeholder=""
           style={{
             width: '100%',
             padding: '10px',
@@ -162,13 +182,19 @@ const ContactForm = () => {
             border: '1px solid #ccc',
             borderRadius: '4px',
           }}
-        >
-          <option>Select an option</option>
-          <option>Web Design</option>
-          <option>Branding</option>
-          <option>Marketing</option>
-        </select>
-
+        />
+        {/* Additonal Note */}
+        <label style={{color:'black', display:'block', marginBottom:'10px'}}>
+          Additonal Note <span style={{ color: 'black' }}>*</span>
+        </label>
+        <input type="text"
+         placeholder=""
+         style={{
+           width: '100%',
+           padding: '10px',
+           marginBottom: '20px',
+           border: '1px solid #ccc',
+           borderRadius: '4px',}} />
         {/* Submit */}
         <button
           type="submit"
@@ -189,6 +215,7 @@ const ContactForm = () => {
     </div>
 
   </form>;
+  
 };
 
 export default ContactForm;
