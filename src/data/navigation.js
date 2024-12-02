@@ -111,7 +111,7 @@ const demos = [{
   thumnail: 'mi22'
 }, {
   id: 23,
-  url: '/demo-23',
+  url: '/',
   title: 'Demo XXI',
   thumnail: 'mi23'
 }, {
@@ -189,7 +189,7 @@ const pages = [{
   children: [{
     id: 221,
     title: 'About I',
-    url: '/about-1'
+    url: '/'
   }, {
     id: 222,
     title: 'About II',

@@ -51,7 +51,7 @@ const navigations = [{
     children: [{
       id: 221,
       title: 'About I',
-      url: '/about-1'
+      url: '/'
     }, {
       id: 222,
       title: 'About II',

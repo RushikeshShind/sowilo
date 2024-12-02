@@ -1,4 +1,6 @@
-import Plyr from 'plyr-react';
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr'), { ssr: false });
 import Image from 'next/image';
 import { Fragment } from 'react'; // -------- custom component -------- //
 

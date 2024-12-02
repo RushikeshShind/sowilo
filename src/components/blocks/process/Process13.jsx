@@ -1,4 +1,6 @@
-import Plyr from 'plyr-react';
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr'), { ssr: false });
 import Hex from 'icons/Hex'; // -------- data -------- //
 
 import { processList10 } from 'data/process';

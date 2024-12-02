@@ -67,3 +67,5 @@ export const blogList3 = [{
     '2x': '/img/photos/b17@2x.jpg 2x'
   }
 }]; // used in the blog-6 block
+
+
