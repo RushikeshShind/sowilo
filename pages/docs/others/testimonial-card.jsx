@@ -4,7 +4,6 @@ import { TestimonialCard1, TestimonialCard2, TestimonialCard3, TestimonialCard4,
 
 import { card1Markup, card2Markup, card3Markup, card4Markup, card5Markup, card6Markup } from 'markups/others/testimonial-cards'; // -------- data -------- //
 
-import { testimonialList2 } from 'data/testimonial-list';
 const quickAccess = [{
   title: 'Testimonial Card 1',
   url: 'snippet-1'
@@ -24,28 +23,7 @@ const quickAccess = [{
   title: 'Testimonial Card 6',
   url: 'snippet-6'
 }];
-const testimonialList1 = [{
-  name: 'Coriss Ambady',
-  designation: 'Financial Analyst',
-  review: `Donec id elit non porta gravida at eget metus. Duis mollis est luctus commodo nisi erat.`
-}, {
-  name: 'Cory Zamora',
-  designation: 'Marketing Specialist',
-  review: `Donec id elit non porta gravida at eget metus. Duis mollis est luctus commodo nisi erat.`
-}];
-const testimonialList3 = [{
-  id: 1,
-  name: 'Coriss Ambady',
-  image: '/img/avatars/te1.jpg',
-  designation: 'Financial Analyst',
-  review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis.`
-}, {
-  id: 2,
-  name: 'Cory Zamora',
-  image: '/img/avatars/te2.jpg',
-  designation: 'Marketing Specialist',
-  review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis.`
-}];
+
 
 const TestimonialCards = () => {
   return <DocLayout pageTitle="Tesimonial Cards" quickAccssLinks={quickAccess} headingColClass="col-md-9 col-lg-7 col-xl-5 mx-auto" description="Use our custom testimonial card components to build any custom blog section or blocks">
@@ -58,9 +36,7 @@ const TestimonialCards = () => {
         <div className="card">
           <div className="card-body mb-n2">
             <div className="row gx-md-5 gy-5">
-              {testimonialList1.map((item, i) => <div className="col-md-6" key={i}>
-                  <TestimonialCard1 {...item} />
-                </div>)}
+            
             </div>
           </div>
 
@@ -88,7 +64,6 @@ const TestimonialCards = () => {
 
         <div className="card">
           <div className="card-body mb-n2">
-            {testimonialList2.slice(0, 1).map((item, i) => <TestimonialCard2 key={i} {...item} />)}
           </div>
 
           <div className="card-footer position-relative">
@@ -116,9 +91,7 @@ const TestimonialCards = () => {
         <div className="card">
           <div className="card-body mb-n2">
             <div className="row isotope gy-6">
-              {testimonialList3.map(item => <div className="item col-md-6" key={item.id}>
-                  <TestimonialCard3 {...item} />
-                </div>)}
+              
             </div>
           </div>
 
@@ -174,9 +147,7 @@ const TestimonialCards = () => {
         <div className="card">
           <div className="card-body mb-n2">
             <div className="row isotope gy-6">
-              {testimonialList1.map(item => <div className="item col-md-6" key={item.name}>
-                  <TestimonialCard5 {...item} />
-                </div>)}
+             
             </div>
           </div>
 
@@ -205,9 +176,7 @@ const TestimonialCards = () => {
         <div className="card">
           <div className="card-body mb-n2">
             <div className="row isotope gy-6">
-              {testimonialList1.map(item => <div className="item col-md-6" key={item.name}>
-                  <TestimonialCard6 {...item} />
-                </div>)}
+              
             </div>
           </div>
 

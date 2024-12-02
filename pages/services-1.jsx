@@ -3,7 +3,6 @@ import { Fragment } from 'react'; // -------- custom component -------- //
 import { Facts3 } from 'components/blocks/facts';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
-import { Banner3 } from 'components/blocks/banner';
 import { Pricing1 } from 'components/blocks/pricing';
 import { Contact3 } from 'components/blocks/contact';
 import { Process6 } from 'components/blocks/process';
@@ -69,7 +68,7 @@ const Services = () => {
         {
         /* ========== banner section ========== */
       }
-        <Banner3 />
+      
 
         <section className="wrapper bg-light angled upper-end">
           <div className="container py-14 py-md-16">

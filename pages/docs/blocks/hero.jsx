@@ -1,6 +1,6 @@
 import BlockLayout from 'components/layouts/BlockLayout';
 import CodeHighlight from 'components/reuseable/CodeHighlight';
-import * as All from 'components/blocks/hero';
+// import * as All from 'components/blocks/hero';
 
 const Heros = () => {
   return <BlockLayout title="Hero">

@@ -3,7 +3,6 @@ import Carousel from 'components/reuseable/Carousel';
 import carouselBreakpoints from 'utils/carouselBreakpoints';
 import { TestimonialCard3 } from 'components/reuseable/testimonial-cards'; // -------- data -------- //
 
-import { testimonialList2 } from 'data/testimonial-list';
 
 const Testimonial4 = () => {
   return <div className="wrapper bg-light">
@@ -19,9 +18,7 @@ const Testimonial4 = () => {
 
         <div className="swiper-container dots-closer mb-6">
           <Carousel spaceBetween={0} grabCursor navigation={false} breakpoints={carouselBreakpoints}>
-            {testimonialList2.map((item, i) => <div className="item-inner" key={i}>
-                <TestimonialCard3 {...item} />
-              </div>)}
+          
           </Carousel>
         </div>
       </div>

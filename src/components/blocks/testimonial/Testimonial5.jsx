@@ -1,8 +1,6 @@
 import Carousel from 'components/reuseable/Carousel';
 import { TestimonialCard2 } from 'components/reuseable/testimonial-cards'; // -------- data -------- //
 
-import { testimonialList2 } from 'data/testimonial-list';
-
 const Testimonial5 = () => {
   return <section className="wrapper bg-soft-primary">
       <div className="container pt-16 pb-14 pb-md-0">
@@ -21,7 +19,6 @@ const Testimonial5 = () => {
           <div className="col-md-7 col-lg-6 col-xl-6 col-xxl-5 offset-xl-1">
             <div className="swiper-container dots-start dots-closer mt-md-10 mb-md-15">
               <Carousel grabCursor slidesPerView={1} navigation={false}>
-                {testimonialList2.map((item, i) => <TestimonialCard2 {...item} key={i} blockClassName="icon fs-lg" blockDetailsClassName="blockquote-details" />)}
               </Carousel>
             </div>
           </div>

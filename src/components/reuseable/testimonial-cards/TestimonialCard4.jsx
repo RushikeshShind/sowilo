@@ -1,6 +1,5 @@
 import Carousel from '../Carousel';
 import TestimonialCard2 from './TestimonialCard2';
-import { testimonialList2 } from 'data/testimonial-list'; // ============================================================
 
 // ============================================================
 const TestimonialCard4 = ({
@@ -17,7 +16,6 @@ const TestimonialCard4 = ({
           <div className={sliderWrapperClassname}>
             <div className="swiper-container dots-closer mb-4">
               <Carousel grabCursor slidesPerView={1} navigation={false}>
-                {testimonialList2.map((item, i) => <TestimonialCard2 key={i} {...item} />)}
               </Carousel>
             </div>
           </div>

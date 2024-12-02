@@ -1,4 +1,3 @@
-import { Banner4 } from '../banner';
 import ListColumn from 'components/reuseable/ListColumn'; // -------- custom hook -------- //
 
 import useLightBox from 'hooks/useLightBox'; // -------- data -------- //
@@ -10,7 +9,6 @@ const About2 = () => {
   useLightBox();
   return <div className="row gy-10 gy-sm-13 gx-lg-3 align-items-center mb-14 mb-md-17 mb-lg-19">
       <div className="col-md-8 col-lg-6 position-relative">
-        <Banner4 />
       </div>
 
       <div className="col-lg-5 offset-lg-1">

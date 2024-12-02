@@ -1,4 +1,3 @@
-import { Banner4 } from '../banner';
 import { ServiceCard3 } from 'components/reuseable/service-cards'; // -------- data -------- //
 
 import { aboutList4 } from 'data/about';
@@ -6,8 +5,7 @@ import { aboutList4 } from 'data/about';
 const About21 = () => {
   return <div className="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mb-15 mb-md-17">
       <div className="col-lg-6 position-relative">
-        <Banner4 hideShape btnColor="white" />
-      </div>
+=      </div>
 
       <div className="col-lg-6">
         <h2 className="fs-16 text-uppercase text-muted mb-3">What Makes Us Different?</h2>

@@ -1,5 +1,4 @@
 // -------- custom component -------- //
-import { Banner4 } from '../banner';
 import { ServiceCard3 } from 'components/reuseable/service-cards'; // -------- custom hooks -------- //
 
 import useLightBox from 'hooks/useLightBox'; // -------- data -------- //
@@ -11,7 +10,7 @@ const Process9 = () => {
   useLightBox();
   return <div className="row gy-10 gy-sm-13 gx-lg-3 align-items-center mb-14 mb-md-19">
       <div className="col-md-8 col-lg-6 position-relative">
-        <Banner4 imageName="about8" />
+       
       </div>
 
       <div className="col-lg-5 col-xl-4 offset-lg-1">
