@@ -1,4 +1,6 @@
-import Plyr from 'plyr-react';
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr'), { ssr: false });
 import animation from 'utils/animation'; // -------- data -------- //
 
 import { processList5 } from 'data/process';
