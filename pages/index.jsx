@@ -13,7 +13,7 @@ import Puzzle from 'icons/solid-mono/Puzzle';
 import PenTool from 'icons/solid-duo/PenTool';
 import Devices from 'icons/solid-mono/Devices';
 import GlobeTwo from 'icons/solid-mono/GlobeTwo';
-import Demo23 from './demo-23';
+// import Demo23 from './demo-23';
 
 const Home = () => {
   // used for hero area text change

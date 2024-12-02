@@ -111,7 +111,7 @@ const demos = [{
   thumnail: 'mi22'
 }, {
   id: 23,
-  url: '/demo-23',
+  url: '/',
   title: 'Demo XXI',
   thumnail: 'mi23'
 }, {

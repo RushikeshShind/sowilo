@@ -109,9 +109,9 @@ const changeTheme = pathname => {
       changeColor('/css/colors/purple.css', '/css/fonts/urbanist.css');
       break;
 
-    case '/demo-23':
-      changeColor('/css/colors/leaf.css', '/css/fonts/urbanist.css');
-      break;
+    // case '/demo-23':
+    //   changeColor('/css/colors/leaf.css', '/css/fonts/urbanist.css');
+    //   break;
 
     case '/demo-24':
       changeColor('/css/colors/yellow.css', '/css/fonts/urbanist.css');
