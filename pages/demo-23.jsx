@@ -37,7 +37,7 @@ const Demo23 = () => {
          <About24 />
 
         {
-        /* ========== service section ========== */
+        /* ========== service section =========   */
       }
 
 
