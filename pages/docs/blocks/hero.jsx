@@ -4,7 +4,7 @@ import * as All from 'components/blocks/hero';
 
 const Heros = () => {
   return <BlockLayout title="Hero">
-      <Block id={1}>
+      {/* <Block id={1}>
         <div className="pb-13 pb-md-15">
           <All.Hero1 />
         </div>
@@ -78,7 +78,7 @@ const Heros = () => {
         <div className="pb-13 pb-md-15">
           <All.Hero13 />
         </div>
-      </Block>
+      </Block> */}
 
       {
       /* <Block id={14}>
@@ -88,7 +88,7 @@ const Heros = () => {
       </Block> */
     }
 
-      <Block id={15}>
+      {/* <Block id={15}>
         <div className="pb-13 pb-md-15">
           <All.Hero15 />
         </div>
@@ -134,7 +134,7 @@ const Heros = () => {
         <div className="pb-13 pb-md-15">
           <All.Hero22 />
         </div>
-      </Block>
+      </Block> */}
 
       {
       /* <Block id={23}>
@@ -144,7 +144,7 @@ const Heros = () => {
       </Block> */
     }
 
-      <Block id={24}>
+      {/* <Block id={24}>
         <div className="pb-13 pb-md-15">
           <All.Hero24 />
         </div>
@@ -166,7 +166,7 @@ const Heros = () => {
         <div className="pb-13 pb-md-15">
           <All.Hero27 />
         </div>
-      </Block>
+      </Block> */}
     </BlockLayout>;
 };
 

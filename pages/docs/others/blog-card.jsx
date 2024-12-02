@@ -6,7 +6,6 @@ import { BlogCard1, BlogCard2, BlogCard3, BlogCard4, BlogCard5 } from 'component
 import { card1Markup, card2Markup, card3Markup, card4Markup, card5Markup } from 'markups/others/blog-cards'; // -------- data -------- //
 
 import { blogList } from 'data/demo-11';
-import { blogList1, blogList4, blogList5 } from 'data/blog';
 const quickAccess = [{
   title: 'Blog Card 1',
   url: 'snippet-1'
@@ -35,9 +34,7 @@ const BlogCards = () => {
         <div className="card">
           <div className="card-body mb-n2">
             <div className="row gy-6">
-              {blogList1.slice(0, 2).map(item => <div className="col-lg-6" key={item.id}>
-                  <BlogCard1 {...item} />
-                </div>)}
+
             </div>
           </div>
 
@@ -105,7 +102,6 @@ const BlogCards = () => {
         <div className="card">
           <div className="card-body mb-n2">
             <div className="row gy-6">
-              {blogList4.slice(0, 2).map(item => <BlogCard3 {...item} key={item.id} />)}
             </div>
           </div>
 
@@ -164,7 +160,6 @@ const BlogCards = () => {
 
         <div className="card">
           <div className="card-body mb-n2">
-            {blogList5.slice(0, 1).map(item => <BlogCard5 key={item.id} {...item} />)}
           </div>
 
           <div className="card-footer position-relative">
