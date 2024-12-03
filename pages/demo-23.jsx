@@ -61,7 +61,7 @@ const Demo23 = () => {
         {
         /* ========== call to action section ========== */
       }
-        <CTA9 />
+        {/* <CTA9 /> */}
 
         {
         /* ========== about us section ========== */

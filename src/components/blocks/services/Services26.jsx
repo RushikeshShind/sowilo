@@ -9,13 +9,13 @@ const Services26 = () => {
           <div className="col-lg-12 col-xl-10 col-xxl-7 mx-auto text-center">
             <i className="icn-flower text-leaf fs-30 opacity-25" />
             <h2 className="display-5 text-center mt-2 mb-10" style={{ fontFamily: 'Acta Display Book' }} >
-             About Us
+             
             </h2>
           </div>
         </div>
 
         <div className="row grid-view gx-md-8 gx-xl-10 gy-8 gy-lg-0 text-center">
-          {serviceList14.map(({
+          {(({
           id,
           title
         }) => <div className="col-sm-8 col-md-6 col-lg-4 mx-auto" key={id}>

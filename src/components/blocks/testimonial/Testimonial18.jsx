@@ -8,9 +8,9 @@ const Testimonial18 = () => {
   }}>
       <div className="container py-14 py-md-17 text-center">
         <i className="icn-flower text-white fs-30 opacity-50" />
-        <div className="row mt-3">
+        <div className="row mt-3" >
           <div className="col-xl-9 col-xxl-8 mx-auto">
-            <div className="swiper-container dots-light dots-closer mb-6">
+            <div className="swiper-container dots-light dots-closer mb-6 "style={{fontFamily:'GothicA1', fontWeight:'120px'}} >
               <Carousel grabCursor navigation={false} slidesPerView={1}>
                 {testimonialList6.map(({
                 id,
