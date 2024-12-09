@@ -392,7 +392,7 @@ export const serviceList13 = [{
 export const serviceList14 = [{
   id: 1,
   url: '#',
-  title: 'Mar Barroso',
+  title: '',
   image: {
     '1x': '/img/photos/fs1.jpg',
     '2x': '/img/photos/fs1@2x.jpg 2x'
@@ -400,7 +400,7 @@ export const serviceList14 = [{
 }, {
   id: 2,
   url: '#',
-  title: 'Couples',
+  title: '',
   image: {
     '1x': '/img/photos/fs2.jpg',
     '2x': '/img/photos/fs2@2x.jpg 2x'
@@ -408,7 +408,7 @@ export const serviceList14 = [{
 }, {
   id: 3,
   url: '#',
-  title: 'Engagement',
+  title: '',
   image: {
     '1x': '/img/photos/fs3.jpg',
     '2x': '/img/photos/fs3@2x.jpg 2x'

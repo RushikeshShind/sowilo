@@ -4,7 +4,7 @@ import { testimonialList6 } from 'data/testimonial-list';
 
 const Testimonial18 = () => {
   return <section className="wrapper image-wrapper bg-image bg-overlay text-white" style={{
-    backgroundImage: 'url(/img/photos/bg32.jpg)'
+    backgroundImage: 'url(/img/photos/45678.jpg)'
   }}>
       <div className="container py-14 py-md-17 text-center">
         <i className="icn-flower text-white fs-30 opacity-50" />

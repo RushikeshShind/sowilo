@@ -5,7 +5,7 @@ const PageProgress = () => {
   const progressPathRef = useRef(null);
   useEffect(() => {
     if (progressPathRef.current && progressWrapRef.current) {
-      const offset = 50;
+      const offset = 100;
       const progressPath = progressPathRef.current;
       const progressWrap = progressWrapRef.current;
       const pathLength = progressPath.getTotalLength();

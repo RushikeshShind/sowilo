@@ -5,12 +5,13 @@ import styles from '../styles/Home.module.css';
 const Banner5 = () => {
   return <section className="wrapper bg-soft-primary responsive-section">
     <div className="container py-4 py-md-6 py-lg-8">
+    <img src="/img/photos/B-Logo5-SMALL.png" alt="hello" />
 
       <div className="row">
         <div className="col-xl-9 col-xxl-7 mx-auto text-center">
           <i className="icn-flower text-leaf fs-30 opacity-25"></i>
           <h2 className="display-2 mb-4" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
-            Bodynamic Foundation Training Edmonton</h2>
+            Bodynamic Foundation Training <br/>Orlando, USA</h2>
           <a
             href="https://www.bodynamic.com"
             target="_blank"
@@ -105,11 +106,15 @@ const Banner5 = () => {
         </div>
 
       </div>
-      <h1 className='text-center' style={{ fontFamily: 'EditorsNote' }}>Foundation Training Outline</h1>
-      <p className='text-center' style={{ fontFamily: 'GothicA1' }}>4 x 5 Day Modules = 20 Days <br /> Total
+      
+  <h1 className='display-1' style={{ fontFamily: 'EditorsNote' }}>Foundation Training Outline</h1>
+  <p style={{ margin: 10 }}>
+    4 x 5 Day Modules = 20 Days <br />
+    Total Classes run from 10 am – 6 pm every day. <br />
+    Lunch break 1 pm - 2:30 pm.
+  </p>
 
-        Classes run from 10 am – 6 pm every day. <br /> Lunch break 1 pm - 2:30 pm.
-      </p>
+
       {/* 1st Module Section */}
       <div
   style={{
@@ -121,6 +126,7 @@ const Banner5 = () => {
     minHeight: '100vh', // Ensure full height for better responsiveness
   }}
 >
+  
   <div
     style={{
       display: 'flex',
@@ -145,11 +151,11 @@ const Banner5 = () => {
     >
       <div className="image-container">
         <img
-          src="/img/avatars/t6.jpg" // Replace with actual image path
+          src="/img/photos/7878.jpg" // Replace with actual image path
           alt="Kristin sitting on a couch"
           style={{
             width: '100%',
-            height: '100%',
+            height: '50%',
             objectFit: 'cover',
             display: 'block',
           }}
@@ -482,15 +488,7 @@ const Banner5 = () => {
       ))}
     </ul>
     <div style={{ marginTop: '20px' }}>
-      <h2 style={{ fontFamily: 'Sevillana', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
-        Contact
-      </h2>
-      <p>
-        Certified Bodynamic Practitioner <br />
-        www.somatic.pt <br />
-        m. +351915680076<br/>
-        www.bodynamicinternational.com
-      </p>
+     
     </div>
   </div>
 
@@ -509,7 +507,15 @@ const Banner5 = () => {
       backgroundColor: '#fff',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     }}>
-      
+      <h2 style={{ fontFamily: 'Sevillana', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
+        Contact
+      </h2>
+      <p>
+        Certified Bodynamic Practitioner <br />
+        www.somatic.pt <br />
+        m. +351915680076<br/>
+        www.bodynamicinternational.com
+      </p>
     </div>
   </div>
 </div>
@@ -550,14 +556,7 @@ const Banner5 = () => {
       ))}
     </ul>
     <div style={{ marginTop: '20px' }}>
-      <h2 style={{ fontFamily: 'Sevillana', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
-        Contact
-      </h2>
-      <p>James Nicholas, JD, MSW, ASW #102229 <br />
-        Certified Bodynamic Psychotherapist <br />
-        James@Bodynamic.com <br />
-        www.bodynamicinternational.com
-      </p>
+      
     </div>
   </div>
 
@@ -576,7 +575,14 @@ const Banner5 = () => {
       backgroundColor: '#fff',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     }}>
-      
+      <h2 style={{ fontFamily: 'Sevillana', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
+        Contact
+      </h2>
+      <p>James Nicholas, JD, MSW, ASW #102229 <br />
+        Certified Bodynamic Psychotherapist <br />
+        James@Bodynamic.com <br />
+        www.bodynamicinternational.com
+      </p>
     </div>
   </div>
 </div>

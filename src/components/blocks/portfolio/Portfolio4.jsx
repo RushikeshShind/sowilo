@@ -10,7 +10,7 @@ const Portfolio4 = () => {
       <div className={styles.main}>
         <div className={styles.imageContainer}>
           <img
-            src="/img/avatars/t6.jpg" // Replace this with the actual image path
+            src="/img/photos/Shiital_Headshot.jpg" // Replace this with the actual image path
             alt="Kristin sitting on a couch"
             className={styles.image}
           />
@@ -35,8 +35,7 @@ const Portfolio4 = () => {
               <li>Quickly become an authority in our industry</li>
             </ul> */}
           </div>
-          <p className={styles.callToAction}>Now it’s your turn!</p>
-        </div>
+                 </div>
       </div>
     </div>
 
