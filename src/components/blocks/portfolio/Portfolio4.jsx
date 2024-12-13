@@ -8,15 +8,41 @@ const Portfolio4 = () => {
       <div className="overflow-hidden">
       <div className={styles.container}>
       <div className={styles.main}>
-        <div className={styles.imageContainer}>
-          <img
-            src="/img/photos/Shiital_Headshot.jpg" // Replace this with the actual image path
-            alt="Kristin sitting on a couch"
-            style={{  borderLeft: '10px solid #007b7b', // Border on the left
-              borderBottom: '10px solid #007b7b'}}
-            className={styles.image}
-          />
-        </div>
+      <div className={styles.imageContainer} style={{ position: 'relative', display: 'inline-block' }}>
+  {/* Shadow Box */}
+  <div className={styles.imageContainer} style={{ position: 'relative', display: 'inline-block' }}>
+  {/* Shadow Box */}
+  
+
+  {/* Left Side Box */}
+  <div
+    style={{
+      position: 'absolute',
+      top: '20px', // Adjust for shadow offset
+      left: '10px', // Adjust for shadow offset
+      width: '120%',
+      height: '100%',
+      backgroundColor: '#fcc283',
+      zIndex: '2', // Place below the image
+    }}
+  ></div>
+
+  {/* Image */}
+  <img
+    src="/img/photos/Shiital_Headshot.jpg" // Replace this with the actual image path
+    alt="Kristin sitting on a couch"
+    style={{
+      position: 'relative',
+      zIndex: '2', // Place above the shadow box
+      display: 'block',
+      borderLeft: '',
+      borderBottom: '',
+    }}
+    className={styles.image}
+  />
+</div>
+
+</div>
         <div className={styles.textContainer} style={{fontFamily:'GothicA1'}}>
           <h1 className={styles.heading} style={{fontFamily:'EditorsNote'}}>HEY I'M SHIITAL</h1>
           <p className={styles.description}>

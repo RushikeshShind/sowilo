@@ -116,21 +116,22 @@ const Banner5 = () => {
 
 
       {/* 1st Module Section */}
+      <section>
       <div
   style={{
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#9FC3C6', // Light teal background
-    padding: '30px',
-    minHeight: '100vh', // Ensures the layout occupies the full viewport height
+    padding: '5px', // Reduced padding
+    minHeight: '10px', // Reduced minimum height
   }}
 >
   <div
     style={{
       display: 'flex',
       flexDirection: 'row', // Horizontal layout for larger screens
-      maxWidth: '1200px',
+      maxWidth: '1000px',
       width: '100%',
       backgroundColor: 'white',
       borderRadius: '20px',
@@ -233,7 +234,7 @@ const Banner5 = () => {
     </div>
   </div>
 </div>
-
+</section>
 
 
       {/* 2nd module */}
