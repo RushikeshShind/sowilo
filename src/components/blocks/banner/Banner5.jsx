@@ -3,12 +3,12 @@ import dynamic from 'next/dynamic';
 const Plyr = dynamic(() => import('plyr'), { ssr: false });
 import styles from '../styles/Home.module.css';
 const Banner5 = () => {
-  return <section className="wrapper bg-soft-primary responsive-section">
-    <div className="container py- py-mb-8 py-lg-12 item-center">
-    <img src="/img/photos/B-Logo5-SMALL.png" alt="hello" style={{marginLeft: "300px" , obejectfit:'cover' }}/>
+  return <section className="wrapper">
+    <div className="container col-xl-20 py- py-mb-8 py-lg-15 item-center">
+    <img className='' src="/img/photos/B-Logo5-SMALL.png" alt="hello" style={{ width: '1270px ', height: 'auto',  marginLeft: 0, }}/>
 
       <div className="row">
-        <div className="col-xl-9 col-xxl-7 mx-auto text-center">
+        <div className="col-xl-15 col-xxl-15 mx-auto text-center">
           <i className="icn-flower text-leaf fs-30 opacity-25"></i>
           <h2 className="display-2 mb-5" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
             Bodynamic Foundation Training <br/>Orlando, USA</h2>
@@ -17,25 +17,25 @@ const Banner5 = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="link">
-            <h6>Bodynamic International</h6>
+            <h6 style={{ textDecoration: 'underline' }}>Bodynamic International</h6>
           </a>
 
 
 
-          <p className="display-12 text-center mt-12 mb-15 " style={{ fontFamily: 'GothicA1' }}>Bodynamics is a Somatic Developmental Psychology system a groundbreaking paradigm of empirically researched psychology with a focus on practical application. This innovative approach integrates body awareness and developmental stages to enhance personal growth and healing. With a global reach, Bodynamic International offers comprehensive training programs, empowering individuals and professionals worldwide to deepen their understanding of embodiment, self-awareness, and interpersonal dynamics.</p>
+          <p className="display-8 mb-8 " style={{ fontFamily: 'GothicA1' }}>Bodynamics is a Somatic Developmental Psychology system a groundbreaking paradigm of empirically researched psychology with a focus on practical application. This innovative approach integrates body awareness and developmental stages to enhance personal growth and healing. With a global reach, Bodynamic International offers comprehensive training programs, empowering individuals and professionals worldwide to deepen their understanding of embodiment, self-awareness, and interpersonal dynamics.</p>
 
 
         </div>
 
         <h2 className='text-center mb-8' style={{ fontFamily: 'EditorsNote' }}>Training Details</h2>
         <p style={{ fontFamily: 'GothicA1' }}>The Foundation Training is a one-year introductory program in the Bodynamic System. Throughout this foundational course, you will delve into character structures, character positions, and the fundamental concepts essential for understanding contact and communication as presented by the system. These concepts include mutual connection, dignity, boundaries, centering, and grounding.
-
+ 
           The detailed breakdown of the various developmental phases during childhood, paired with central developmental issues and their association with evolving defense mechanisms, offers a framework for comprehending human expression. Through this training, you will sharpen your skills, enabling you to be more present and accurate in your professional endeavors.
         </p>
         <div className="container">
           {/* Section 1 */}
           <div className="section">
-            <h2 style={{ fontFamily: 'EditorsNote' }}>What will we cover in this training?</h2>
+            <h2 style={{ fontFamily: 'EditorsNote', color:'#9FC3C6' }}>What will we cover in this training?</h2>
             <p style={{ fontFamily: 'GothicA1' }}>
               During these 20 days of training, divided into 4 modules, we will present lectures on fundamental psychological
               and physiological development and how these two are interconnected. This unique combination will provide information
@@ -55,7 +55,7 @@ const Banner5 = () => {
           </div>
 
           {/* Section 2 */}
-          <div className="section" style={{ fontFamily: 'EditorsNote' }}>
+          <div className="section" style={{ fontFamily: 'EditorsNote', }}>
             <h2>Why should I take Bodynamic training?</h2>
             <p style={{ fontFamily: 'GothicA1' }}>
               The Bodynamic system has been in existence for 40 years, emphasizing the research and understanding of the body’s
@@ -106,9 +106,9 @@ const Banner5 = () => {
         </div>
 
       </div>
-      
-  <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote' }}>Foundation Training Outline</h1>
-  <p className='text-center' style={{ margin: 10 }}>
+      <section className=" " style={{ backgroundColor: '#9FC3C6'}}>
+  <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote' , }}>Foundation Training Outline</h1>
+  <p className='text-center' style={{ margin: 1 }}>
     4 x 5 Day Modules = 20 Days <br />
     Total Classes run from 10 am – 6 pm every day. <br />
     Lunch break 1 pm - 2:30 pm.
@@ -465,7 +465,7 @@ const Banner5 = () => {
           </div>
         </div>
       </div>
-
+      </section>
       {/* Trainner Details 1 */}
      
       <h1 className='mb-12 text-center' style={{fontFamily:'GothicA1',}}>Instructors</h1>
