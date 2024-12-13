@@ -26,13 +26,14 @@ const Demo23 = () => {
 
       {/* ========== Header ========== */}
       <header className="wrapper bg-soft-primary">
-        <Navbar
+         <Navbar
           info
           search
           stickyBox={false}
           logoAlt="logo-light"
           navClassName="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none"
-        />
+        /> 
+        
       </header>
 
       {/* ========== Main Content ========== */}
@@ -48,70 +49,41 @@ const Demo23 = () => {
         
 
         {/* About Section */}
-        <section className="wrapper" style={{ padding: '60px 20px', backgroundColor: '#508C9B' }}>
-          <div className="container">
+       
             <About24 />
-          </div>
-        </section>
+        
 
         
 
         {/* Testimonial Section */}
-        <section
-          className="testimonial-section"
-          style={{
-            padding: '80px 20px',
-            backgroundColor: '#F3F6F8',
-          }}
-        >
+        
           <Testimonial18 />
-        </section>
+       
 
         {/* Portfolio Section */}
-        <section
-          className="portfolio-section"
-          style={{
-            padding: '80px 20px',
-            backgroundColor: '#E8F1F2',
-          }}
-        >
+      
           <Portfolio4 />
-        </section>
+       
 
         {/* Banner Section */}
-        <section
-          className="banner-section"
-          style={{
-            padding: '60px 20px',
-            backgroundColor: '#D1E8E2',
-            textAlign: 'center',
-          }}
-        >
+       
           <Banner5 />
-        </section>
+      
 
         {/* Blog Section */}
-        <section
-          className="blog-section"
-          style={{
-            padding: '80px 20px',
-            backgroundColor: '#FFFFFF',
-          }}
-        >
-          <div className="container">
+        
             <Blog5 />
-          </div>
-        </section>
+          
       </main>
 
       {/* Footer Section */}
       <footer
         className="footer-section"
         style={{
-          backgroundColor: '#333',
-          color: '#FFF',
+          backgroundColor: '',
+          color: '',
           padding: '40px 20px',
-          textAlign: 'center',
+          textAlign: '',
         }}
       >
         <Footer9 />

@@ -4,20 +4,19 @@ const Plyr = dynamic(() => import('plyr'), { ssr: false });
 import styles from '../styles/Home.module.css';
 const Banner5 = () => {
   return <section className="wrapper bg-soft-primary responsive-section">
-    <div className="container py-4 py-md-6 py-lg-8">
-    <img src="/img/photos/B-Logo5-SMALL.png" alt="hello" />
+    <div className="container py- py-mb-8 py-lg-12 item-center">
+    <img src="/img/photos/B-Logo5-SMALL.png" alt="hello" style={{marginLeft: "300px" , obejectfit:'cover' }}/>
 
       <div className="row">
         <div className="col-xl-9 col-xxl-7 mx-auto text-center">
           <i className="icn-flower text-leaf fs-30 opacity-25"></i>
-          <h2 className="display-2 mb-4" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
+          <h2 className="display-2 mb-5" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
             Bodynamic Foundation Training <br/>Orlando, USA</h2>
           <a
             href="https://www.bodynamic.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="link"
-          >
+            className="link">
             <h6>Bodynamic International</h6>
           </a>
 
@@ -66,6 +65,7 @@ const Banner5 = () => {
               “measurable,” offering a novel degree of practicality for those who utilize this material, whether in their
               professional or personal lives.
             </p>
+           To know more about the Seven Developmental Stages click here.
           </div>
 
           {/* Section 3 */}
@@ -107,8 +107,8 @@ const Banner5 = () => {
 
       </div>
       
-  <h1 className='display-1' style={{ fontFamily: 'EditorsNote' }}>Foundation Training Outline</h1>
-  <p style={{ margin: 10 }}>
+  <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote' }}>Foundation Training Outline</h1>
+  <p className='text-center' style={{ margin: 10 }}>
     4 x 5 Day Modules = 20 Days <br />
     Total Classes run from 10 am – 6 pm every day. <br />
     Lunch break 1 pm - 2:30 pm.
@@ -121,61 +121,56 @@ const Banner5 = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#9FC3C6',
+    backgroundColor: '#9FC3C6', // Light teal background
     padding: '30px',
-    minHeight: '100vh', // Ensure full height for better responsiveness
+    minHeight: '100vh', // Ensures the layout occupies the full viewport height
   }}
 >
-  
   <div
     style={{
       display: 'flex',
-      flexDirection: 'column', // Default for small screens
+      flexDirection: 'row', // Horizontal layout for larger screens
       maxWidth: '1200px',
       width: '100%',
       backgroundColor: 'white',
-      borderRadius: '10px',
+      borderRadius: '20px',
       overflow: 'hidden',
       boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
     }}
   >
-    {/* Left Section with Image */}
+    {/* Image Section */}
     <div
       style={{
-        flex: 1,
-        backgroundImage: `url('https://via.placeholder.com/600x600')`, // Replace with actual image URL
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '300px', // Default height for small screens
+        width: '50%', // Half-width for the image section
+        height: 'auto',
+        overflow: 'hidden',
       }}
     >
-      <div className="image-container">
-        <img
-          src="/img/photos/7878.jpg" // Replace with actual image path
-          alt="Kristin sitting on a couch"
-          style={{
-            width: '100%',
-            height: '50%',
-            objectFit: 'cover',
-            display: 'block',
-          }}
-        />
-      </div>
+      <img
+        src="/img/photos/7878.jpg" // Replace with the actual image path
+        alt="Kristin sitting on a couch"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
+      />
     </div>
 
-    {/* Right Section with Content */}
+    {/* Content Section */}
     <div
       style={{
-        flex: 1,
-        padding: '20px',
+        width: '50%', // Half-width for the content section
+        padding: '40px', // Adds consistent spacing
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+        textAlign: 'left',
       }}
     >
       <h3
         style={{
-          color: '#AF8B65',
+          color: '#AF8B65', // Soft gold
           fontSize: '20px',
           fontWeight: 650,
           marginBottom: '10px',
@@ -191,31 +186,55 @@ const Banner5 = () => {
           marginBottom: '10px',
         }}
       >
-        April 1 – 5, 2025
+        Your Foundations for an Authentic & Stand-Out Brand
       </h2>
       <h4
         style={{
-          color: '#AF8B65',
+          color: '#555', // Neutral gray for the subtitle
           fontWeight: 500,
-          marginBottom: '15px',
+          marginBottom: '20px',
           fontFamily: 'GothicA1',
         }}
       >
-        INSTRUCTOR : James Nicholas
+        Who You Are and Your Niche Market.
       </h4>
+      <p
+        style={{
+          marginBottom: '20px',
+          fontFamily: 'Arial, sans-serif',
+          lineHeight: '1.8',
+        }}
+      >
+        Before you start creating anything visual for your business, we have to
+        make sure you’re crystal clear on your brand’s foundation. Whether you’re
+        outlining this for the first time or diving deeper than you have in the
+        past, this will become like your brand’s bible!
+      </p>
       <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>
         IN THIS MODULE YOU WILL:
       </h4>
-      <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-        <li>Bodynamic System Overview</li>
-        <li>Bodyknot</li>
-        <li>Layers of Feelings</li>
-        <li>Ego Aspects</li>
-        <li>Existence Developmental Phase</li>
+      <ul
+        style={{
+          paddingLeft: '20px',
+          lineHeight: '1.8',
+          fontFamily: 'Arial, sans-serif',
+        }}
+      >
+        <li>Define who you are as a business & what your values are.</li>
+        <li>
+          Learn how to say “what you do” in a way that’s clear, exciting AND that
+          makes you stand out against the competition.
+        </li>
+        <li>
+          Get extra personal with defining your ideal client and knowing their
+          wants, dreams, and struggles.
+        </li>
       </ul>
     </div>
   </div>
 </div>
+
+
 
       {/* 2nd module */}
       <div

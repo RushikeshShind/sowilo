@@ -12,11 +12,13 @@ const Portfolio4 = () => {
           <img
             src="/img/photos/Shiital_Headshot.jpg" // Replace this with the actual image path
             alt="Kristin sitting on a couch"
+            style={{  borderLeft: '10px solid #007b7b', // Border on the left
+              borderBottom: '10px solid #007b7b'}}
             className={styles.image}
           />
         </div>
         <div className={styles.textContainer} style={{fontFamily:'GothicA1'}}>
-          <h1 className={styles.heading} style={{fontFamily:'EditorsNote'}}>HEY I'M SHITTAL</h1>
+          <h1 className={styles.heading} style={{fontFamily:'EditorsNote'}}>HEY I'M SHIITAL</h1>
           <p className={styles.description}>
           I am passionate about human development and potential. From early childhood education to adult learning to change management, I have traversed many paths to currently focusing on developmental psychology, specifically somatic developmental psychology.
           </p>
