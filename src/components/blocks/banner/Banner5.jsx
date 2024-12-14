@@ -10,14 +10,14 @@ const Banner5 = () => {
       <div className="row">
         <div className="col-xl-15 col-xxl-15 mx-auto text-center">
           <i className="icn-flower text-leaf fs-30 opacity-25"></i>
-          <h2 className="display-2 mb-5" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
+          <h2 className="display-2 mb-5 text-dark" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
             Bodynamic Foundation Training <br/>Orlando, USA</h2>
           <a
             href="https://www.bodynamic.com"
             target="_blank"
             rel="noopener noreferrer"
             className="link">
-            <h6 style={{ textDecoration: 'underline' }}>Bodynamic International</h6>
+            <h6 style={{ textDecoration: 'underline', color:'#009990' }}>Bodynamic International</h6>
           </a>
 
 
@@ -27,7 +27,7 @@ const Banner5 = () => {
 
         </div>
 
-        <h2 className='text-center mb-8' style={{ fontFamily: 'EditorsNote' }}>Training Details</h2>
+        <h2 className='text-center mb-8' style={{ fontFamily: 'EditorsNote' , color:'#009990'}}>Training Details</h2>
         <p style={{ fontFamily: 'GothicA1' }}>The Foundation Training is a one-year introductory program in the Bodynamic System. Throughout this foundational course, you will delve into character structures, character positions, and the fundamental concepts essential for understanding contact and communication as presented by the system. These concepts include mutual connection, dignity, boundaries, centering, and grounding.
  
           The detailed breakdown of the various developmental phases during childhood, paired with central developmental issues and their association with evolving defense mechanisms, offers a framework for comprehending human expression. Through this training, you will sharpen your skills, enabling you to be more present and accurate in your professional endeavors.
@@ -35,7 +35,7 @@ const Banner5 = () => {
         <div className="container">
           {/* Section 1 */}
           <div className="section">
-            <h2 style={{ fontFamily: 'EditorsNote', color:'#9FC3C6' }}>What will we cover in this training?</h2>
+            <h2 style={{ fontFamily: 'EditorsNote', color:'#009990' }}>What will we cover in this training?</h2>
             <p style={{ fontFamily: 'GothicA1' }}>
               During these 20 days of training, divided into 4 modules, we will present lectures on fundamental psychological
               and physiological development and how these two are interconnected. This unique combination will provide information
@@ -56,7 +56,7 @@ const Banner5 = () => {
 
           {/* Section 2 */}
           <div className="section" style={{ fontFamily: 'EditorsNote', }}>
-            <h2>Why should I take Bodynamic training?</h2>
+            <h2 style={{color:'#009990'}}>Why should I take Bodynamic training?</h2>
             <p style={{ fontFamily: 'GothicA1' }}>
               The Bodynamic system has been in existence for 40 years, emphasizing the research and understanding of the body’s
               connection to psychology and development from its inception. It is among the pioneering schools to holistically
@@ -65,9 +65,9 @@ const Banner5 = () => {
               “measurable,” offering a novel degree of practicality for those who utilize this material, whether in their
               professional or personal lives.
             </p>
-           To know more about the Seven Developmental Stages click here.
+           
           </div>
-
+          <p>To know more about the Seven Developmental Stages  <p style={{color:'#009990'}}>click here.</p> </p>
           {/* Section 3 */}
           <div className="section mb-10" style={{ fontFamily: 'GothicA1' }}>
             <h2>Who is this training for?</h2>
@@ -76,7 +76,7 @@ const Banner5 = () => {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                gap: '10px', // Adjust the gap between the two lists if needed
+                gap: 'px', // Adjust the gap between the two lists if needed
               }}
             >
               <ul style={{ listStyleType: 'disc', paddingLeft: '20px', }}>
@@ -556,143 +556,129 @@ const Banner5 = () => {
       </section>
       {/* Trainner Details 1 */}
      
-      <h1 className='mb-12 text-center' style={{fontFamily:'GothicA1',}}>Instructors</h1>
-      <div className="mb-12" style={{
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '20px',
-  backgroundColor: '#f5f2ed',
+      <div style={{
+  padding: '30px',
+  backgroundColor: '#',
   fontFamily: "'Georgia', serif",
-  flexWrap: 'wrap',
+  borderRadius: '10px',
+  boxShadow: '0 4px 12px rgba(121, 255, 19, 0.1)',
 }}>
+ <h1 
+  className="mb-12 text-center animate-text" 
+  style={{ 
+    fontFamily: 'GothicA1', 
+    fontSize: '2.5rem', 
+    color: '#3b3b3b', 
+    marginBottom: '20px', 
+    letterSpacing: '2px', 
+    textTransform: 'uppercase'
+  }}
+>
+  INSTRUCTORS
+</h1>
+  <h3 className="text-center" style={{ 
+    fontFamily: 'Georgia', 
+    fontSize: '1.2rem', 
+    color: '#4a4a4a', 
+    marginBottom: '40px' 
+  }}>
+   
+  </h3>
+
+  {/* Content Section */}
+  <div style={{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    gap: '10px',
+    flexWrap: 'wrap',
+  }}>
+    {/* First Card */}
+    <div style={{
+      flex: '1 1 calc(30% - 20px)',
+      padding: '20px',
+      borderRadius: '10px',
+      backgroundColor: '#ffffff',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      textAlign: 'center',
+    }}>
+      <img
+        src="/img/photos/Mar-Barroso.webp"
+        alt="Coaching setup"
+        style={{ width: '100%', borderRadius: '10px', marginBottom: '25px' }}
+      />
+      <h2 style={{ 
+        fontFamily: 'GothicA1', 
+        fontSize: '1.5rem', 
+        color: '#3b3b3b', 
+        marginBottom: '10px' ,
+        color:'#009990', 
+      }}>
+       Mar Barroso
+      </h2>
+      <p style={{ 
+        fontSize: '0.7rem', 
+        color: '#3b3b3b', 
+        marginBottom: '20px' 
+      }}>
+        Mar Barroso has a master’s degree in clinical and health psychology, a bachelor’s in psychology, and a bachelor’s in human resources with an associate in training management. <br/>
  
-  {/* Left Section */}
-  <div style={{
-    flex: '1 1 45%',
-    paddingRight: '20px',
-    marginBottom: '20px',
-  }}>
-    <img
-        src="/img/avatars/t6.jpg"
-        alt="Coaching setup"
-        style={{ width: '100%', borderRadius: '10px' }}
-      />
-    <h2>Mar Barroso</h2>
-    <ul style={{ fontFamily: 'GothicA1', padding: 0 }}>
-      {[
-        "Mar Barroso has a master’s degree in clinical and health psychology, a bachelor’s in psychology, and a bachelor’s in human resources with an associate in training management.",
-        "She has more than 13 years of experience in clinical practice.  Mar is a Bodynamic® educational therapist and part of the international training team of Bodynamic International®. She teaches Foundation Training, Practitioner Training, and Shock Trauma Training in Portugal, Spain, and Turkey.",
-        "Mar is the founder and CEO of SOMATIC—School of Body Psychotherapies (est. 2014), the senior assistant and official representative for Somatic Experiencing® in Portugal, and the Trainer for Bodynamic International® in Portugal and Spain, with more than 600 enrolled students. She is also an assistant teacher with Ditte Marcher for shock trauma.",
-        
-      ].map((text, index) => (
-        <li key={index} style={{ marginBottom: '10px' }}>
-          <span style={{ color: '#000', fontSize: '0.8rem', lineHeight: '1.5' }}>
-            {text}
-          </span>
-        </li>
-      ))}
-    </ul>
-    <div style={{ marginTop: '20px' }}>
-     
+ She has more than 13 years of experience in clinical practice.  Mar is a Bodynamic® educational therapist and part of the international training team of Bodynamic International®. She teaches Foundation Training, Practitioner Training, and Shock Trauma Training in Portugal, Spain, and Turkey. <br/>
+  
+ Mar is the founder and CEO of SOMATIC—School of Body Psychotherapies (est. 2014), the senior assistant and official representative for Somatic Experiencing® in Portugal, and the Trainer for Bodynamic International® in Portugal and Spain, with more than 600 enrolled students. She is also an assistant teacher with Ditte Marcher for shock trauma.<br/>
+  
+ Additionally, she is trained in other areas, such as Cognitive Behavioral Therapy (CBT), Children's Shock Trauma with Maggie Klein, Developing Trauma and Somatic Experiencing with Peter Levine, Clinical Case Studies with Stephen Porges, Spirituality, and Reorienting Birth with Lisbeth Marcher. <br/>
+  
+ She lives in Portugal, is married, and is the mother of two amazing teenagers. She loves people, nature, and dancing.
+ 
+      </p>
+      <p style={{color:'#009990'}}>Contact:
+@ <a href='www.somatic.pt'> www.somatic.pt</a> <br />
+<a>e.  info@somatic.pt</a> <br />
+m. +351915680076
+</p>
     </div>
-  </div>
 
-  {/* Right Section */}
-  <div style={{
-    flex: '1 1 45%',
-    display: 'flex',
-    justifyContent: 'center',
-    marginBottom: '20px',
-  }}>
+    {/* Second Card */}
     <div style={{
-      position: 'relative',
-      width: '100%',
-      maxWidth: '400px',
-      padding: '10px',
-      backgroundColor: '#fff',
+      flex: '1 1 calc(30% - 20px)',
+      padding: '20px',
+      borderRadius: '10px',
+      backgroundColor: '#ffffff',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      textAlign: 'center',
     }}>
-      <h2 style={{ fontFamily: 'Sevillana', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
-        Contact
+      <img
+        src="/img/photos/james-nicholas.jpeg"
+        alt="Coaching setup"
+        style={{ width: '100%', borderRadius: '10px', marginBottom: '15px' }}
+      />
+      <h2 style={{ 
+        fontFamily: 'GothicA1', 
+        fontSize: '1.5rem', 
+      color:'#009990', 
+        marginBottom: '10px' 
+      }}>
+       James Nicholas
       </h2>
-      <p>
-        Certified Bodynamic Practitioner <br />
-        www.somatic.pt <br />
-        m. +351915680076<br/>
-        www.bodynamicinternational.com
+      <p style={{ 
+        fontSize: '0.7rem', 
+        color: '#3b3b3b', 
+        marginBottom: '20px' 
+      }}>
+       James Nicholas is a certified Bodynamic® therapist and Bodynamic® analyst serving Southern California and is one of the North American training coordinators for Bodynamic® International. He is an attorney and member in good standing of the California Bar and an associate clinical social worker licensed in California. He received his B.A. in philosophy and history from UCLA, J.D. from Northwestern University, and M.S.W. from USC.
+       James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral techniques, and bodywork.  His focus areas include individual therapy, trauma, attachment, couples counseling, mediation/conflict resolution, and family systems.  He also specializes in bodymapping (conducting and reading).  In addition to private practice, James works as an associate clinician at the USC Center for Work and Family Life. He lives in San Diego with his wife and 7-year-old son.
+      <p style={{color:'#009990'}}>James Nicholas,
+        JD, MSW, ASW 
+Certified Bodynamic Psychotherapist <br/>
+email- James@Bodynamic.com</p>
       </p>
     </div>
   </div>
 </div>
 
-{/* Trainer Details 2 */}
-<div className="mb-12" style={{
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '20px',
-  backgroundColor: '#f5f2ed',
-  fontFamily: "'Georgia', serif",
-  flexWrap: 'wrap',
-}}>
-  {/* Left Section */}
-  <div style={{
-    flex: '1 1 45%',
-    paddingRight: '20px',
-    marginBottom: '20px',
-  }}>
-    <img
-        src="/img/avatars/t6.jpg"
-        alt="Coaching setup"
-        style={{ width: '100%', borderRadius: '10px' }}
-      />
-    <h2>James Nicholas</h2>
-    <ul style={{ fontFamily: 'GothicA1', padding: 0 }}>
-      {[
-        "James Nicholas is a certified Bodynamic® therapist and Bodynamic® analyst serving Southern California and is one of the North American training coordinators for Bodynamic® International. He is an attorney and member in good standing of the California Bar and an associate clinical social worker licensed in California. He received his B.A. in philosophy and history from UCLA, J.D. from Northwestern University, and M.S.W. from USC.",
-        "James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral techniques, and bodywork. His focus areas include individual therapy, trauma, attachment, couples counseling, mediation/conflict resolution, and family systems. He also specializes in bodymapping (conducting and reading). In addition to private practice, James works as an associate clinician at the USC Center for Work and Family Life. He lives in San Diego with his wife and 7-year-old son.",
-      ].map((text, index) => (
-        <li key={index} style={{ marginBottom: '10px' }}>
-          <span style={{ color: '#000', fontSize: '0.8rem', lineHeight: '1.5' }}>
-            {text}
-          </span>
-        </li>
-      ))}
-    </ul>
-    <div style={{ marginTop: '20px' }}>
-      
-    </div>
-  </div>
 
-  {/* Right Section */}
-  <div style={{
-    flex: '1 1 45%',
-    display: 'flex',
-    justifyContent: 'center',
-    marginBottom: '20px',
-  }}>
-    <div style={{
-      position: 'relative',
-      width: '100%',
-      maxWidth: '400px',
-      padding: '10px',
-      backgroundColor: '#fff',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    }}>
-      <h2 style={{ fontFamily: 'Sevillana', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '10px' }}>
-        Contact
-      </h2>
-      <p>James Nicholas, JD, MSW, ASW #102229 <br />
-        Certified Bodynamic Psychotherapist <br />
-        James@Bodynamic.com <br />
-        www.bodynamicinternational.com
-      </p>
-    </div>
-  </div>
-</div>
 
 
 
