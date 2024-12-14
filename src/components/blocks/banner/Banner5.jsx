@@ -106,7 +106,17 @@ const Banner5 = () => {
         </div>
 
       </div>
-      <section className=" " style={{ backgroundColor: '#9FC3C6'}}>
+      <section 
+  className="" 
+  style={{ 
+    backgroundColor: '#9FC3C6', 
+    width: '120%', 
+    boxSizing: 'border-box', 
+    padding: '5rem', 
+    marginLeft: '-10%',
+    marginRight: '-10%'
+  }}
+>
   <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote' , }}>Foundation Training Outline</h1>
   <p className='text-center' style={{ margin: 1 }}>
     4 x 5 Day Modules = 20 Days <br />
@@ -123,7 +133,7 @@ const Banner5 = () => {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#9FC3C6', // Light teal background
-    padding: '5px', // Reduced padding
+    padding: '25px', // Reduced padding
     minHeight: '10px', // Reduced minimum height
   }}
 >
@@ -161,7 +171,7 @@ const Banner5 = () => {
     {/* Content Section */}
     <div
       style={{
-        width: '50%', // Half-width for the content section
+        width: '80%', // Half-width for the content section
         padding: '40px', // Adds consistent spacing
         display: 'flex',
         flexDirection: 'column',
@@ -172,64 +182,55 @@ const Banner5 = () => {
       <h3
         style={{
           color: '#AF8B65', // Soft gold
-          fontSize: '20px',
+          fontSize: '30px',
           fontWeight: 650,
           marginBottom: '10px',
           fontFamily: 'Sevillana',
         }}
       >
-        module 1
+        Module 1
       </h3>
       <h2
         style={{
-          fontSize: '24px',
+          fontSize: '30px',
           fontWeight: 'bold',
           marginBottom: '10px',
         }}
       >
-        Your Foundations for an Authentic & Stand-Out Brand
+        April 1 – 5, 2025
       </h2>
       <h4
         style={{
           color: '#555', // Neutral gray for the subtitle
-          fontWeight: 500,
+          fontWeight: 600,
           marginBottom: '20px',
           fontFamily: 'GothicA1',
         }}
       >
-        Who You Are and Your Niche Market.
+        Instructor: James Nicholas
       </h4>
-      <p
-        style={{
-          marginBottom: '20px',
-          fontFamily: 'Arial, sans-serif',
-          lineHeight: '1.8',
-        }}
-      >
-        Before you start creating anything visual for your business, we have to
-        make sure you’re crystal clear on your brand’s foundation. Whether you’re
-        outlining this for the first time or diving deeper than you have in the
-        past, this will become like your brand’s bible!
-      </p>
+      
       <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>
         IN THIS MODULE YOU WILL:
       </h4>
       <ul
         style={{
-          paddingLeft: '20px',
+          fontSize:'30px',
+          paddingLeft: '30px',
           lineHeight: '1.8',
-          fontFamily: 'Arial, sans-serif',
+          fontFamily: 'EditorNote',
         }}
       >
-        <li>Define who you are as a business & what your values are.</li>
-        <li>
-          Learn how to say “what you do” in a way that’s clear, exciting AND that
-          makes you stand out against the competition.
+        <li>Bodynamic System Overview
         </li>
         <li>
-          Get extra personal with defining your ideal client and knowing their
-          wants, dreams, and struggles.
+        Bodyknot
         </li>
+        <li>
+        Layers of Feelings
+        </li>
+        <li>Ego Aspects</li>
+        <li>Existence Developmental Phase</li>
       </ul>
     </div>
   </div>
@@ -239,233 +240,319 @@ const Banner5 = () => {
 
       {/* 2nd module */}
       <div
-        style={{
-          display: 'flex',
+  style={{
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#9FC3C6',
-    padding: '30px',
-    minHeight: '100vh',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-      flexDirection: 'column', // Default for small screens
-      maxWidth: '1200px',
+    backgroundColor: '#9FC3C6', // Light teal background
+    padding: '25px', // Reduced padding
+    minHeight: '10px', // Reduced minimum height
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'row', // Horizontal layout for larger screens
+      maxWidth: '1000px',
       width: '100%',
       backgroundColor: 'white',
-      borderRadius: '10px',
+      borderRadius: '20px',
       overflow: 'hidden',
       boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-          }}
-        >
-          {/* Left Section with Image */}
-          <div
-            style={{
-              flex: 1,
-              backgroundImage: `url('https://via.placeholder.com/600x600')`, // Replace with actual image URL
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '300px', // Default height for small screens
-            }}
-          >
-            <div className={styles.imageContainer}>
-              <img
-                src="/img/avatars/t6.jpg" // Replace this with the actual image path
-                alt="Kristin sitting on a couch"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  display: 'block',
-                }}
-                className={styles.image}
-              />
-            </div>
-          </div>
+    }}
+  >
+    {/* Image Section */}
+    <div
+      style={{
+        width: '50%', // Half-width for the image section
+        height: 'auto',
+        overflow: 'hidden',
+      }}
+    >
+      <img
+        src="/img/photos/module2.jpg" // Replace with the actual image path
+        alt="Kristin sitting on a couch"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
+      />
+    </div>
 
-          {/* Right Section with Content */}
-          <div
-            style={{
-              flex: 1,
-              padding: '40px',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-            }}
-          >
-            <h3 className='mb-5' style={{ color: '#AF8B65', fontSize: '20 px', fontWeight: 650, marginBottom: '10px', fontFamily: 'Sevillana' }}>
-              module 2
-            </h3>
-            <h2 className='mb-1' style={{ fontSize: '28px', fontWeight: 'bold' }}>
-              June 3  – 7, 2025
-            </h2>
-            {/* <hr  style={{ borderTop: '1px solid #000', marginBottom: '10px' }} /> */}
-            <h4 style={{ color: '#AF8B65', fontWeight: 500, marginBottom: '15px', fontFamily: 'GothicA1' }}>
-              INSTRUCTOR : Mar Barroso
-
-
-            </h4>
-            <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>IN THIS MODULE YOU WILL:</h4>
-            <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-              <li> Need Developmental Phase</li>
-              <li>
-                Autonomy Developmental Phase
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    {/* Content Section */}
+    <div
+      style={{
+        width: '80%', // Half-width for the content section
+        padding: '40px', // Adds consistent spacing
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'left',
+      }}
+    >
+      <h3
+        style={{
+          color: '#AF8B65', // Soft gold
+          fontSize: '30px',
+          fontWeight: 650,
+          marginBottom: '10px',
+          fontFamily: 'Sevillana',
+        }}
+      >
+        Module 2
+      </h3>
+      <h2
+        style={{
+          fontSize: '30px',
+          fontWeight: 'bold',
+          marginBottom: '10px',
+        }}
+      >
+        June 3  – 7, 2025
+      </h2>
+      <h4
+        style={{
+          color: '#555', // Neutral gray for the subtitle
+          fontWeight: 600,
+          marginBottom: '20px',
+          fontFamily: 'GothicA1',
+        }}
+      >
+        Instructor: Mar Barroso
+      </h4>
+      
+      <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>
+        IN THIS MODULE YOU WILL:
+      </h4>
+      <ul
+        style={{
+          fontSize:'30px',
+          paddingLeft: '30px',
+          lineHeight: '1.8',
+          fontFamily: 'EditorNote',
+        }}
+      >
+        <li>Need Developmental Phase
+        </li>
+        <li>
+        Autonomy Developmental Phase
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
       {/* 3rd module */}
+    
       <div
-        style={{
-          display: 'flex',
+  style={{
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#9FC3C6',
-    padding: '30px',
-    minHeight: '100vh',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-      flexDirection: 'column', // Default for small screens
-      maxWidth: '1200px',
+    backgroundColor: '#9FC3C6', // Light teal background
+    padding: '25px', // Reduced padding
+    minHeight: '10px', // Reduced minimum height
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'row', // Horizontal layout for larger screens
+      maxWidth: '1000px',
       width: '100%',
       backgroundColor: 'white',
-      borderRadius: '10px',
+      borderRadius: '20px',
       overflow: 'hidden',
       boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-          }}
-        >
-          {/* Left Section with Image */}
-          <div
-            style={{
-              flex: 1,
-              backgroundImage: `url('https://via.placeholder.com/600x600')`, // Replace with the actual image URL
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '100%',
-            }}
-          >
-            <div className={styles.imageContainer}>
-              <img
-                src="/img/avatars/t6.jpg" // Replace this with the actual image path
-                alt="Kristin sitting on a couch"
-                className={styles.image}
-              />
-            </div>
-          </div>
-
-          {/* Right Section with Content */}
-          <div
-            style={{
-              flex: 1,
-              padding: '40px',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-            }}
-          >
-            <h3 className='mb-5' style={{ color: '#AF8B65', fontSize: '20 px', fontWeight: 650, marginBottom: '10px', fontFamily: 'Sevillana' }}>
-              module 3
-            </h3>
-            <h2 className='mb-1' style={{ fontSize: '28px', fontWeight: 'bold' }}>
-              Sep 2 – 6, 2025
-            </h2>
-            {/* <hr  style={{ borderTop: '1px solid #000', marginBottom: '10px' }} /> */}
-            <h4 style={{ color: '#AF8B65', fontWeight: 500, marginBottom: '15px', fontFamily: 'GothicA1' }}>
-              INSTRUCTOR : James Nicholas
-
-            </h4>
-            <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>IN THIS MODULE YOU WILL:</h4>
-            <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-              <li> Will Developmental Phase</li>
-              <li>
-                Love/Sexuality Developmental Phase
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* 4th module */}
-      <div className='mb-12'
+    }}
+  >
+    {/* Image Section */}
+    <div
+      style={{
+        width: '50%', // Half-width for the image section
+        height: 'auto',
+        overflow: 'hidden',
+      }}
+    >
+      <img
+        src="/img/photos/module3.jpg" // Replace with the actual image path
+        alt="Kristin sitting on a couch"
         style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: '#9FC3C6', // Matches the teal background
-          padding: '30px',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
+      />
+    </div>
+
+    {/* Content Section */}
+    <div
+      style={{
+        width: '80%', // Half-width for the content section
+        padding: '40px', // Adds consistent spacing
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'left',
+      }}
+    >
+      <h3
+        style={{
+          color: '#AF8B65', // Soft gold
+          fontSize: '30px',
+          fontWeight: 650,
+          marginBottom: '10px',
+          fontFamily: 'Sevillana',
         }}
       >
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column', // Default for small screens
-            maxWidth: '1200px',
-            width: '100%',
-            backgroundColor: 'white',
-            borderRadius: '10px',
-            overflow: 'hidden',
-            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-          }}
-        >
-          {/* Left Section with Image */}
-          <div
-            style={{
-              flex: 1,
-              backgroundImage: `url('https://via.placeholder.com/600x600')`, // Replace with the actual image URL
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              height: '100%',
-            }}
-          >
-            <div className={styles.imageContainer}>
-              <img
-                src="/img/avatars/t6.jpg" // Replace this with the actual image path
-                alt="Kristin sitting on a couch"
-                className={styles.image}
-              />
-            </div>
-          </div>
+        Module 3
+      </h3>
+      <h2
+        style={{
+          fontSize: '30px',
+          fontWeight: 'bold',
+          marginBottom: '10px',
+        }}
+      >
+        Sep 2 – 6, 2025 
+      </h2>
+      <h4
+        style={{
+          color: '#555', // Neutral gray for the subtitle
+          fontWeight: 600,
+          marginBottom: '20px',
+          fontFamily: 'GothicA1',
+        }}
+      >
+        Instructor: James Nicholas
+      </h4>
+      
+      <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>
+        IN THIS MODULE YOU WILL:
+      </h4>
+      <ul
+        style={{
+          fontSize:'30px',
+          paddingLeft: '30px',
+          lineHeight: '1.8',
+          fontFamily: 'EditorNote',
+        }}
+      >
+        <li>Will Developmental Phase
+        </li>
+        <li>
+        Love/Sexuality Developmental Phase
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+      {/* 4th module */}
+      <div
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#9FC3C6', // Light teal background
+    padding: '25px', // Reduced padding
+    minHeight: '10px', // Reduced minimum height
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'row', // Horizontal layout for larger screens
+      maxWidth: '1000px',
+      width: '100%',
+      backgroundColor: 'white',
+      borderRadius: '20px',
+      overflow: 'hidden',
+      boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+    }}
+  >
+    {/* Image Section */}
+    <div
+      style={{
+        width: '50%', // Half-width for the image section
+        height: 'auto',
+        overflow: 'hidden',
+      }}
+    >
+      <img
+        src="/img/photos/module4.jpg" // Replace with the actual image path
+        alt="Kristin sitting on a couch"
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
+      />
+    </div>
 
-          {/* Right Section with Content */}
-          <div
-            style={{
-              flex: 1,
-              padding: '40px',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-            }}
-          >
-            <h3 className='mb-5' style={{ color: '#AF8B65', fontSize: '20 px', fontWeight: 650, marginBottom: '10px', fontFamily: 'Sevillana' }}>
-              module 4
-            </h3>
-            <h2 className='mb-1' style={{ fontSize: '28px', fontWeight: 'bold' }}>
-              Oct 28  –  Nov 1, 2025
-            </h2>
-            {/* <hr  style={{ borderTop: '1px solid #000', marginBottom: '10px' }} /> */}
-            <h4 style={{ color: '#AF8B65', fontWeight: 500, marginBottom: '15px', fontFamily: 'GothicA1' }}>
-              INSTRUCTOR : Mar Barroso
-
-            </h4>
-            <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>IN THIS MODULE YOU WILL:</h4>
-            <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
-              <li> Opinion Developmental Phase</li>
-              <li>
-                Performance/Solidarity Developmental Phase
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
+    {/* Content Section */}
+    <div 
+      style={{
+        width: '80%', // Half-width for the content section
+        padding: '40px', // Adds consistent spacing
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textAlign: 'left',
+      }}
+    >
+      <h3
+        style={{
+          color: '#AF8B65', // Soft gold
+          fontSize: '30px',
+          fontWeight: 650,
+          marginBottom: '10px',
+          fontFamily: 'Sevillana',
+        }}
+      >
+        Module 4
+      </h3>
+      <h2
+        style={{
+          fontSize: '30px',
+          fontWeight: 'bold',
+          marginBottom: '10px',
+        }}
+      >
+        Oct 28  –  Nov 1, 2025
+      </h2>
+      <h4
+        style={{
+          color: '#555', // Neutral gray for the subtitle
+          fontWeight: 600,
+          marginBottom: '20px',
+          fontFamily: 'GothicA1',
+        }}
+      >
+        Instructor: Mar Barroso
+      </h4>
+      
+      <h4 style={{ fontWeight: 'bold', marginBottom: '10px' }}>
+        IN THIS MODULE YOU WILL:
+      </h4>
+      <ul
+        style={{
+          fontSize:'30px',
+          paddingLeft: '30px',
+          lineHeight: '1.8',
+          fontFamily: 'EditorNote',
+        }}
+      >
+        <li>Opinion Developmental Phase
+        </li>
+        <li>
+        Performance/Solidarity Developmental Phase
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
       </section>
       {/* Trainner Details 1 */}
      
