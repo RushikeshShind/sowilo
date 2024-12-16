@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic';
 
 const Plyr = dynamic(() => import('plyr'), { ssr: false });
-import styles from '../styles/Home.module.css';
 const Banner5 = () => {
   return <section className="wrapper">
     <div className="container col-xl-20 py- py-mb-8 py-lg-15 item-center">
@@ -564,11 +563,11 @@ const Banner5 = () => {
   boxShadow: '0 4px 12px rgba(121, 255, 19, 0.1)',
 }}>
  <h1 
-  className="mb-12 text-center animate-text" 
+  className="mb-12 text-center animate-text  gradient-1" 
   style={{ 
     fontFamily: 'GothicA1', 
     fontSize: '2.5rem', 
-    color: '#3b3b3b', 
+    color: 'white', 
     marginBottom: '20px', 
     letterSpacing: '2px', 
     textTransform: 'uppercase'
@@ -608,7 +607,7 @@ const Banner5 = () => {
         alt="Coaching setup"
         style={{ width: '100%', borderRadius: '10px', marginBottom: '25px' }}
       />
-      <h2 style={{ 
+      <h2  style={{ 
         fontFamily: 'GothicA1', 
         fontSize: '1.5rem', 
         color: '#3b3b3b', 

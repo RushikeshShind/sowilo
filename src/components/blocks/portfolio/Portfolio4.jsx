@@ -4,116 +4,134 @@ import Carousel from 'components/reuseable/Carousel'; // -------- data -------- 
 import { portfolioList3 } from 'data/portfolio';
 import styles from '../styles/Home.module.css';
 const Portfolio4 = () => {
-  return <section className="wrapper bg-light">
-      <div className="overflow-hidden">
-      <div className={styles.container}>
-      <div className={styles.main}>
-      <div className={styles.imageContainer} style={{ position: 'relative', display: 'inline-block' }}>
-  {/* Shadow Box */}
-  <div className={styles.imageContainer} style={{ position: 'relative', display: 'inline-block' }}>
-  {/* Shadow Box */}
-  
-
-  {/* Left Side Box */}
+  return <section
+  className="wrapper bg-light"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "3rem 1rem",
+    fontFamily: "Arial, sans-serif",
+    backgroundColor: "#f4f7f6", // Light background
+  }}
+>
+  {/* Container */}
   <div
     style={{
-      position: 'absolute',
-      top: '20px', // Adjust for shadow offset
-      left: '10px', // Adjust for shadow offset
-      width: '120%',
-      height: '100%',
-      backgroundColor: '#fcc283',
-      zIndex: '2', // Place below the image
+      display: "flex",
+      flexDirection: "row", // Side-by-side layout
+      flexWrap: "wrap", // Ensure responsiveness
+      gap: "2rem",
+      maxWidth: "1200px",
+      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+      backgroundColor: "#fff",
+      borderRadius: "10px",
+      overflow: "hidden",
+    }}
+  >
+    {/* Left: Image Section */}
+    <div
+      style={{
+        flex: "1",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "1rem",
+      }}
+    >
+      
+      <div
+  style={{
+    position: "relative", // To position the box behind the image
+    width: "100%",
+    maxWidth: "400px", // Adjust the max-width of the image container
+    height: "auto",
+  }}
+>
+  {/* Box behind the image */}
+  <div
+    style={{
+      position: "absolute", // Place behind the image
+      top: "5%",
+      left: "5%",
+      width: "100%",
+      height: "100%",
+      backgroundColor: "#508C9B", // Yellow background
+      zIndex: 0, // Ensure it stays behind the image
+      borderRadius: "10px", // Rounded corners for the box
+      transform: "rotate(5deg)", // Slight tilt for styling
     }}
   ></div>
 
   {/* Image */}
   <img
-    src="/img/photos/Shiital_Headshot.jpg" // Replace this with the actual image path
-    alt="Kristin sitting on a couch"
+    src="/img/photos/Shiital_Headshot.jpg" // Replace with your image path
+    alt="Kristin Image"
     style={{
-      position: 'relative',
-      zIndex: '2', // Place above the shadow box
-      display: 'block',
-      borderLeft: '',
-      borderBottom: '',
+      position: "relative", // Keep image above the box
+      width: "100%",
+      height: "auto",
+      borderRadius: "10px",
+      zIndex: 1, // Ensure image is above the box
     }}
-    className={styles.image}
   />
 </div>
 
-</div>
-        <div className={styles.textContainer} style={{fontFamily:'GothicA1'}}>
-          <h1 className={styles.heading} style={{fontFamily:'EditorsNote'}}>HEY I'M SHIITAL</h1>
-          <p className={styles.description}>
-          I am passionate about human development and potential. From early childhood education to adult learning to change management, I have traversed many paths to currently focusing on developmental psychology, specifically somatic developmental psychology.
-          </p>
-          <p className={styles.description}>
-          My journey in Somatic Developmental Psychology began in 2023 with my first Bodynamic demonstration session, an experience that revealed underlying dynamics profoundly influencing my ability to sustain close, intimate relationships. This work holds deep personal significance for me, as it marked the beginning of a transformative exploration of self and connection.
-          </p>
-          <p className={styles.description}>
-          Drawing on this transformative experience, I am deeply committed to empowering individuals to heal from developmental trauma, cultivate self-awareness, build secure relationships, and lay a strong foundation for lifelong resilience and fulfillment.
-          </p>
-          <div className={styles.description}>
-            <p>I firmly believe that lifelong mental health challenges can be addressed by integrating traditional developmental psychology principles with a somatic focus. This approach emphasizes the vital role of embodied experience in fostering psychological growth, healing, and overall well-being, which inspires my current efforts. I am collaborating with the Bodynamic International global team to bring Bodynamic Training and Workshops to the United States and contribute to the growth and cohesion of the global Bodynamic community.
-            </p>
-            {/* <ul className={styles.list}>
-              <li>Surpass $10k months in the first year</li>
-              <li>Attract our dream clients on repeat</li>
-              <li>Quickly become an authority in our industry</li>
-            </ul> */}
-          </div>
-                 </div>
-      </div>
     </div>
 
-        {/* <div className="container py-14 py-md-16">
-          <div className="row">
-            <div className="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
-              <i className="icn-flower text-leaf fs-30 opacity-25"></i>
-              <h2 className="display-5 text-center mt-2 mb-10">
-                Some of wonderful love stories <br className="d-none d-md-block" /> I witnessed and had the chance to
-                capture
-              </h2>
-            </div>
-          </div>
+    {/* Right: Content Section */}
+    <div
+      style={{
+        flex: "3",
+        padding: "2rem",
+        textAlign: "left",
+        color: "#333",
+      }}
+    >
+      <h2 style={{ fontSize: "2rem", marginBottom: "1rem", color: "#000" , fontFamily:'EditorsNote' }}>
+        HEY I'M SHIITAL
+      </h2>
+      <p style={{ lineHeight: "1.5", marginBottom: "1rem", fontFamily:'GothicA1' }}>
+        I am passionate about human development and potential. From early childhood education to adult learning to change management, I have traversed many paths to currently focusing on developmental psychology, specifically somatic developmental psychology.
+      </p>
+      <p style={{ lineHeight: "1.5", marginBottom: "1rem", fontFamily:'GothicA1' }}>
+      My journey in Somatic Developmental Psychology began in 2023 with my first Bodynamic demonstration session, an experience that revealed underlying dynamics profoundly influencing my ability to sustain close, intimate relationships. This work holds deep personal significance for me, as it marked the beginning of a transformative exploration of self and connection.
+      </p>
+      <p style={{ lineHeight: "1.5", marginBottom: "1rem" , fontFamily:'GothicA1' }}>
+      Drawing on this transformative experience, I am deeply committed to empowering individuals to heal from developmental trauma, cultivate self-awareness, build secure relationships, and lay a strong foundation for lifelong resilience and fulfillment.
+      </p>
+      <h3
+        style={{
+          fontSize: "1.9rem",
+          marginBottom: "0.3rem",
+          color: "#3c868e",
+          fontFamily:"Urbanist "
+        }}
+      >
+        I firmly believe that lifelong mental health challenges can be addressed by integrating traditional developmental psychology principles with a somatic focus.
+      </h3>
+      <ul
+        style={{
+          listStyleType: "none",
+          padding: 0,
+          margin: "1rem 0",
+        }}
+      >
+        <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" , fontFamily:'GothicA1' }}>
+          ✔ This approach emphasizes the vital role of embodied experience in fostering psychological growth, healing, and overall well-being, which inspires my current efforts.
+        </li>
+        <li style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily:'GothicA1' }}>
+          ✔ I am collaborating with the Bodynamic International global team to bring Bodynamic Training and Workshops to the United States and contribute to the growth and cohesion of the global Bodynamic community.
+        </li>
+        
+      </ul>
+    
+    </div>
+  </div>
+</section>
+;
 
-          <div className="swiper-container grid-view nav-bottom nav-color mb-14 text-center">
-            <Carousel pagination={false} className="overflow-visible pb-2" breakpoints={{
-            0: {
-              slidesPerView: 1
-            },
-            768: {
-              slidesPerView: 2
-            }
-          }}>
-              {portfolioList3.map(item => <div className="card shadow-lg" key={item.id}>
-                  <figure className="card-img-top overlay overlay-1">
-                    <Link href="#" passHref legacyBehavior>
-                      <a>
-                        <img className="img-fluid" src={item.image['1x']} srcSet={item.image['2x']} alt="" />
-                        <span className="bg" />
-                      </a>
-                    </Link>
-
-                    <figcaption>
-                      <h5 className="from-top mb-0">View Gallery</h5>
-                    </figcaption>
-                  </figure>
-
-                  <div className="card-body p-6">
-                    <h3 className="fs-21 mb-1">{item.name}</h3>
-                    <ul className="post-meta fs-16 mb-0">
-                      <li>{item.photos} Photos</li>
-                      <li>{item.category}</li>
-                    </ul>
-                  </div>
-                </div>)}
-            </Carousel>
-          </div>
-        </div> */}
-      </div>
-    </section>;
 };
 
 export default Portfolio4;
