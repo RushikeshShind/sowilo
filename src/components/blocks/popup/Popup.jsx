@@ -1,5 +1,5 @@
 import { useState } from 'react';
-const popup = () => {
+const Popup = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const togglePopup = () => {
@@ -90,4 +90,4 @@ const styles = {
   },
 };
 
-export default popup;
+export default Popup;
