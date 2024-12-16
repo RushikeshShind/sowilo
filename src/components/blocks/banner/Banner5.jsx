@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import{ Popup } from 'components/blocks/popup';
 
 const Plyr = dynamic(() => import('plyr'), { ssr: false });
 const Banner5 = () => {
@@ -66,7 +67,7 @@ const Banner5 = () => {
             </p>
            
           </div>
-          <p>To know more about the Seven Developmental Stages  <p style={{color:'#009990'}}>click here.</p> </p>
+         <Popup/> 
           {/* Section 3 */}
           <div className="section mb-10" style={{ fontFamily: 'GothicA1' }}>
             <h2>Who is this training for?</h2>
