@@ -10,7 +10,6 @@ import { Navbar } from 'components/blocks/navbar';
 import { About24 } from 'components/blocks/about';
 import { Footer9 } from 'components/blocks/footer';
 import { Banner5 } from 'components/blocks/banner';
-import{ Popup } from 'components/blocks/popup';
 import { Services26 } from 'components/blocks/services';
 import { CTA9 } from 'components/blocks/call-to-action';
 import { Portfolio4 } from 'components/blocks/portfolio';
@@ -55,7 +54,7 @@ const Demo23 = () => {
             <About24 />
         
 
-        <Popup/>
+     
 
         {/* Testimonial Section */}
         
