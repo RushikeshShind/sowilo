@@ -1,64 +1,129 @@
-import dayjs from 'dayjs';
-import Link from 'next/link';
-// -------- custom components -------- //
-import Carousel from 'components/reuseable/Carousel';
-import NextLink from 'components/reuseable/links/NextLink';
-import carouselBreakpoints from 'utils/carouselBreakpoints'; // -------- data -------- //
-import ContactForm from 'components/common/ContactForm';
-import dynamic from 'next/dynamic';
+import React, { useState, useEffect } from "react";
+import Plyr from "plyr-react";
+import "plyr-react/plyr.css";
 
-// Dynamically import Plyr with ssr: false
-const Plyr = dynamic(() => import('plyr-react'), { ssr: false });
+const TestimonialSlider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
- 
+  // Array of videos
+  const slides = [
+    {
+      type: "video",
+      videoSrc: "https://vimeo.com/469964414",
+      options: { autoplay: true, muted: true }
+    },
+    {
+      type: "video",
+      videoSrc: "https://vimeo.com/276290101",
+      options: { autoplay: true, muted: true }
+    }
+  ];
 
-const Blog5 = () => {
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  // Cleanup Plyr to avoid DOM issues
+  useEffect(() => {
+    return () => {
+      const plyrInstances = document.querySelectorAll(".plyr");
+      plyrInstances.forEach((player) => player.plyr && player.plyr.destroy());
+    };
+  }, [currentIndex]);
+
   return (
-    <section className="wrapper bg-soft-primary">
-      <div className="row">
-        <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 mb-12">
-          <h1 className="col-lg-12 display-1 text-center" style={{fontFamily: 'Sacramento', fontWeight: '500px'}}>
-            Form for Registration
-          </h1>
-          <p className="lead text-center mb-12"></p>
-          <ContactForm />
-        </div>
-      </div>
+    <section
+      style={{
+        backgroundColor: "#9FC3C6",
+        padding: "0px 0",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        width: "100%", // Full-width section
+        minHeight: "100vh", // Full screen height
+      }}
+    >
+      <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote'   }}>What they're saying about the course</h1>
 
-      <div className="row text-justify">
-        <div className="col-xl-9 mx-auto md-10 mb-12">
-          <h1 className="text-center mb-12">What they're saying about the course</h1>
-          <Plyr 
-            options={{
-              loadSprite: true,
-              clickToPlay: true
-            }}
+      <div
+        style={{
+          width: "50%", // Take 90% of the screen width
+          maxWidth: "1200px", // Restrict max width to 1200px
+          backgroundColor: "#fff",
+          padding: "20px", // Adjust padding
+          borderRadius: "8px", // Add border-radius for styling
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Add a subtle shadow
+        }}
+      >
+        <div key={currentIndex} style={{ width: "100%", height: "auto" }}>
+          <Plyr
+            key={currentIndex}
             source={{
-              type: 'video',
-              sources: [{
-                src: 'https://vimeo.com/469964414?autoplay=1&muted=1&stream_id=Y2xpcHN8NjI0MDMzNDd8aWQ6ZGVzY3xbXQ%3D%3D',
-                provider: 'vimeo'
-              }]
+              type: "video",
+              sources: [
+                {
+                  src: slides[currentIndex]?.videoSrc,
+                  provider: "vimeo"
+                }
+              ]
+            }}
+            options={{
+              autoplay: slides[currentIndex]?.options?.autoplay || false,
+              muted: slides[currentIndex]?.options?.muted || false
             }}
           />
-          <h3 className="col-xl-12 mb-4 mt-6 text-center">Bodynamic Training Testimonials</h3>
-          <Plyr 
-            options={{
-              loadSprite: true,
-              clickToPlay: true
+        </div>
+
+        {/* Buttons */}
+        <div
+          style={{
+            marginTop: "20px",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          {/* Smaller Previous Button */}
+          <button
+            onClick={handlePrev}
+            style={{
+              background: "#00B3A6",
+              color: "#fff",
+              padding: "5px 10px",
+              fontSize: "12px",
+              border: "none",
+              borderRadius: "4px",
             }}
-            source={{
-              type: 'video',
-              sources: [{
-                src: 'https://vimeo.com/276290101?share=copy#t=0',
-                provider: 'vimeo'
-              }]
+          >
+            Prev
+          </button>
+
+          {/* Regular-sized Next Button */}
+          <button
+            onClick={handleNext}
+            style={{
+              background: "#00B3A6",
+              color: "#fff",
+              padding: "10px 20px",
+              fontSize: "16px",
+              border: "none",
+              borderRadius: "4px",
             }}
-          />
+          >
+            Next
+          </button>
         </div>
       </div>
     </section>
   );
 };
 
-export default Blog5;
+export default TestimonialSlider;

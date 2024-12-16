@@ -117,7 +117,7 @@ const Banner5 = () => {
     marginRight: '-10%'
   }}
 >
-  <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote' , }}>Foundation Training Outline</h1>
+  <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote'   }}>Foundation Training Outline</h1>
   <p className='text-center' style={{ margin: 1 }}>
     4 x 5 Day Modules = 20 Days <br />
     Total Classes run from 10 am – 6 pm every day. <br />
@@ -553,29 +553,18 @@ const Banner5 = () => {
     </div>
   </div>
 </div>
-      </section>
+      
       {/* Trainner Details 1 */}
-     
+     <section style={{backgroundColor: "#9FC3C6",}}>
+      
       <div style={{
-  padding: '30px',
-  backgroundColor: '#',
-  fontFamily: "'Georgia', serif",
-  borderRadius: '10px',
+  padding: '20px',
+  backgroundColor: "#9FC3C6",
+  fontFamily: "GothicA1",
+  
   boxShadow: '0 4px 12px rgba(121, 255, 19, 0.1)',
 }}>
- <h1 
-  className="mb-12 text-center animate-text  gradient-1" 
-  style={{ 
-    fontFamily: 'GothicA1', 
-    fontSize: '2.5rem', 
-    color: 'white', 
-    marginBottom: '20px', 
-    letterSpacing: '2px', 
-    textTransform: 'uppercase'
-  }}
->
-  INSTRUCTORS
-</h1>
+ <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote', fontSize:'35px'  }}>INSTRUCTORS</h1>
   <h3 className="text-center" style={{ 
     fontFamily: 'Georgia', 
     fontSize: '1.2rem', 
@@ -606,7 +595,7 @@ const Banner5 = () => {
       <img
         src="/img/photos/Mar-Barroso.webp"
         alt="Coaching setup"
-        style={{ width: '100%', borderRadius: '10px', marginBottom: '25px' }}
+        style={{ width: '100%', borderRadius: '1px', marginBottom: '25px' }}
       />
       <h2  style={{ 
         fontFamily: 'GothicA1', 
@@ -652,7 +641,7 @@ m. +351915680076
       <img
         src="/img/photos/james-nicholas.jpeg"
         alt="Coaching setup"
-        style={{ width: '100%', borderRadius: '10px', marginBottom: '15px' }}
+        style={{ width: '100%', borderRadius: '1px', marginBottom: '15px' }}
       />
       <h2 style={{ 
         fontFamily: 'GothicA1', 
@@ -677,7 +666,8 @@ email- James@Bodynamic.com</p>
     </div>
   </div>
 </div>
-
+</section>
+</section>
 
 
 

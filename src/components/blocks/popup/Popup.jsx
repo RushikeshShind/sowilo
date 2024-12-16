@@ -11,8 +11,8 @@ const Popup = () => {
   return (
     <div>
       <div style={styles.banner}>
-        <h1>To know more about the Seven Developmental Stages!</h1>
-        <button onClick={togglePopup} style={styles.button}>
+        <h1 className='display-1 text-center' style={{ fontFamily: 'EditorsNote'   }}>To know more about the Seven Developmental Stages!</h1>
+        <button onClick={togglePopup} style={styles.button }>
           Click here
         </button>
       </div>
@@ -77,13 +77,14 @@ const styles = {
   },
   button: {
     backgroundColor: '#fff',
-    color: '#4CAF50',
+    color: '#9FC3C6',
     border: 'none',
     padding: '10px 20px',
-    fontSize: '16px',
+    fontSize: '25px',
     cursor: 'pointer',
     borderRadius: '5px',
     marginTop: '20px',
+  fontFamily: 'EditorsNote'
   },
   overlay: {
     position: 'fixed',

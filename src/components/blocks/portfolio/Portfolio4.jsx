@@ -13,7 +13,7 @@ const Portfolio4 = () => {
     justifyContent: "center",
     padding: "3rem 1rem",
     fontFamily: "Arial, sans-serif",
-    backgroundColor: "#f4f7f6", // Light background
+    backgroundColor: "#9FC3C6"// Light background
   }}
 >
   {/* Container */}
