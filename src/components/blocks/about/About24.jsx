@@ -51,15 +51,16 @@ const About24 = () => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
+       letterSpacing: '2px',
     }}
   >
      <h1 className='display-1 ' style={{fontFamily:'EditorsNote', color:'#9CBFBC', fontSize:'70px'}}>Bodynamic Foundation Training</h1>
-    <h6 style={{fontFamily:'EdiotrsNote' ,fontSize:'25px'}}>
+    <h6 style={{fontFamily:'Cormorant' ,fontSize:'25px'}}>
       Embark on a Journey of Somatic Developmental Psychology for Personal and
       Professional Growth
     </h6>
   
-     <p style={{fontSize:'19px'}}>Embark on a transformative journey with the Bodynamic system, integrating
+     <p style={{fontSize:'19px',fontFamily:'Sinclaire'}}>Embark on a transformative journey with the Bodynamic system, integrating
       body awareness and developmental<br/> psychology to deepen self-awareness,
       healing, and relational dynamics in your personal and professional life.</p> 
     

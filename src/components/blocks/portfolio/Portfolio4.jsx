@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 const Portfolio4 = () => {
   return (
     <section
-      className="wrapper bg-light"
+      className="wrapper bg-light "
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -14,7 +14,7 @@ const Portfolio4 = () => {
         justifyContent: 'center',
         padding: '3rem 1rem',
         fontFamily: 'Arial, sans-serif',
-        backgroundColor: '#9FC3C6', // Light background
+        backgroundColor: '#508C9B', // Light background
       }}
     >
       {/* Container */}
@@ -25,8 +25,7 @@ const Portfolio4 = () => {
           flexWrap: 'wrap', // Ensure responsiveness
           gap: '2rem',
           maxWidth: '1200px',
-          boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-          backgroundColor: '#fff',
+          backgroundColor: 'white',
           borderRadius: '10px',
           overflow: 'hidden',
         }}
@@ -47,6 +46,7 @@ const Portfolio4 = () => {
               width: '100%',
               maxWidth: '1200px', // Adjust the max-width of the image container
               height: 'auto',
+              
             }}
           >
             {/* Box behind the image */}
@@ -54,13 +54,13 @@ const Portfolio4 = () => {
               style={{
                 position: 'absolute', // Place behind the image
                 top: '1%',
-                left: '-1%',
-                width: '123%',
-                height: '100%',
-                backgroundColor: '#508C9B', // Background color
+                left: '-10%',
+                width: '143%',
+                height: '120%',
+                backgroundColor: '', // Background color
                 zIndex: 0, // Ensure it stays behind the image
-                borderRadius: '20px', // Rounded corners for the box
-                transform: 'rotate(5deg)', // Slight tilt for styling
+                borderRadius: '2px', // Rounded corners for the box
+                transform: 'rotate(0deg)', // Slight tilt for styling
               }}
             ></div>
 
@@ -72,7 +72,8 @@ const Portfolio4 = () => {
                 position: 'relative', // Keep image above the box
                 width: '120%',
                 height: 'auto',
-                borderRadius: '10px',
+                boxShadow:'',
+                borderRadius: '1px',
                 zIndex: 1, // Ensure image is above the box
               }}
             />

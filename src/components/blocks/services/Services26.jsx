@@ -1,5 +1,5 @@
 import Link from 'next/link'; // -------- data -------- //
-
+import React, { useState } from "react";
 import { serviceList14 } from 'data/service';
 
 const Services26 = () => {
@@ -9,7 +9,7 @@ const Services26 = () => {
           <div className="col-lg-12 col-xl-10 col-xxl-7 mx-auto text-center">
             <i className="icn-flower text-leaf fs-30 opacity-25" />
             <h2 className="display-5 text-center mt-2 mb-10" style={{ fontFamily: 'Acta Display Book' }} >
-             
+            
             </h2>
           </div>
         </div>

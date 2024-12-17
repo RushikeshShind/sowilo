@@ -30,6 +30,15 @@ const FullScreenCards = () => {
                         display: 'block', // Removes inline spacing
                     }}
                 />
+                <h2 className="display-2 mb-5 text-dark" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
+            Bodynamic Foundation Training <br />Orlando, USA</h2>
+          <a
+            href="https://www.bodynamic.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link">
+            <h6 style={{ textDecoration: 'underline', color:'#009990' }}>Bodynamic International</h6>
+          </a>
             </div>
 
 
@@ -219,7 +228,7 @@ const FullScreenCards = () => {
             }}></div>
             {/* Section 4 */}
             <div style={{
-                backgroundImage: 'url("https://via.placeholder.com/400x400")',
+                backgroundImage: 'url("/img/photos/section.4.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '300px',
@@ -233,35 +242,43 @@ const FullScreenCards = () => {
                 backgroundColor: '#d4e3df',
                 minHeight: '400px',
             }}>
-                <h4 style={{
+                <h2 style={{
                     color: '#55B9A6',
-                    fontSize: '0.8rem',
+                    fontSize: '1.8rem',
                     letterSpacing: '2px',
                     marginBottom: '1rem',
-                }}>TRANSFORM YOUR EMAIL STRATEGY</h4>
-                <h2 style={{
-                    fontSize: '2.2rem',
-                    fontWeight: '700',
-                    marginBottom: '1rem',
-                    color: '#222',
-                }}>
-                    EMPOWERED EMAIL MARKETING
-                </h2>
-                <p style={{
-                    fontStyle: 'italic',
-                    color: '#666',
-                    marginBottom: '1.5rem',
-                }}>
-                    Easily create engaging email campaigns that convert.
-                </p>
-                <ul style={{ listStyle: 'none', padding: '0', color: '#444', fontSize: '1rem' }}>
-                    <li style={{ marginBottom: '0.5rem' }}>
-                        ➤ <strong>Build an engaged email community</strong> that converts subscribers.
-                    </li>
-                    <li>
-                        ➤ 6-module course + templates & strategy guides.
-                    </li>
-                </ul>
+                }}>Who is this training for?</h2>
+                <div
+              className="list-container"
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                gap: 'px', // Adjust the gap between the two lists if needed
+              }}
+            >
+              <ul style={{ listStyleType: 'disc', paddingLeft: '20px', }}>
+                <li>Therapists</li>
+                <li>Mental Health Counsellors</li>
+                <li>Doctors</li>
+                <li>Physiotherapists</li>
+                <li>Massage Therapists</li>
+                <li>Yoga teachers</li>
+                <li>Dance teachers</li>
+                <li>Trainers</li>
+                <li>Sales people</li>
+              </ul>
+              <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+                <li>Psychiatrists</li>
+                <li>Osteopaths</li>
+                <li>Naturopaths</li>
+                <li>Social workers</li>
+                <li>Cranio-sacral specialists</li>
+                <li>Pedagogues</li>
+                <li>Teachers</li>
+                <li>And of course parents!</li>
+              </ul>
+            </div>
+                
                 <button style={{
                     backgroundColor: '#55B9A6',
                     color: '#fff',
@@ -274,7 +291,9 @@ const FullScreenCards = () => {
                     JOIN NOW
                 </button>
             </div>
+            
         </div>
+        
     );
 };
 

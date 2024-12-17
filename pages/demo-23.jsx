@@ -16,6 +16,8 @@ import { Portfolio4 } from 'components/blocks/portfolio';
 import { Testimonial18 } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
 import {FullScreenCards} from 'components/blocks/FullScreenCards';
+import { InstructorCards } from 'components/blocks/instructors';
+import {CTA8} from 'components/blocks/call-to-action'
 
 const Demo23 = () => {
   // Used for the animated line
@@ -73,8 +75,8 @@ const Demo23 = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#instructions">
-                  Instructions
+                <a className="nav-link" href="#instructors">
+                INSTRUCTORS
                 </a>
               </li>
               <li className="nav-item">
@@ -113,19 +115,21 @@ const Demo23 = () => {
         </section>
 
         {/* Bodynamic Foundation Section */}
-        <section id="shiital" >
+        <section id="shiital">
           <Portfolio4 />
           </section>
 
         {/* Training Details Section */}
         <FullScreenCards />
      
+        <CTA8/>
+     
           <Banner5 />
   
 
         {/* Instructions Section */}
         
-          <Services26 />
+          <InstructorCards/>
        
 
         {/* Contact Section */}

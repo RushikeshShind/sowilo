@@ -112,7 +112,7 @@ const styles = {
   },
   closeButton: {
     position: 'absolute',
-    top: '10px',
+    top: '12px',
     right: '10px',
     background: 'none',
     border: 'none',
@@ -122,7 +122,7 @@ const styles = {
   content: {
     maxHeight: '80vh', // Content will scroll if it exceeds this height
     overflowY: 'auto', // Enables vertical scrolling if content overflows
-    paddingRight: '20px', // Adds some padding to the right for scrollbar visibility
+    paddingRight: '10px', // Adds some padding to the right for scrollbar visibility
     color:'White'
   },
 };
