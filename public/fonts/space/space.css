@@ -60,3 +60,15 @@
   font-style: normal;
   font-display: block; /* Ensures optimal font loading */
 }
+@font-face {
+  font-family: 'Sinclaire';
+  src: url('Sinclaire-Bold.ttf') format('ttf');
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('CormorantGaramond-Bold.ttf')format('ttf');
+  font-style: normal;
+  font-display: block;
+}

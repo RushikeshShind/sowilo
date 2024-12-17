@@ -53,7 +53,7 @@ const About24 = () => {
       justifyContent: 'center',
     }}
   >
-     <h1 className='display-1 ' style={{fontFamily:'EditorsNote', color:'#9CBFBC', fontSize:'80px'}}>Bodynamic Foundation Training</h1>
+     <h1 className='display-1 ' style={{fontFamily:'EditorsNote', color:'#9CBFBC', fontSize:'70px'}}>Bodynamic Foundation Training</h1>
     <h6 style={{fontFamily:'EdiotrsNote' ,fontSize:'25px'}}>
       Embark on a Journey of Somatic Developmental Psychology for Personal and
       Professional Growth

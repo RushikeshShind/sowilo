@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import color from 'utils/color';
 
 // Main component
 const Popup = () => {
@@ -19,7 +20,7 @@ const Popup = () => {
 
       {/* Use PopupModal instead of Popup to avoid name conflict */}
       <PopupModal isOpen={isPopupOpen} onClose={togglePopup}>
-        <h6 className='display-5'>The Seven Developmental Phases</h6>
+        <h6 className='display-5 text-center'style={{color:'white'}}>The Seven Developmental Phases</h6>
         <ul>
           <strong>1. Existence (2nd trimester → 3 months):</strong>
           <li>
@@ -76,14 +77,15 @@ const styles = {
     fontFamily: 'EditorNote',
   },
   button: {
+    color:'White',
     backgroundColor: '#fff',
     color: '#9FC3C6',
     border: 'none',
-    padding: '10px 20px',
-    fontSize: '25px',
+    padding: '10px 10px',
+    fontSize: '15px',
     cursor: 'pointer',
     borderRadius: '5px',
-    marginTop: '20px',
+    marginTop: '10px',
   fontFamily: 'EditorsNote'
   },
   overlay: {
@@ -99,7 +101,7 @@ const styles = {
     zIndex: 1000,
   },
   popup: {
-    backgroundColor: '#ffd68c',
+    backgroundColor: '#9FC3C6',
     padding: '20px',
     borderRadius: '8px',
     width: '800px',
@@ -121,6 +123,7 @@ const styles = {
     maxHeight: '80vh', // Content will scroll if it exceeds this height
     overflowY: 'auto', // Enables vertical scrolling if content overflows
     paddingRight: '20px', // Adds some padding to the right for scrollbar visibility
+    color:'White'
   },
 };
 

@@ -15,7 +15,7 @@ import { CTA9 } from 'components/blocks/call-to-action';
 import { Portfolio4 } from 'components/blocks/portfolio';
 import { Testimonial18 } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
-
+import {FullScreenCards} from 'components/blocks/FullScreenCards';
 
 const Demo23 = () => {
   // Used for the animated line
@@ -27,68 +27,125 @@ const Demo23 = () => {
 
       {/* ========== Header ========== */}
       <header className="wrapper bg-soft-primary">
-         <Navbar
-          info
-          search
-          stickyBox={false}
-          logoAlt="logo-light"
-          navClassName="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none"
-        /> 
-        
+        <nav
+          className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+          style={{ padding: '10px 20px' }}
+        >
+          <a className="navbar-brand" href="#home">
+           <img src="/img/sowilo.jpeg" alt="hello"  style={{width:'100px'}}/>
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="#home">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#sowilo">
+                  Sowilo
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#shiital">
+                  Shiital
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#bodynamic">
+                  Bodynamic Foundation
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#training">
+                  Training Details
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#instructions">
+                  Instructions
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#registration">
+                  Registration
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#course-video">
+                  Course Video
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
 
       {/* ========== Main Content ========== */}
-      <main
-        className="content-wrapper"
-        style={{
-          width: '100vw', // Full width
-          backgroundColor: '#F9F9F9', // Light background
-          margin: 0,
-          padding: 0,
-        }}
-      >
+      <main className="content-wrapper" style={{ width: '100vw', margin: 0, padding: 0 }}>
+        {/* Home Section */}
         
 
-        {/* About Section */}
-       
-            <About24 />
-        
+        {/* Sowilo Section */}
+        <section id="">
+          <About24 />
+        </section>
 
-     
-
-        {/* Testimonial Section */}
-        
+        {/* Shiital Section */}
+        <section id="sowilo" >
           <Testimonial18 />
-       
+        </section>
 
-        {/* Portfolio Section */}
-      
+        {/* Bodynamic Foundation Section */}
+        <section id="shiital" >
           <Portfolio4 />
-       
+          </section>
 
-        {/* Banner Section */}
-       
+        {/* Training Details Section */}
+        <FullScreenCards />
+     
           <Banner5 />
-      
+  
 
-        {/* Blog Section */}
+        {/* Instructions Section */}
         
-            <Blog5 />
-          
+          <Services26 />
+       
+
+        {/* Contact Section */}
+        
+          <CTA9 />
+       
+
+        {/* Registration Section */}
+        
+
+        {/* Course Video Section */}
+       
+          <Blog5 />
+        
       </main>
 
       {/* Footer Section */}
-      <footer
-        className="footer-section"
-        style={{
-          backgroundColor: '',
-          color: '',
-          padding: '40px 20px',
-          textAlign: '',
-        }}
-      >
+      
         <Footer9 />
-      </footer>
+   
     </Fragment>
   );
 };
