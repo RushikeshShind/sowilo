@@ -1,3 +1,3 @@
 import Popup from './Popup';
-
-export {  Popup };
+import Popup2 from './popup2'; 
+export {  Popup,Popup2 };

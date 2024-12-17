@@ -19,6 +19,8 @@ import {FullScreenCards} from 'components/blocks/FullScreenCards';
 import { InstructorCards } from 'components/blocks/instructors';
 import {CTA8} from 'components/blocks/call-to-action';
 import {CTA6} from 'components/blocks/call-to-action';
+import ContactForm from 'components/common/ContactForm';
+
 const Demo23 = () => {
   // Used for the animated line
   useProgressbar();
@@ -146,6 +148,8 @@ const Demo23 = () => {
         {/* Course Video Section */}
        
           <Blog5 />
+
+         <ContactForm/>
         
       </main>
 

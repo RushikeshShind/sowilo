@@ -53,12 +53,13 @@ const TestimonialSlider = () => {
     flexDirection: "column",
   }}
 >
-  <h2 style={{ color: "#333", marginBottom: "20px" }}>
-    What they're saying about the course
-  </h2>
+  <h1 className="display-1"style={{fontFamily:'EditorsNote'}}> <i className="icn-flower text-black fs-30 opacity-50" /> Course Testimonials < i className="icn-flower text-black fs-30 opacity-50" /></h1>
 
   {/* Updated box width and padding */}
-  <div style={{ width: "90%", maxWidth: "1100px", backgroundColor: "#fff", padding: "60px" }}>
+  <div className="text-center" style={{ width: "90%", maxWidth: "1100px", backgroundColor: "#fff", padding: "60px" }}>
+    <h2 style={{ color: "#333", marginBottom: "20px", fontFamily:'GothicA1' }}>
+  "What they're saying about the course"
+  </h2>
     <div key={currentIndex}> {/* Key forces re-render */}
       {/* Updated Plyr wrapper with a larger video size */}
       <Plyr

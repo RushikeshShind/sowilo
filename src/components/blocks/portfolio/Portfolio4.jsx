@@ -130,7 +130,7 @@ const Portfolio4 = () => {
           <p
             style={{
               fontSize:'17px',
-              lineHeight: '1.0',
+              lineHeight: '1.2',
               marginBottom: '1rem',
               fontFamily: 'GothicA1',
             }}
@@ -144,10 +144,10 @@ const Portfolio4 = () => {
             style={{
               fontSize:'17px',
               lineHeight: '1.0',
-              fontSize: '1.5rem',
+              fontSize: '1.0rem',
               marginBottom: '0.3rem',
               color: '#3c868e',
-              fontFamily: 'GothicA1',
+              fontFamily: 'Sinclaire',
             }}
           >
             I firmly believe that lifelong mental health challenges can be

@@ -2,7 +2,8 @@ const CTA6 = () => {
   return <div className="wrapper image-wrapper bg-auto no-overlay bg-image text-center bg-map" style={{
     backgroundImage: 'url(/img/photos/eng.jpg)',
     
-  }}>
+  }}> 
+  <h1 className="display-1 mb-1 align-center " style={{color:'white', fontFamily:'Sinclaire'}}> <i className="icn-flower text-white fs-30 opacity-50" /> Enrollment Section <i className="icn-flower text-white fs-30 opacity-50" /></h1>
       <div className="container py-md-17 py-lg-18 d-flex justify-content-center align-items-center" style={{ backgroundColor: "" }}>
   <div 
     className="text-center p-5 rounded" 

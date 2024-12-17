@@ -3,10 +3,9 @@ const ContactForm = () => {
     <div style={{ fontFamily: "EditorNote", padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       {/* Main Heading */}
      
-           {/* <h1 style={{ fontfamily: "Sevillana-regular", fontweight: '400', fontstyle: 'normal' }}>
-        Inquire to Work with Us
-      </h1> */}
-
+            <h1 className="text-center" style={{ fontfamily: "EditorsNote", fontweight: '400', fontstyle: 'normal',color:'#2ed8df' }}>
+        Resigration Form
+      </h1>
       {/* Form */}
       <form>
         {/* Email Address */}
@@ -117,7 +116,7 @@ const ContactForm = () => {
         /> */}
 
         {/* How did you hear */}
-        <label style={{color:'black', display: 'line', marginBottom: '10px' }}>
+        <label style={{color:'black', display: 'line', marginBottom: '10px',fontFamily:'EditorNote' }}>
         How did you hear about Bodynamic International? <span style={{ color: 'black' }}>*</span>
         </label>
         <select
@@ -202,7 +201,7 @@ const ContactForm = () => {
             display: 'block',
             width: '100%',
             padding: '10px',
-            backgroundColor: '#000',
+            backgroundColor: '#2ed8df',
             color: '#fff',
             border: 'none',
             borderRadius: '4px',
