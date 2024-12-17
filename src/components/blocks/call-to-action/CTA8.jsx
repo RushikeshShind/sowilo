@@ -9,7 +9,7 @@ const CTA8 = () => {
           <div className="row text-center">
             <div className="col-xl-1 col-xxl-10 mx-auto">
               
-              
+            <i className="icn-flower text-black fs-30 opacity-50" />
             </div>
           </div>
 

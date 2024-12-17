@@ -17,8 +17,8 @@ import { Testimonial18 } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
 import {FullScreenCards} from 'components/blocks/FullScreenCards';
 import { InstructorCards } from 'components/blocks/instructors';
-import {CTA8} from 'components/blocks/call-to-action'
-
+import {CTA8} from 'components/blocks/call-to-action';
+import {CTA6} from 'components/blocks/call-to-action';
 const Demo23 = () => {
   // Used for the animated line
   useProgressbar();
@@ -131,7 +131,10 @@ const Demo23 = () => {
         
           <InstructorCards/>
        
+           
 
+           <CTA6/>
+        
         {/* Contact Section */}
         
           <CTA9 />

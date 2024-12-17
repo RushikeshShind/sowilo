@@ -48,7 +48,7 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
         fontFamily: "Sinclaire",
       }}
     >
-      <h1 className="text-center display-1">INSTRUCTORS</h1>
+      <h1 className="text-center display-1 mb-12"> <i className="icn-flower text-black fs-30 opacity-50" />INSTRUCTORS <i className="icn-flower text-black fs-30 opacity-50" /></h1>
       <div
         style={{
           display: "grid",

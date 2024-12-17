@@ -291,7 +291,7 @@ const Banner5 = () => {
     {/* Content Section */}
     <div
       style={{
-        width: '80%', // Half-width for the content section
+        width: '70%', // Half-width for the content section
         padding: '40px', // Adds consistent spacing
         display: 'flex',
         flexDirection: 'column',
@@ -304,8 +304,8 @@ const Banner5 = () => {
           color: '#AF8B65', // Soft gold
           fontSize: '30px',
           fontWeight: 650,
-          marginBottom: '10px',
-          fontFamily: 'Sevillana',
+           marginBottom: '20px',
+          fontFamily: 'Cormarant',
         }}
       >
         Module 3
@@ -324,7 +324,7 @@ const Banner5 = () => {
           color: '#555', // Neutral gray for the subtitle
           fontWeight: 600,
           marginBottom: '20px',
-          fontFamily: 'GothicA1',
+          fontFamily: 'Cormarant',
         }}
       >
         Instructor: James Nicholas
@@ -335,9 +335,9 @@ const Banner5 = () => {
       </h4>
       <ul
         style={{
-          fontSize:'30px',
-          paddingLeft: '30px',
-          lineHeight: '1.8',
+          fontSize:'20px',
+          paddingLeft: '20px',
+          lineHeight: '1.5',
           fontFamily: 'EditorNote',
         }}
       >
@@ -409,8 +409,8 @@ const Banner5 = () => {
           color: '#AF8B65', // Soft gold
           fontSize: '30px',
           fontWeight: 650,
-          marginBottom: '10px',
-          fontFamily: 'Sevillana',
+          marginBottom: '20px',
+          fontFamily: 'Cormarant',
         }}
       >
         Module 4
@@ -440,9 +440,9 @@ const Banner5 = () => {
       </h4>
       <ul
         style={{
-          fontSize:'30px',
+          fontSize:'20px',
           paddingLeft: '30px',
-          lineHeight: '1.8',
+          lineHeight: '1.5',
           fontFamily: 'EditorNote',
         }}
       >
