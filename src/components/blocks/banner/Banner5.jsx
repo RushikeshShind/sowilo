@@ -21,17 +21,17 @@ const Banner5 = () => {
             </h2>
             <p  style={styles.cardDescription}>
             Instructor: James Nicholas
-              <ul>
-                <li>Bodynamic System Overview
+            <ul  className=" text-left" style={{fontSize:'1.5rem',listStyleType: 'none',paddingLeft: '10px'}}>
+              <li><span style={{ color: '#cda67e' }}>✔</span>Bodynamic System Overview
                 </li>
-                <li>
+                <li><span style={{ color: '#cda67e' }}>✔</span>
                   Bodyknot
-                  <li>
+                  <li><span style={{ color: '#cda67e' }}>✔</span>
                     Layers of Feelings
                   </li>
-                  <li>Ego Aspects
+                  <li><span style={{ color: '#cda67e' }}>✔</span>Ego Aspects
                   </li>
-                  <li>Existence Developmental Phase</li>
+                  <li><span style={{ color: '#cda67e' }}>✔</span>Existence Developmental Phase</li>
                 </li>
               </ul>
             </p>
@@ -55,9 +55,9 @@ const Banner5 = () => {
             <p style={styles.cardDescription}>
             Instructor: Mar Barroso
             </p>
-            <ul style={{fontSize:'1.5rem'}}>
-              <li>Need Developmental Phase</li>
-              <li>Autonomy Developmental Phase</li>
+            <ul  className=" text-left" style={{fontSize:'1.5rem',listStyleType: 'none',paddingLeft: '10px'}}>
+            <li><span style={{ color: '#cda67e' }}>✔</span>Need Developmental Phase</li>
+            <li><span style={{ color: '#cda67e' }}>✔</span>Autonomy Developmental Phase</li>
             </ul>
           </div>
           <div style={styles.imageContainer}>
@@ -69,7 +69,7 @@ const Banner5 = () => {
           </div>
         </div>
         {/* third Resource */}
-        <div style={{ height: "4px", width: "100%", backgroundColor: "#cda67e", marginTop: "20px" }}></div>
+        <div style={{ height: "4px", width: "100%", backgroundColor: "#cda67e", marginTop: "20px", paddingLeft: '10px' }}></div>
         <div style={styles.card}>
           <div style={styles.textContent}>
             <h2 style={styles.cardTitle}>
@@ -77,10 +77,10 @@ const Banner5 = () => {
             </h2>
             <p  style={styles.cardDescription}>
             Instructor: James Nicholas
-              <ul>
-                <li>Will Developmental Phase
+            <ul  className=" text-left" style={{fontSize:'1.5rem',listStyleType: 'none', paddingLeft: '10px'}}>
+              <li><span style={{ color: '#cda67e' }}>✔</span>Will Developmental Phase
                 </li>
-                <li>
+                <li><span style={{ color: '#cda67e' }}>✔</span>
                 Love/Sexuality Developmental Phase
                 </li>
               </ul>
@@ -104,10 +104,10 @@ const Banner5 = () => {
             </h2>
             <p  style={styles.cardDescription}>
             Instructor: Mar Barroso
-              <ul>
-                <li>Opinion Developmental Phase
+            <ul className=" text-left"style={{ listStyleType: 'none', paddingLeft: '10px', }}>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Opinion Developmental Phase
                 </li>
-                <li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> 
                 Performance/Solidarity Developmental Phase
                 </li>
               </ul>
@@ -142,7 +142,7 @@ const styles = {
     marginBottom: "40px",
   },
   highlight: {
-    color: "#00AEB0", // Highlight color
+    color: "#cda67e", // Highlight color
   },
   cardContainer: {
     display: "flex",
