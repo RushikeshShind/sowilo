@@ -104,7 +104,7 @@ const Demo23 = () => {
       </header>
 
       {/* ========== Main Content ========== */}
-      <main className="content-wrapper" style={{ width: '100vw', margin: 0, padding: 0 }}>
+      <main className="content-wrapper" style={{ width: '100vw', margin: 0, padding: 0 , fontFamily:'Cormorant'}}>
         {/* Home Section */}
         
 

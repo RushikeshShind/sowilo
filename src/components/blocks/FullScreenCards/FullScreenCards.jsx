@@ -76,7 +76,7 @@ const FullScreenCards = () => {
                 </p>
                 <ul style={{ listStyle: 'none', padding: '0', color: '#444', fontSize: '1rem', fontFamily: 'Cormorant' }}>
                     <li style={{ marginBottom: '0.5rem' }}>
-                    <span style={{ color: '#cda67e' }}>➤</span> The training provides a detailed analysis of childhood developmental phases, highlighting central developmental challenges and their connection to emerging defense mechanisms.
+                     <span style={{ color: '#cda67e' }}>➤</span> The training provides a detailed analysis of childhood developmental phases, highlighting central developmental challenges and their connection to emerging defense mechanisms.
                     </li>
                     <li>
                     <span style={{ color: '#cda67e' }}>➤</span> Through this program, you will refine your professional skills, cultivating greater presence, depth, and effectiveness in your work.
@@ -208,13 +208,14 @@ const FullScreenCards = () => {
                 padding: '3rem',
                 backgroundColor: '#d4e3df',
                 minHeight: '400px',
-            }}>
-                <h2 style={{
-                    color: '#55B9A6',
-                    fontSize: '1.8rem',
-                    letterSpacing: '2px',
-                    marginBottom: '1rem',
-                }}>Who is this training for?</h2>
+            }}><h4 style={{
+                color: '#55B9A6',
+                fontSize: '1.8rem',
+                letterSpacing: '2px',
+                marginBottom: '1rem',
+                fontFamily: 'Sinclaire'
+            }}>Who is this training for?</h4>
+                
                 <div
               className="list-container"
               style={{
@@ -231,18 +232,18 @@ const FullScreenCards = () => {
                 <li><span style={{ color: '#cda67e' }}>✔</span> Massage Therapists</li>
                 <li><span style={{ color: '#cda67e' }}>✔</span> Yoga teachers</li>
                 <li><span style={{ color: '#cda67e' }}>✔</span>  Dance teachers</li>
-                <li>Trainers</li>
-                <li>Sales people</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> Trainers</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> Sales people</li>
               </ul>
-              <ul style={{ listStyleType: 'disc', paddingLeft: '0px' }}>
-                <li>Psychiatrists</li>
-                <li>Osteopaths</li>
-                <li>Naturopaths</li>
-                <li>Social workers</li>
-                <li>Cranio-sacral specialists</li>
-                <li>Pedagogues</li>
-                <li>Teachers</li>
-                <li>And of course parents!</li>
+              <ul style={{ listStyleType: 'none', paddingLeft: '0px' }}>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Psychiatrists</li>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Osteopaths</li>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Naturopaths</li>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Social workers</li>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Cranio-sacral specialists</li>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Pedagogues</li>
+              <li><span style={{ color: '#cda67e' }}>✔</span> Teachers</li>
+              <li><span style={{ color: '#cda67e' }}>✔</span> And of course parents!</li>
               </ul>
             </div>
                 
