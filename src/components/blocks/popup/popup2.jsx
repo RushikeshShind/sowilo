@@ -60,8 +60,8 @@ const styles = {
     fontFamily: 'EditorNote',
   },
   button: {
-    color:'White',
-    backgroundColor: '#fff',
+    color:'',
+    backgroundColor: '#cda67e',
     color: 'black',
     border: 'none',
     padding: '10px 10px',

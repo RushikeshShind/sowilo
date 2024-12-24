@@ -33,11 +33,9 @@ const Demo23 = () => {
       <header className="wrapper bg-soft-primary">
         <nav
           className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
-          style={{ padding: '10px 20px' }}
+          style={{ padding: '10px 70px', fontFamily:'Cormorant' }}
         >
-          <a className="navbar-brand" href="#home">
-           <img src="/img/sowilo.jpeg" alt="hello"  style={{width:'100px'}}/>
-          </a>
+          
           <button
             className="navbar-toggler"
             type="button"
@@ -67,25 +65,26 @@ const Demo23 = () => {
                 </a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="#bodynamic">
                   Bodynamic Foundation
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#training">
-                  Training Details
+                Training Outline
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#instructors">
-                INSTRUCTORS
+                Trainers
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
+              
               <li className="nav-item">
                 <a className="nav-link" href="#registration">
                   Registration
@@ -97,6 +96,9 @@ const Demo23 = () => {
                 </a>
               </li>
             </ul>
+            <a className="navbar-brand" href="#home">
+           <img src="/img/sowilo.jpeg" alt="hello"  style={{width:'100px'}}/>
+          </a>
           </div>
         </nav>
       </header>
@@ -111,35 +113,42 @@ const Demo23 = () => {
           <About24 />
         </section>
 
-        {/* Shiital Section */}
+        
         <section id="sowilo" >
           <Testimonial18 />
         </section>
 
-        {/* Bodynamic Foundation Section */}
+        
+
+        
         <section id="shiital">
           <Portfolio4 />
           </section>
 
+           {/* Contact Section */}
+           <section id="contact">
+           <CTA9 /></section>
+
         {/* Training Details Section */}
-        <FullScreenCards />
+        <section id='bodynamic'><FullScreenCards /></section>
+        
      
         <CTA8/>
-     
-          <Banner5 />
+      <section id="training">
+      <Banner5 />
+      </section>
+          
   
 
         {/* Instructions Section */}
-        
+        <section id='instructors'></section>
           <InstructorCards/>
        
            
 
-           <CTA6/>
+           <section id='Enrollment Section'><CTA6/></section>
         
-        {/* Contact Section */}
-        
-          <CTA9 />
+       
        
 
         {/* Registration Section */}

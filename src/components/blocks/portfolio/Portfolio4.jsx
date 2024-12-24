@@ -12,8 +12,8 @@ const Portfolio4 = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '3rem 1rem',
-        fontFamily: 'Arial, sans-serif',
+        padding: '3rem 3rem',
+        
         backgroundColor: '#508C9B', // Light background
       }}
     >
@@ -24,7 +24,7 @@ const Portfolio4 = () => {
           flexDirection: 'row', // Side-by-side layout
           flexWrap: 'wrap', // Ensure responsiveness
           gap: '2rem',
-          maxWidth: '1200px',
+          maxWidth: 'auto',
           backgroundColor: 'white',
           borderRadius: '10px',
           overflow: 'hidden',
@@ -43,7 +43,7 @@ const Portfolio4 = () => {
           <div
             style={{
               position: 'relative', // To position the box behind the image
-              width: '100%',
+              width: '130%',
               maxWidth: '1200px', // Adjust the max-width of the image container
               height: 'auto',
               
@@ -53,16 +53,13 @@ const Portfolio4 = () => {
             <div
               style={{
                 position: 'absolute', // Place behind the image
-                top: '1%',
-                left: '-10%',
-                width: '143%',
-                height: '120%',
-                backgroundColor: '', // Background color
-                zIndex: 0, // Ensure it stays behind the image
-                borderRadius: '2px', // Rounded corners for the box
-                transform: 'rotate(0deg)', // Slight tilt for styling
+                top: '3%',
+                bottom:'10%',
+                left: '-50%',
+                width: '100%',
+                height: '100%',
               }}
-            ></div>
+            ><img src="/img/photos/shiitalbg.png" alt="" style={{height:'105%', bottom:'10%'}}/></div>
 
             {/* Image */}
             <img
@@ -84,27 +81,26 @@ const Portfolio4 = () => {
         <div
           style={{
             flex: '3',
-            padding: '2rem',
+            padding: '5rem',
             textAlign: 'left',
             color: '#333',
           }}
         >
           <h2
             style={{
-              fontSize: '2rem',
-              marginBottom: '1rem',
-              color: '#000',
-              fontFamily: 'EditorsNote',
+              fontSize: '3rem',
+              marginBottom: '2rem',
+              fontFamily: 'Cormorant',
             }}
           >
             HEY, I'M SHIITAL
           </h2>
           <p
             style={{
-              fontSize:'17px',
+              fontSize:'25px',
               lineHeight: '1.0',
               marginBottom: '1rem',
-              fontFamily: 'GothicA1',
+              fontFamily: 'Cormorant',
             }}
           >
             I am passionate about human development and potential. From early
@@ -114,10 +110,10 @@ const Portfolio4 = () => {
           </p>
           <p
             style={{
-              fontSize:'17px',
+              fontSize:'25px',
               lineHeight: '1.0',
               marginBottom: '1rem',
-              fontFamily: 'GothicA1',
+              fontFamily: 'Cormorant',
             }}
           >
             My journey in Somatic Developmental Psychology began in 2023 with my
@@ -129,10 +125,10 @@ const Portfolio4 = () => {
           </p>
           <p
             style={{
-              fontSize:'17px',
+              fontSize:'25px',
               lineHeight: '1.2',
               marginBottom: '1rem',
-              fontFamily: 'GothicA1',
+              fontFamily: 'Cormorant',
             }}
           >
             Drawing on this transformative experience, I am deeply committed to
@@ -142,12 +138,12 @@ const Portfolio4 = () => {
           </p>
           <h3
             style={{
-              fontSize:'17px',
+              fontSize:'25px',
               lineHeight: '1.0',
-              fontSize: '1.0rem',
+              fontSize: '1rem',
               marginBottom: '0.3rem',
-              color: '#3c868e',
-              fontFamily: 'Sinclaire',
+              color: '#C8A17E',
+              fontFamily: 'Cormorant',
             }}
           >
             I firmly believe that lifelong mental health challenges can be
@@ -156,7 +152,7 @@ const Portfolio4 = () => {
           </h3>
           <ul
             style={{
-              fontSize:'17px',
+              fontSize:'25px',
               lineHeight: '1.0',
               listStyleType: 'none',
               padding: 0,
@@ -165,27 +161,30 @@ const Portfolio4 = () => {
           >
             <li
               style={{
-                fontSize:'17px',
+                
+                fontSize:'25px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '1.0rem',
-                fontFamily: 'GothicA1',
+                fontFamily: 'Cormorant',
               }}
             >
-              ✔ This approach emphasizes the vital role of embodied experience
+           <span style={{ color: '#cda67e' }}>✔ </span>This approach emphasizes the vital role of embodied experience
               in fostering psychological growth, healing, and overall
               well-being, which inspires my current efforts.
             </li>
+    
             <li
               style={{
-                fontSize:'17px',
+                
+                fontSize:'25px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '0.5rem',
-                fontFamily: 'GothicA1',
+                gap: '0.7rem',
+                fontFamily: 'Cormorant',
               }}
             >
-              ✔ I am collaborating with the Bodynamic International global team
+           <span style={{ color: '#cda67e' }}>✔ </span>  I am collaborating with the Bodynamic International global team
               to bring Bodynamic Training and Workshops to the United States
               and contribute to the growth and cohesion of the global Bodynamic
               community.

@@ -90,7 +90,7 @@ const TestimonialSlider = () => {
       <button
         onClick={handlePrev}
         style={{
-          background: "#00B3A6",
+          background: "#cda67e",
           color: "#fff",
           padding: "10px 15px",
           fontSize: "14px",
@@ -105,7 +105,7 @@ const TestimonialSlider = () => {
       <button
         onClick={handleNext}
         style={{
-          background: "#00B3A6",
+          background: "#cda67e",
           color: "#fff",
           padding: "10px 20px",
           fontSize: "16px",

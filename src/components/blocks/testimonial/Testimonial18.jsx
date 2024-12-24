@@ -4,17 +4,18 @@ import { testimonialList6 } from 'data/testimonial-list';
 
 const Testimonial18 = () => {
   return <section className="wrapper image-wrapper bg-image bg-overlay text-white" style={{
-    backgroundImage: 'url(/img/photos/45678.jpg)'
+    backgroundImage: 'url(/img/photos/sowilo2.png)'
   }}>
       <div className="container-fluid p-0 text-center" style={{ width: '100%', height: '50vh' }}>
-  <i className="icn-flower text-white fs-10 opacity-100" />
+  
   <div className="row justify-content-center m-0" style={{ width: '100%' }}>
     <div className="col-xl-9 col-xxl-8 mx-auto p-0">
       <div className="swiper-container dots-light dots-closer mb-6 display-2" style={{ color: 'white', fontWeight: '120px' }}>
         <Carousel grabCursor navigation={false} slidesPerView={1}>
           {testimonialList6.map(({ id, name, review }) => (
-            <div className="display-3 fs-20 mb-2" key={id}>
-              <p>“{name}”</p>
+            <div className="display-1 fs-20 mb-1" style={{fontFamily:'Sinclaire'}} key={id}>
+              <p></p>
+              <p className='display-1 '>{name}</p>
               <div className="justify-content-center" style={{ fontFamily: 'EditorsNote', padding: '0', width: '100%' }}>
                 <div className="info" style={{ width: '100%' }}>
                   <h6 className="fs-15" style={{ color: 'white', fontSize: '32px', lineHeight: '1.6', letterSpacing: '2px' }}>

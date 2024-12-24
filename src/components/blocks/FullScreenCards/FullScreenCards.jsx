@@ -76,24 +76,13 @@ const FullScreenCards = () => {
                 </p>
                 <ul style={{ listStyle: 'none', padding: '0', color: '#444', fontSize: '1rem', fontFamily: 'Cormorant' }}>
                     <li style={{ marginBottom: '0.5rem' }}>
-                        ➤ The training provides a detailed analysis of childhood developmental phases, highlighting central developmental challenges and their connection to emerging defense mechanisms.
+                    <span style={{ color: '#cda67e' }}>➤</span> The training provides a detailed analysis of childhood developmental phases, highlighting central developmental challenges and their connection to emerging defense mechanisms.
                     </li>
                     <li>
-                        ➤ Through this program, you will refine your professional skills, cultivating greater presence, depth, and effectiveness in your work.
+                    <span style={{ color: '#cda67e' }}>➤</span> Through this program, you will refine your professional skills, cultivating greater presence, depth, and effectiveness in your work.
                     </li>
                 </ul>
-                <button style={{
-                    backgroundColor: '#55B9A6',
-                    color: '#fff',
-                    border: 'none',
-                    padding: '0.8rem 1.2rem',
-                    cursor: 'pointer',
-                    fontWeight: '600',
-                    marginTop: '1.5rem',
-                    fontFamily: 'Cormorant'
-                }}>
-                    JOIN NOW
-                </button>
+                
             </div>
 
             <div style={{
@@ -145,24 +134,13 @@ const FullScreenCards = () => {
                 </p>
                 <ul style={{ listStyle: 'none', padding: '0', color: '#444', fontSize: '0.8rem', fontFamily: 'Cormorant' }}>
                     <li style={{ marginBottom: '0.4rem' }}>
-                        ➤ You will also be introduced to various Bodynamic techniques designed to support behavioral change, applicable across all age groups, including children. These techniques will enhance your ability to read the physiological body and interpret it psychologically by identifying areas of strength and those needing attention. This skill set will offer fresh perspectives on how to engage effectively with others and determine the most supportive actions in any interaction.
+                    <span style={{ color: '#cda67e' }}>➤</span> You will also be introduced to various Bodynamic techniques designed to support behavioral change, applicable across all age groups, including children. These techniques will enhance your ability to read the physiological body and interpret it psychologically by identifying areas of strength and those needing attention. This skill set will offer fresh perspectives on how to engage effectively with others and determine the most supportive actions in any interaction.
                     </li>
                     <li>
-                        ➤Additionally, the training includes the short version of the Bodyknot technique—a practical tool for maintaining dignity and mutual connection in challenging situations. This technique supports conflict resolution and the development of an observing ego, fostering greater self-awareness and relational harmony.
+                    <span style={{ color: '#cda67e' }}>➤</span>Additionally, the training includes the short version of the Bodyknot technique—a practical tool for maintaining dignity and mutual connection in challenging situations. This technique supports conflict resolution and the development of an observing ego, fostering greater self-awareness and relational harmony.
                     </li>
                 </ul>
-                <button style={{
-                    backgroundColor: '#55B9A6',
-                    color: '#fff',
-                    border: 'none',
-                    padding: '0.8rem 1.2rem',
-                    cursor: 'pointer',
-                    fontWeight: '600',
-                    marginTop: '1.5rem',
-                    fontFamily: 'Cormorant'
-                }}>
-                    JOIN NOW
-                </button>
+                
             </div>
 
             {/* Section 3 */}
@@ -200,24 +178,13 @@ const FullScreenCards = () => {
                 </p>
                 <ul style={{ listStyle: 'none', padding: '0', color: '#444', fontSize: '1rem', fontFamily: 'Cormorant' }}>
                     <li style={{ marginBottom: '0.5rem' }}>
-                        ➤ The system provides an exceptional range of tools and techniques to enhance self-awareness and deepen understanding of others.
+                    <span style={{ color: '#cda67e' }}>➤</span> The system provides an exceptional range of tools and techniques to enhance self-awareness and deepen understanding of others.
                     </li>
                     <li>
-                        ➤ What sets Bodynamic apart is its unique ability to make psychological progress measurable, delivering a practical and accessible methodology that benefits both personal growth and professional practice.
+                    <span style={{ color: '#cda67e' }}>➤</span> What sets Bodynamic apart is its unique ability to make psychological progress measurable, delivering a practical and accessible methodology that benefits both personal growth and professional practice.
                     </li>
                 </ul>
-                <button style={{
-                    backgroundColor: '#55B9A6',
-                    color: '#fff',
-                    border: 'none',
-                    padding: '0.8rem 1.2rem',
-                    cursor: 'pointer',
-                    fontWeight: '600',
-                    marginTop: '1.5rem',
-                    fontFamily: 'Cormorant'
-                }}>
-                    JOIN NOW
-                </button>
+                
             </div>
 
             <div style={{
@@ -256,18 +223,18 @@ const FullScreenCards = () => {
                 gap: 'px', // Adjust the gap between the two lists if needed
               }}
             >
-              <ul style={{ listStyleType: 'disc', paddingLeft: '20px', }}>
-                <li>Therapists</li>
-                <li>Mental Health Counsellors</li>
-                <li>Doctors</li>
-                <li>Physiotherapists</li>
-                <li>Massage Therapists</li>
-                <li>Yoga teachers</li>
-                <li>Dance teachers</li>
+              <ul className=" text-left"style={{ listStyleType: 'none', paddingLeft: '10px', }}>
+                <li><span style={{ color: '#cda67e' }}>✔</span>  Therapists</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> Mental Health Counsellors</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> Doctors</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> Physiotherapists</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> Massage Therapists</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span> Yoga teachers</li>
+                <li><span style={{ color: '#cda67e' }}>✔</span>  Dance teachers</li>
                 <li>Trainers</li>
                 <li>Sales people</li>
               </ul>
-              <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+              <ul style={{ listStyleType: 'disc', paddingLeft: '0px' }}>
                 <li>Psychiatrists</li>
                 <li>Osteopaths</li>
                 <li>Naturopaths</li>
@@ -279,17 +246,7 @@ const FullScreenCards = () => {
               </ul>
             </div>
                 
-                <button style={{
-                    backgroundColor: '#55B9A6',
-                    color: '#fff',
-                    border: 'none',
-                    padding: '0.8rem 1.2rem',
-                    cursor: 'pointer',
-                    fontWeight: '600',
-                    marginTop: '1.5rem',
-                }}>
-                    JOIN NOW
-                </button>
+                
             </div>
             
         </div>
