@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
-
+import Popup4 from "../popup/Popup4";
+import  Popup5  from "../popup/Popup5";
 const Footer9 = () => {
   const router = useRouter();
 
@@ -23,20 +24,14 @@ const Footer9 = () => {
               className="col-md-4 d-flex flex-column align-items-center"
               style={{ color: "white" }}
             >
-              <ul className="list-unstyled mb-0" style={{ color: " #ffffff" }}>
+              <ul className="list-unstyled mb-0" style={{ color: " #ffffff", fontFamily:'Cormorant'}}>
                 <li>
-                  <button
-                    onClick={() => navigateToPage("/privacy-policy")}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: "white",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Privacy Policy & Terms and Condition
-                  </button>
+                 
+                    <Popup4/>
+                  
+                 
                 </li>
+                
               </ul>
             </div>
 
@@ -57,17 +52,7 @@ const Footer9 = () => {
             <div className="col-md-4 d-flex flex-column align-items-center">
               <ul className="list-unstyled mb-0 color-white">
                 <li>
-                  <button
-                    onClick={() => navigateToPage("/contact-us")}
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: "white",
-                      cursor: "pointer",
-                    }}
-                  >
-                    CONTACT US
-                  </button>
+                 <Popup5/>
                 </li>
               </ul>
             </div>
