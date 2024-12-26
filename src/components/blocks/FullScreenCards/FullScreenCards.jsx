@@ -38,7 +38,7 @@ const FullScreenCards = () => {
                 <h2 style={{
                     fontSize: '1.0rem',
                     fontWeight: '700',
-                    marginBottom: '1rem',
+                    marginBottom: 'rem',
                     fontFamily: 'Cormorant'
                 }}>
                     The Foundation Training is a comprehensive one-year introductory program in the Bodynamic System.
@@ -66,7 +66,7 @@ const FullScreenCards = () => {
 
             {/* Empowered Email Marketing Section */}
             <div style={{
-                backgroundImage: 'url("/img/photos/section2.jpg")',
+                backgroundImage: 'url("/img/photos/section2b.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '200px',
@@ -160,7 +160,7 @@ const FullScreenCards = () => {
             </div>
 
             <div style={{
-                backgroundImage: 'url("/img/photos/section3.jpg")',
+                backgroundImage: 'url("/img/photos/section3b.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '400px',
