@@ -5,6 +5,10 @@ const Plyr = dynamic(() => import('plyr'), { ssr: false });
 
 const Banner5 = () => {
   return (
+
+
+
+    
     <div style={styles.container}>
       <h1 style={styles.heading}>
       Foundation  <span style={styles.highlight}>Training </span> Outline
@@ -206,6 +210,7 @@ const styles = {
       justifyContent: "center",
     },
   },
+  
 };
 
 export default Banner5;

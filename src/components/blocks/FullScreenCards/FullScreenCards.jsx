@@ -2,6 +2,9 @@ import React from 'react';
 
 const FullScreenCards = () => {
     return (
+        <section className='wrapper'style={{
+            paddingLeft: '120px', 
+            paddingRight: '120px',}}>
         <div style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
@@ -9,37 +12,11 @@ const FullScreenCards = () => {
             height: '90%',
             margin: '0',
             boxSizing: 'border-box',
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Cormorant',
             overflow: 'hidden',
         }}>
             {/* Header Main Image */}
-            <div
-                style={{
-                    gridColumn: '1 / -1',
-                    textAlign: 'center',
-                }}
-            >
-                <img
-                    className=''
-                    src='/img/photos/B-Logo5-SMALL.png'
-                    alt='hello'
-                    style={{
-                        width: '100%', // Makes the image span the full width of the container
-                        height: 'auto',
-                        margin: 0, // Removes any margin
-                        display: 'block', // Removes inline spacing
-                    }}
-                />
-                <h2 className="display-2 mb-5 text-dark" style={{ fontFamily: 'EditorsNote', fontWeight: 300 }}>
-            Bodynamic Foundation Training <br />Orlando, USA</h2>
-          <a
-            href="https://www.bodynamic.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link">
-            <h6 style={{ textDecoration: 'underline', color:'#009990' }}>Bodynamic International</h6>
-          </a>
-            </div>
+           
 
 
             {/* Foundation Training Section */}
@@ -47,19 +24,19 @@ const FullScreenCards = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                padding: '3rem',
+                padding: '1rem',
                 backgroundColor: '#d4e3df',
-                minHeight: '400px',
+                Height: '100px',
             }}>
                 <h4 style={{
                     color: '#55B9A6',
                     fontSize: '1.8rem',
                     letterSpacing: '2px',
                     marginBottom: '1rem',
-                    fontFamily: 'Sinclaire'
+                    fontFamily: 'Cormorant'
                 }}>Foundation Training:</h4>
                 <h2 style={{
-                    fontSize: '1.2rem',
+                    fontSize: '1.0rem',
                     fontWeight: '700',
                     marginBottom: '1rem',
                     fontFamily: 'Cormorant'
@@ -69,12 +46,12 @@ const FullScreenCards = () => {
                 <p style={{
                     fontFamily: 'Cormorant',
                     color: '#444',
-                    fontSize: '1rem',
+                    fontSize: '0.9rem',
                     marginBottom: '1.5rem',
                 }}>
                     This foundational course explores character structures, character positions, and the fundamental concepts underlying contact and communication within the system. These concepts include mutual connection, dignity, boundaries, centering, and grounding.
                 </p>
-                <ul style={{ listStyle: 'none', padding: '0', color: '#444', fontSize: '1rem', fontFamily: 'Cormorant' }}>
+                <ul style={{ listStyle: 'none', padding: '0', color: '#444', fontSize: '0.8rem', fontFamily: 'Cormorant' }}>
                     <li style={{ marginBottom: '0.5rem' }}>
                      <span style={{ color: '#cda67e' }}>➤</span> The training provides a detailed analysis of childhood developmental phases, highlighting central developmental challenges and their connection to emerging defense mechanisms.
                     </li>
@@ -85,12 +62,7 @@ const FullScreenCards = () => {
                 
             </div>
 
-            <div style={{
-                backgroundImage: 'url("/img/photos/bg39.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                minHeight: '400px',
-            }}></div>
+            <img src="/img/photos/section1.jpg" alt="" style={{height:'459px'}}/>
 
             {/* Empowered Email Marketing Section */}
             <div style={{
@@ -104,7 +76,7 @@ const FullScreenCards = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                padding: '2rem',
+                padding: '1rem',
                 backgroundColor: '#d4e3df',
                 minHeight: '400px',
             }}>
@@ -113,7 +85,7 @@ const FullScreenCards = () => {
                     fontSize: '1.8rem',
                     letterSpacing: '2px',
                     marginBottom: '1rem',
-                    fontFamily: 'Sinclaire'
+                    fontFamily: 'Cormorant'
                 }}>What will we cover in this training?</h4>
                 <h2 style={{
                     fontSize: '1.2rem',
@@ -149,7 +121,7 @@ const FullScreenCards = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                padding: '3rem',
+                padding: '1rem',
                 backgroundColor: '#d4e3df',
                 minHeight: '400px',
             }}>
@@ -158,7 +130,7 @@ const FullScreenCards = () => {
                     fontSize: '1.8rem',
                     letterSpacing: '2px',
                     marginBottom: '1rem',
-                    fontFamily: 'Sinclaire'
+                    fontFamily: 'Cormorant'
                 }}>Why should I take Bodynamic training?</h4>
                 <h2 style={{
                     fontSize: '1.2rem',
@@ -205,7 +177,7 @@ const FullScreenCards = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                padding: '3rem',
+                padding: '1rem',
                 backgroundColor: '#d4e3df',
                 minHeight: '400px',
             }}><h4 style={{
@@ -213,7 +185,7 @@ const FullScreenCards = () => {
                 fontSize: '1.8rem',
                 letterSpacing: '2px',
                 marginBottom: '1rem',
-                fontFamily: 'Sinclaire'
+                fontFamily: 'Cormorant'
             }}>Who is this training for?</h4>
                 
                 <div
@@ -251,7 +223,7 @@ const FullScreenCards = () => {
             </div>
             
         </div>
-        
+        </section>
     );
 };
 

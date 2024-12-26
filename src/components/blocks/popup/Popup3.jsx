@@ -12,9 +12,9 @@ const Popup = () => {
   return (
     <div>
       <div style={styles.banner}>
-        <h1 className='display-1 text-center' style={{ fontFamily: 'Cormorant'   }}>To know more about the Seven Developmental Stages!</h1>
+        <h1 className='display-1 text-center' style={{ fontFamily: 'Cormorant'   }}>Privacy Policy & Terms and Condition</h1>
         <button onClick={togglePopup} style={styles.button }>
-          Click here
+         
         </button>
       </div>
 
@@ -75,18 +75,6 @@ const styles = {
     padding: '20px',
     textAlign: 'center',
     fontFamily: 'Cormorant',
-  },
-  button: {
-    color:'White',
-    backgroundColor: '#fff',
-    color: '#9FC3C6',
-    border: 'none',
-    padding: '10px 10px',
-    fontSize: '15px',
-    cursor: 'pointer',
-    borderRadius: '5px',
-    marginTop: '10px',
-  fontFamily: 'Cormorant'
   },
   overlay: {
     position: 'fixed',

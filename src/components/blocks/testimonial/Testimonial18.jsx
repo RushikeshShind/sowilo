@@ -13,12 +13,15 @@ const Testimonial18 = () => {
       <div className="swiper-container dots-light dots-closer mb-6 display-2" style={{ color: 'white', fontWeight: '120px' }}>
         <Carousel grabCursor navigation={false} slidesPerView={1}>
           {testimonialList6.map(({ id, name, review }) => (
-            <div className="display-1 fs-20 mb-1" style={{fontFamily:'Sinclaire'}} key={id}>
+            <div className="display-1 fs-20 mb-1" style={{fontFamily:'Cormorant'}} key={id}>
               <p></p>
               <p className='display-1 '>{name}</p>
-              <div className="justify-content-center" style={{ fontFamily: 'EditorsNote', padding: '0', width: '100%' }}>
+              <div className="justify-content-center" style={{ fontFamily: 'Cormorant', padding: '0', width: '100%' }}>
                 <div className="info" style={{ width: '100%' }}>
-                  <h6 className="fs-15" style={{ color: 'white', fontSize: '32px', lineHeight: '1.6', letterSpacing: '2px' }}>
+                  <h6 className="fs-15" style={{  fontSize:'35px',
+              lineHeight: '1.4',
+              marginBottom: '1rem',
+              fontFamily: 'Cormorant',color:'white' }}>
                     At SOWILO, we are dedicated to guiding individuals on a journey toward wholeness, helping them align with their true essence and realize their fullest potential. Inspired by the meaning of “SOWILO” (the sun – symbolizing victory, guidance, mastery, wholeness, and seat of the soul), we believe that the answers people seek already reside within them.
                     <br /><br />
                     We integrate evidence-based practices with alternative therapeutic approaches to support physical, emotional, and spiritual well-being. By harnessing life’s transformative energy, we aspire to be a catalyst for renewal, growth, and balance.

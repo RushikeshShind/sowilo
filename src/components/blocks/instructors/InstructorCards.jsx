@@ -58,9 +58,9 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
     }}
   >
       <h1 className="text-center display-1 mb-12">
-        <i className="icn-flower text-black fs-30 opacity-50" />
+        <i className="icn-flower text-black fs-30 opacity-100" style={{color:'#ffffff'}} />
         TRAINERS
-        <i className="icn-flower text-black fs-30 opacity-50" />
+        <i className="icn-flower text-black fs-30 opacity-100" style={{color:'#ffffff'}}/>
       </h1>
       <div
         style={{

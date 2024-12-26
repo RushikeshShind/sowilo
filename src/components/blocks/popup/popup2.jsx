@@ -57,7 +57,7 @@ const styles = {
     color: 'black',
     padding: '20px',
     textAlign: 'center',
-    fontFamily: 'EditorNote',
+    fontFamily: 'Cormorant',
   },
   button: {
     color:'',
@@ -69,7 +69,7 @@ const styles = {
     cursor: 'pointer',
     borderRadius: '5px',
     marginTop: '10px',
-    fontFamily:'Sinclaire',
+    fontFamily:'Cormorant',
   },
   overlay: {
     position: 'fixed',

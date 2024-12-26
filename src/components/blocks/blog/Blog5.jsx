@@ -53,11 +53,11 @@ const TestimonialSlider = () => {
     flexDirection: "column",
   }}
 >
-  <h1 className="display-1"style={{fontFamily:'EditorsNote'}}> <i className="icn-flower text-black fs-30 opacity-50" /> Course Testimonials < i className="icn-flower text-black fs-30 opacity-50" /></h1>
+  <h1 className="display-1"style={{fontFamily:'Cormorant'}}> <i className="icn-flower text-black fs-30 opacity-50" /> Course Testimonials < i className="icn-flower text-black fs-30 opacity-50" /></h1>
 
   {/* Updated box width and padding */}
   <div className="text-center" style={{ width: "90%", maxWidth: "1100px", backgroundColor: "#fff", padding: "60px" }}>
-    <h2 style={{ color: "#333", marginBottom: "20px", fontFamily:'GothicA1' }}>
+    <h2 style={{ color: "#333", marginBottom: "20px", fontFamily:'Cormorant' }}>
   "What they're saying about the course"
   </h2>
     <div key={currentIndex}> {/* Key forces re-render */}

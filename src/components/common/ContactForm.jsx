@@ -1,9 +1,9 @@
 const ContactForm = () => {
   return <form className="contact-form needs-validation" method="post">
-    <div style={{ fontFamily: "EditorNote", padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
+    <div className="mb-12" style={{ fontFamily: "Cormorant", padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       {/* Main Heading */}
      
-            <h1 className="text-center" style={{ fontfamily: "EditorsNote", fontweight: '400', fontstyle: 'normal',color:'#2ed8df' }}>
+            <h1 className="text-center" style={{ fontfamily: "Cormorant", fontweight: '400', fontstyle: 'normal',color:'#cda67e' }}>
         Resigration Form
       </h1>
       {/* Form */}
@@ -116,7 +116,7 @@ const ContactForm = () => {
         /> */}
 
         {/* How did you hear */}
-        <label style={{color:'black', display: 'line', marginBottom: '10px',fontFamily:'EditorNote' }}>
+        <label style={{color:'black', display: 'line', marginBottom: '10px',fontFamily:'Cormorant' }}>
         How did you hear about Bodynamic International? <span style={{ color: 'black' }}>*</span>
         </label>
         <select
@@ -201,7 +201,7 @@ const ContactForm = () => {
             display: 'block',
             width: '100%',
             padding: '10px',
-            backgroundColor: '#2ed8df',
+            backgroundColor: '#cda67e',
             color: '#fff',
             border: 'none',
             borderRadius: '4px',

@@ -3,7 +3,7 @@ const CTA6 = () => {
     backgroundImage: 'url(/img/photos/eng.jpg)',
     
   }}> 
-  <h1 className="display-1 mb-1 align-center " style={{color:'white', fontFamily:'Sinclaire'}}> <i className="icn-flower text-white fs-30 opacity-50" /> Enrollment Section <i className="icn-flower text-white fs-30 opacity-50" /></h1>
+  <h1 className="display-1 mb-1 align-center " style={{color:'white', fontFamily:'Cormorant'}}> <i className="icn-flower text-white fs-30 opacity-50" /> Enrollment Section <i className="icn-flower text-white fs-30 opacity-50" /></h1>
       <div className="container py-md-17 py-lg-18 d-flex justify-content-center align-items-center" style={{ backgroundColor: "" }}>
   <div 
     className="text-center p-5 rounded" 
@@ -17,7 +17,7 @@ const CTA6 = () => {
     <h2 
       className=" fw-bold mb-4" 
       style={{
-        fontFamily: "EditorsNote",
+        fontFamily: "Cormorant",
         fontSize: "2rem",
         color: "#333",
         letterSpacing: "1px",
@@ -40,7 +40,7 @@ const CTA6 = () => {
     <h3 
       className="fw-bold mt-5 mb-4" 
       style={{
-        fontFamily: "EditorsNote",
+        fontFamily: "Cormorant",
         fontSize: "1.8rem",
         color: "#333",
       }}
@@ -62,7 +62,7 @@ const CTA6 = () => {
     <h3 
       className="fw-bold mt-5 mb-4" 
       style={{
-        fontFamily: "EditorsNote",
+        fontFamily: "Cormorant",
         fontSize: "1.8rem",
         color: "#333",
       }}
