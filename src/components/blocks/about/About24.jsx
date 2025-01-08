@@ -3,8 +3,10 @@ import styles from './styles.module.css';
 const About24 = () => {
   return (
     <section className={styles.aboutSection}>
+      <div></div>
       {/* Image Section */}
       <div className={styles.aboutImageContainer}>
+        <div></div>
         <img
           src="/img/photos/header2.jpg" // Replace with the actual image path
           alt="Kristin sitting on a couch"
@@ -14,16 +16,12 @@ const About24 = () => {
 
       {/* Text Section */}
       <div className={styles.aboutTextContainer}>
-        <h1 className={styles.aboutTitle}>Bodynamic Foundation Training</h1>
-        <h6 className={styles.aboutSubtitle}>
-          Embark on a Journey of Somatic Developmental Psychology for Personal
-          and Professional Growth
-        </h6>
+        <h1 className='display-1' style={{fontFamily:'sinclair' , color:' #9cbfbc'}}>Bodynamic Foundation Training</h1>
+        
+        <h5 className='display-6' style={{fontsize: '20px' ,fontFamily: 'sinclair'}}>Embark on a Journey of Somatic Developmental Psychology</h5> 
+       
         <h7 className={styles.aboutDescription}>
-          Embark on a transformative journey with the Bodynamic system,
-          integrating body awareness and developmental psychology to deepen
-          self-awareness, healing, and relational dynamics in your <br />personal and
-          professional life.
+        Embark on a transformative journey with the Bodynamic system, integrating body awareness and developmental psychology to deepen self-awareness, healing, and relational dynamics in your personal and professional life.
         </h7>
       </div>
     </section>

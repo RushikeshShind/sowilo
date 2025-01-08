@@ -1,32 +1,41 @@
 const CTA6 = () => {
-  return <div className="wrapper image-wrapper bg-auto no-overlay bg-image text-center bg-map" style={{
-    backgroundImage: 'url(/img/photos/eng.jpg)',
+  return <div className="wrapper bg-auto no-overlay bg-image text-center" style={{ 
+    backgroundImage: 'url(/img/waters-3102729_1280.jpg)', height:'auto',
     
   }}> 
-  <h1 className="display-1 mb-1 align-center " style={{color:'white', fontFamily:'Cormorant'}}> <i className="icn-flower text-white fs-30 opacity-50" /> Enrollment Section <i className="icn-flower text-white fs-30 opacity-50" /></h1>
+<div>  <h1 className="display-1"
+      style={{
+        fontFamily: 'sinclair',
+        color:'rgb(37, 216, 204)',
+        border:'2px'
+      }}
+    ><br />
+      Enrollment Section
+    </h1></div>
       <div className="container py-md-17 py-lg-18 d-flex justify-content-center align-items-center" style={{ backgroundColor: "" }}>
+        
   <div 
     className="text-center p-5 rounded" 
     style={{
-      maxWidth: "600px",
+      maxWidth: "800px",
       backgroundColor: "#fff",
       boxShadow: "0px 10px 20px rgba(0,0,0,0.1)",
       borderRadius: "10px",
     }}
-  ><i className="icn-flower text-black fs-30 opacity-50" />
+  > 
     <h2 
-      className=" fw-bold mb-4" 
+      className=" fw-bold mb-1" 
       style={{
-        fontFamily: "Cormorant",
-        fontSize: "2rem",
+        fontFamily: "sinclair",
+        fontSize: "1.8rem",
         color: "#333",
-        letterSpacing: "1px",
+        
       }}
     >
   CLARITY
     </h2>
     <p 
-      className="mb-4"
+      className="mb-2"
       style={{
         fontFamily: "Cormorant",
         fontSize: "1rem",
@@ -40,7 +49,7 @@ const CTA6 = () => {
     <h3 
       className="fw-bold mt-5 mb-4" 
       style={{
-        fontFamily: "Cormorant",
+        fontFamily: "sinclair",
         fontSize: "1.8rem",
         color: "#333",
       }}
@@ -62,7 +71,7 @@ const CTA6 = () => {
     <h3 
       className="fw-bold mt-5 mb-4" 
       style={{
-        fontFamily: "Cormorant",
+        fontFamily: "sinclair",
         fontSize: "1.8rem",
         color: "#333",
       }}

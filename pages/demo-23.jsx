@@ -1,19 +1,15 @@
 import { Fragment } from 'react';
 import useProgressbar from 'hooks/useProgressbar';
 import { Blog5 } from 'components/blocks/blog';
-import { Hero23 } from 'components/blocks/hero';
-import { Navbar } from 'components/blocks/navbar';
 import { About24 } from 'components/blocks/about';
 import { Footer9 } from 'components/blocks/footer';
 import { Banner5 } from 'components/blocks/banner';
-import { Services26 } from 'components/blocks/services';
 import { CTA9 } from 'components/blocks/call-to-action';
 import { Portfolio4 } from 'components/blocks/portfolio';
 import { Testimonial18 } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
 import { FullScreenCards } from 'components/blocks/FullScreenCards';
 import { InstructorCards } from 'components/blocks/instructors';
-import { CTA8 } from 'components/blocks/call-to-action';
 import { CTA6 } from 'components/blocks/call-to-action';
 import ContactForm from 'components/common/ContactForm';
 
@@ -89,7 +85,7 @@ const Demo23 = () => {
       </header>
 
       {/* ========== Main Content ========== */}
-      <main className="content-wrapper" style={{ width: '100vw', margin: 0, padding: 0 }}>
+      <main className="content-wrapper" style={{ width: '100vw', margin: 0, padding: 0, fontFamily:'Cormorant' }}>
         <section id="">
           <About24 />
         </section>
@@ -140,6 +136,7 @@ const Demo23 = () => {
     >
       Orlando, USA
     </p>
+    <a href="https://www.bodynamic.com/" style={{color:'rgb(228, 135, 28)'}}>Bodaynamic International</a>
   </div>
   <div
     style={{
@@ -170,7 +167,7 @@ const Demo23 = () => {
         <section id="bodynamic">
           <FullScreenCards />
         </section>
-        <CTA8 />
+        
         <section id="training">
           <Banner5 />
         </section>

@@ -6,19 +6,19 @@ import styles from '../styles/Home.module.css';
 const Portfolio4 = () => {
   return (
     <section
-      className="wrapper bg-light "
+      className="wrapper bg-light"
       style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '3rem 3rem',
+        padding: '2rem 3rem',
         
         backgroundColor: '#508C9B', // Light background
       }}
     >
       {/* Container */}
-      <div
+      <div className='mb-1'
         style={{
           display: 'flex',
           flexDirection: 'row', // Side-by-side layout
@@ -43,7 +43,7 @@ const Portfolio4 = () => {
           <div
             style={{
               position: 'relative', // To position the box behind the image
-              width: '130%',
+              width: '120%',
               maxWidth: '1200px', // Adjust the max-width of the image container
               height: 'auto',
               
@@ -53,7 +53,7 @@ const Portfolio4 = () => {
             <div
               style={{
                 position: 'absolute', // Place behind the image
-                top: '3%',
+                top: '1%',
                 bottom:'10%',
                 left: '-50%',
                 width: '100%',
@@ -81,7 +81,7 @@ const Portfolio4 = () => {
         <div
           style={{
             flex: '3',
-            padding: '5rem',
+            padding: '4rem',
             textAlign: 'left',
             color: '#333',
           }}
@@ -90,7 +90,7 @@ const Portfolio4 = () => {
             style={{
               fontSize: '3rem',
               marginBottom: '2rem',
-              fontFamily: 'Cormorant',
+              fontFamily:'sinclair',
             }}
           >
             HEY, I'M SHIITAL
@@ -140,10 +140,9 @@ const Portfolio4 = () => {
             style={{
               fontSize:'25px',
               lineHeight: '1.0',
-              fontSize: '1rem',
-              marginBottom: '0.3rem',
-              color: '#C8A17E',
+              marginBottom: '1rem',
               fontFamily: 'Cormorant',
+              color: '#C8A17E',
             }}
           >
             I firmly believe that lifelong mental health challenges can be

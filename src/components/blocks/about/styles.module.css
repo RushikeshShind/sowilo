@@ -10,21 +10,22 @@
   background-color: #9cbfbc;
   padding: 4rem 1rem;
   width: 500px;
-  font-family: 'Cormorant';
+  font-family: 'sinclair';
   font-weight: 500;
   font-size: 0.9rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .aboutImage {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-left: 180px;
+  margin-top: 35px;
   width: 330px;
   border: 10px solid white;
 }
 
 .aboutTextContainer {
-  margin-left: 50px;
+  margin-left: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,18 +33,18 @@
 }
 
 .aboutTitle {
-  font-family: 'Cormorant';
+  font-family: 'sinclair';
   color: #9cbfbc;
   font-size: 60px;
 }
 
 .aboutSubtitle {
-  font-family: 'Cormorant';
+  font-family: 'sinclair';
   font-size: 20px;
 }
 
 .aboutDescription {
-  font-size: 19px;
+  font-size: 20px;
   font-family: 'Cormorant';
 }
 

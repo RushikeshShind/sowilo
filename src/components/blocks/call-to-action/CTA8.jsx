@@ -15,7 +15,7 @@ const CTA8 = () => {
 
           <div className="d-flex justify-content-center">
             <span>
-              <Popup/>
+              
               
             </span>
           </div>

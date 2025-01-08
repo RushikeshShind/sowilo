@@ -53,14 +53,14 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
       background: "linear-gradient(to top,rgb(198, 230, 222) 50%, #9CBFBC 50%)",
       padding: "50px",
       fontFamily: "Cormorant",
-      height: "100vh", // Ensures the section covers the full viewport height
+      height: "auto", // Ensures the section covers the full viewport height
       margin: 0, // Removes default margin for consistent layout
     }}
   >
-      <h1 className="text-center display-1 mb-12">
-        <i className="icn-flower text-black fs-30 opacity-100" style={{color:'#ffffff'}} />
+      <h1 className="text-center display-1 mb-12" style={{fontFamily:'sinclair'}}>
+        
         TRAINERS
-        <i className="icn-flower text-black fs-30 opacity-100" style={{color:'#ffffff'}}/>
+      
       </h1>
       <div
         style={{
@@ -129,6 +129,7 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
                     fontSize: "1.4rem",
                     color: "rgb(0, 127, 127)",
                     marginBottom: "10px",
+                    fontFamily:'sinclair'
                   }}
                 >
                   {instructor.name}

@@ -1,16 +1,16 @@
 const ContactForm = () => {
   return <form className="contact-form needs-validation" method="post">
-    <div className="mb-12" style={{ fontFamily: "Cormorant", padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
+    <div className="mb-12" style={{  padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       {/* Main Heading */}
      
-            <h1 className="text-center" style={{ fontfamily: "Cormorant", fontweight: '400', fontstyle: 'normal',color:'#cda67e' }}>
+            <h1 className="text-center" style={{ fontFamily:'sinclair',color:' #cda67e' }}>
         Resigration Form
       </h1>
       {/* Form */}
       <form>
         {/* Email Address */}
         <label style={{color:'black', marginBottom: '10px' }}>
-        Full name <span style={{ color: 'black' }}>*</span>
+        Full name <span style={{ color: 'black' }}>*</span> 
         </label>
         <input
           type="text"

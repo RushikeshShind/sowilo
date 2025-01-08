@@ -72,3 +72,7 @@
   font-style: normal;
   font-display: block;
 }
+@font-face {
+  font-family: 'sinclair';
+  src: url('Sinclair.woff2')format('woff2');
+}
