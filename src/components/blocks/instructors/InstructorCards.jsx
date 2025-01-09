@@ -145,10 +145,12 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
   }}
 >
 <p style={{ fontSize: "20px", color: "#555555" }}>
-                  {instructor.contact}
+                 
                 </p>
                 <p style={{ fontSize: "20px", color: "#555555" }}>
                   {instructor.info}
+                 <br /><strong>Contact:</strong> 
+                  {instructor.contact}
                 </p>
               </div>
             </div>
