@@ -109,11 +109,6 @@ const CTA6 = () => {
             self-discovery and growth.
           </p>
 
-          <section id="/#registration" style={{ padding: "50px", backgroundColor: "#f5f5f5" }}>
- 
-  {/* Registration form or content */}
-</section>
-
 <button
   className="btn text-white"
   style={{

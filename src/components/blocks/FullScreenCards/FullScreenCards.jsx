@@ -115,9 +115,9 @@ const FullScreenCards = () => {
                 ></div>
                 <div style={sectionStyles.contentSection}>
                     <h4 style={sectionStyles.heading}>What will we cover in this training?</h4>
-                    <h2 style={sectionStyles.subHeading}>
+                    <p style={sectionStyles.text}>
                     This training delves into psychological and physiological development, focusing on character structure formation and its impact on the body. You'll explore the origins of your preferences, biases, and defenses, understanding their benefits and challenges.
-                    </h2>
+                    </p>
                     <p style={sectionStyles.text}>
                     The training offers Bodynamic techniques that support behavioral change for all ages and refine your ability to analyze the physiological body in psychological terms. By developing this skill set, you’ll gain fresh perspectives on engaging with others effectively and choosing actions that foster meaningful interactions.
                     </p >
