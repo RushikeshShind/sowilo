@@ -24,7 +24,7 @@ const Footer9 = () => {
               className="col-md-4 d-flex flex-column align-items-center"
               style={{ color: "white" }}
             >
-              <ul className="list-unstyled mb-0" style={{ color: " #ffffff", fontFamily:'Cormorant'}}>
+              <ul className="list-unstyled mb-0" style={{ color: " #ffffff", fontFamily:'Cormorant', fontSize:'20px'}}>
                 <li>
                  
                     <Popup4/>
