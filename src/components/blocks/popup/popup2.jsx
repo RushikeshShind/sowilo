@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import color from 'utils/color';
 
 // Main component
@@ -11,30 +11,36 @@ const Popup2 = () => {
 
   return (
     <div>
-      
-        
-        <button onClick={togglePopup} style={styles.button }>
-          Contact Me
-        </button>
-     
+      <button onClick={togglePopup} style={styles.button}>
+        Contact Me
+      </button>
 
-      {/* Use PopupModal instead of Popup to avoid name conflict */}
       <PopupModal isOpen={isPopupOpen} onClose={togglePopup}>
-        <h6 className='display-5 text-center'style={{color: 'black'}}>Contact</h6>
-        <ul style={{color:'black'}}>
-          
-     
-          I can be reached at <strong>24shiital@gmail.com</strong>  (preferred) and <strong> +1 781 929 0606</strong> <br />(iMessage and What’s App; calls with appointments, please).
-       
-          
+        <h6 className="display-5 text-center" style={{ color: 'black' }}>Contact</h6>
+        <ul style={{ color: 'black' }}>
+          I can be reached at <strong>24shiital@gmail.com</strong> (preferred) and <strong>+1 781 929 0606</strong> <br />
+          (iMessage and WhatsApp; calls with appointments, please).
         </ul>
       </PopupModal>
     </div>
   );
 };
 
-// Renamed Popup component to PopupModal to avoid conflict
+// PopupModal component with scrolling disabled
 const PopupModal = ({ isOpen, onClose, children }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+    } else {
+      document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+
+    // Cleanup to ensure no side effects when the component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
@@ -52,15 +58,7 @@ const PopupModal = ({ isOpen, onClose, children }) => {
 };
 
 const styles = {
-  banner: {
-    backgroundColor: 'white',
-    color: 'black',
-    padding: '20px',
-    textAlign: 'center',
-    fontFamily: 'Cormorant',
-  },
   button: {
-    color:'',
     backgroundColor: '#eab085',
     color: 'white',
     border: 'none',
@@ -69,7 +67,7 @@ const styles = {
     cursor: 'pointer',
     borderRadius: '5px',
     marginTop: '10px',
-    fontFamily:'Cormorant',
+    fontFamily: 'Cormorant',
   },
   overlay: {
     position: 'fixed',
@@ -90,7 +88,7 @@ const styles = {
     width: '800px',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     position: 'relative',
-    maxHeight: '80vh',  // Limits the popup height to 80% of the viewport height
+    maxHeight: '80vh',
     overflow: 'hidden', // Prevents overflow outside the popup container
   },
   closeButton: {
@@ -106,7 +104,7 @@ const styles = {
     maxHeight: '80vh', // Content will scroll if it exceeds this height
     overflowY: 'auto', // Enables vertical scrolling if content overflows
     paddingRight: '10px', // Adds some padding to the right for scrollbar visibility
-    color:'White'
+    color: 'white',
   },
 };
 

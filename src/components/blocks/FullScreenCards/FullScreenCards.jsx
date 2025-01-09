@@ -29,7 +29,7 @@ const FullScreenCards = () => {
             padding: '0', // Remove padding
         },
         heading: {
-            color: '#0e5d6E',
+            color: ' #0e5d6E',
             fontSize: 'clamp(24px, 2.5vw, 32px)',
             letterSpacing: '1px',
             fontFamily: 'sinclair',

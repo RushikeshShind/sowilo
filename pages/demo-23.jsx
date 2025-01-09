@@ -125,7 +125,7 @@ const Demo23 = () => {
         fontSize: "1.8rem", // Scaled font size for smaller screens
         marginBottom: "10px",
         fontFamily: 'sinclair',
-        color:'rgb(71, 71, 71)'
+        color:' #0e5d6E'
       }}
     >
       Bodynamic Foundation Training
