@@ -42,7 +42,7 @@ const FullScreenCards = () => {
         },
         text: {
             color: '#444',
-            fontSize: 'clamp(14px, 1.5vw, 18px)',
+            fontSize: 'clamp(14px, 1.5vw, 20px)',
             marginBottom: '1.1rem',
         },
         list: {
@@ -51,6 +51,7 @@ const FullScreenCards = () => {
             margin: '0', // Remove margin
             color: '#444',
             fontSize: 'clamp(12px, 1.2vw, 16px)',
+            fontSize:'20px'
         },
         listItem: {
             marginBottom: '0.5rem',
