@@ -14,7 +14,7 @@ const Popup4 = () => {
       
         
         <button onClick={togglePopup} style={styles.button }>
-      Terms and Condition
+      Terms and Conditions
         </button>
      
 

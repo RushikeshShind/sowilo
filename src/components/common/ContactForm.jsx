@@ -4,7 +4,7 @@ const ContactForm = () => {
       {/* Main Heading */}
      
             <h1  className=" display-2 text-center" style={{ fontFamily:'sinclair',color:' #eab085' }}>
-        Resigration Form
+            Registration form
       </h1>
       {/* Form */}
       <form>

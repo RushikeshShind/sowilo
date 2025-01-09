@@ -57,7 +57,7 @@ const TestimonialSlider = () => {
 
   {/* Updated box width and padding */}
   <div className="text-center" style={{ width: "90%", maxWidth: "1100px", backgroundColor: "#fff", padding: "60px" }}>
-    <h2 style={{ color: "#333", marginBottom: "20px", fontFamily:'Cormorant', fontSize:'20px' }}>
+    <h2 style={{ color: "#333", marginBottom: "28px", fontFamily:'Cormorant', fontSize:'24px' }}>
   "What they're saying about the course"
   </h2>
     <div key={currentIndex}> {/* Key forces re-render */}

@@ -50,7 +50,7 @@ const FullScreenCards = () => {
             padding: '0',
             margin: '0', // Remove margin
             color: '#444',
-            fontSize: 'clamp(12px, 1.2vw, 16px)',
+            fontSize: 'clamp(12px, 1.2vw, 20px)',
             fontSize:'20px'
         },
         listItem: {
@@ -179,11 +179,12 @@ const FullScreenCards = () => {
                             <li>
                                 <span style={sectionStyles.listIcon}>➤</span> Trainers
                             </li>
-                        </ul>
-                        <ul style={sectionStyles.list}>
                             <li>
                                 <span style={sectionStyles.listIcon}>➤</span> Salespeople
                             </li>
+                        </ul>
+                        <ul style={sectionStyles.list}>
+                           
                             <li>
                                 <span style={sectionStyles.listIcon}>➤</span> Psychiatrists
                             </li>
