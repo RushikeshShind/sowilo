@@ -3,13 +3,13 @@ const ContactForm = () => {
     <div className="mb-12" style={{  padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       {/* Main Heading */}
      
-            <h1 className="text-center" style={{ fontFamily:'sinclair',color:' #cda67e' }}>
+            <h1  className=" display-2 text-center" style={{ fontFamily:'sinclair',color:' #eab085' }}>
         Resigration Form
       </h1>
       {/* Form */}
       <form>
         {/* Email Address */}
-        <label style={{color:'black', marginBottom: '10px' }}>
+        <label style={{color:'black', marginBottom: '10px' , fontSize:'20px' }}>
         Full name <span style={{ color: 'black' }}>*</span> 
         </label>
         <input
@@ -201,11 +201,12 @@ const ContactForm = () => {
             display: 'block',
             width: '100%',
             padding: '10px',
-            backgroundColor: '#cda67e',
+            backgroundColor: ' #eab085',
             color: '#fff',
             border: 'none',
             borderRadius: '4px',
             cursor: 'pointer',
+            fontSize:'20px'
           }}
         >
           Submit

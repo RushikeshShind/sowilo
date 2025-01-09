@@ -13,9 +13,9 @@ const Testimonial18 = () => {
       <div className="swiper-container dots-light dots-closer mb-6 display-2" style={{ color: 'white', fontWeight: '120px' }}>
         <Carousel grabCursor navigation={false} slidesPerView={1}>
           {testimonialList6.map(({ id, name, review }) => (
-            <div className="display-1 fs-20" style={{fontFamily:'sinclair'}} key={id}>
+            <div className="display-1 " style={{fontFamily:'sinclair'}} key={id}>
               <p></p>
-              <p className='display-1 '>{name}</p>
+              <p className='display-2 '>{name}</p>
               <div className="justify-content-center" style={{ fontFamily: 'Cormorant', padding: '0', width: '100%' }}>
                 <div className="info" style={{ width: '100%' }}>
                   <h4 className='display-10' style={{fontSize:'20px',

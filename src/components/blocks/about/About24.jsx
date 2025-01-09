@@ -16,7 +16,7 @@ const About24 = () => {
 
       {/* Text Section */}
       <div className={styles.aboutTextContainer}>
-        <h1 className='display-1' style={{fontFamily:'sinclair' , color:' #9cbfbc'}}>Bodynamic Foundation Training</h1>
+        <h1 className='display-2' style={{fontFamily:'sinclair' , color:'#0e5d6e', fontsize: '40px'}}>Bodynamic Foundation Training</h1>
         
         <h5 className='display-6' style={{fontsize: '20px' ,fontFamily: 'sinclair'}}>Embark on a Journey of Somatic Developmental Psychology</h5> 
        

@@ -22,7 +22,7 @@ const Demo23 = () => {
 
       {/* ========== Header ========== */}
       <header className="wrapper bg-soft-primary">
-      <nav className="navbar navbar-expand-lg navbar-dark  sticky-top" style={{backgroundColor:'rgb(38, 108, 102)'}}>
+      <nav className="navbar navbar-expand-lg navbar-dark  sticky-top" style={{backgroundColor:' #0e5d6e'}}>
   <button
     className="navbar-toggler order-1"
     type="button"
@@ -46,40 +46,41 @@ const Demo23 = () => {
     />
   </svg>
   </button>
-  <a className="navbar-brand ms-auto order-2" href="#home">
+  <div className="collapse navbar-collapse" id="navbarNav">
+  <ul className="navbar-nav me-auto text-start" style={{color: '#eab085'}}>
+    <li className="nav-item" style={{color: '#eab085'}}>
+      <a className="nav-link " style={{color: '#eab085'}}href="#home">Home</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link "style={{color: '#eab085'}} href="#sowilo">Sowilo</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link "style={{color: '#eab085'}} href="#shiital">Shiital</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link"style={{color: '#eab085'}} href="#contact">Contact</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link "style={{color: '#eab085'}} href="#bodynamic">Bodynamic Foundation</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link "style={{color: '#eab085'}}href="#training">Training Outline</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link" style={{color: '#eab085'}} href="#instructors">Trainers</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link" style={{color: '#eab085'}} href="#registration">Registration</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link " style={{color: '#eab085'}} href="#Testimonials">Testimonials</a>
+    </li>
+  </ul>
+  <a className="navbar-brand ms-auto" href="#home">
     <img src="/img/sowilo1.png" alt="Sowilo Logo" style={{ width: '100px' }} />
   </a>
-  <div className="collapse navbar-collapse order-3" id="navbarNav">
-    <ul className="navbar-nav ms-auto text-center">
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#home">Home</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#sowilo">Sowilo</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#shiital">Shiital</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#contact">Contact</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#bodynamic">Bodynamic Foundation</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#training">Training Outline</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#instructors">Trainers</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#registration">Registration</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link text-white" href="#Testimonials">Testimonials</a>
-      </li>
-    </ul>
-  </div>
+</div>
+
 </nav>
 
       </header>
@@ -107,7 +108,7 @@ const Demo23 = () => {
     alignItems: "center",
     justifyContent: "center",
     padding: "20px",
-    backgroundColor: "#c3d9d9", // Light teal background
+    backgroundColor: " #DAEAED", // Light teal background
     color: "#000", // Black font color
   }}
 >
@@ -122,21 +123,33 @@ const Demo23 = () => {
     <h2
       style={{
         fontSize: "1.8rem", // Scaled font size for smaller screens
-        fontWeight: "bold",
         marginBottom: "10px",
+        fontFamily: 'sinclair',
+        color:'rgb(71, 71, 71)'
       }}
     >
       Bodynamic Foundation Training
     </h2>
     <p
       style={{
-        fontSize: "1rem",
+        fontSize: "28px",
         marginBottom: "20px",
+        fontFamily: 'sinclair'
       }}
     >
       Orlando, USA
     </p>
-    <a href="https://www.bodynamic.com/" style={{color:'rgb(228, 135, 28)'}}>Bodaynamic International</a>
+    <button 
+      className="btn text-white " 
+      style={{
+        backgroundColor: " #eab085",
+        padding: "10px 20px",
+        fontSize: "20px",
+       
+        
+      }}
+    >
+    <a href="https://www.bodynamic.com/" style={{color:'rgb(255, 255, 255)' , fontSize:'20px'}}>Bodaynamic International</a></button>
   </div>
   <div
     style={{

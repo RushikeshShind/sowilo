@@ -15,7 +15,7 @@ const Footer9 = () => {
       {/* Footer Section */}
       <footer
         className="bg-teal-300 text-white"
-        style={{ backgroundColor: "rgb(38, 108, 102)" }}
+        style={{ backgroundColor: " #0e5d6E " }}
       >
         <div className="container py-5 ">
           <div className="row text-center">
@@ -59,13 +59,13 @@ const Footer9 = () => {
           </div>
 
           <div className="row mt-5">
-            <div className="col-12 text-center">
-              <p className="mb-0">© 2024 sowilo. All rights reserved.</p>
+            <div className="col-12 text-center" style={{color:'#eab085'}}>
+              <p className="mb-0" >© 2024 sowilo. All rights reserved.</p>
               <p>
                 Developed by{" "}
                 <a
                   href="http://isparxinfotech.com"
-                  style={{ color: "white", textDecoration: "none" }}
+                  style={{ color: "#eab085", textDecoration: "none" }}
                 >
                   Isparxinfotech.com
                 </a>

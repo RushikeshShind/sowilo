@@ -16,7 +16,7 @@ const FullScreenCards = () => {
             flexDirection: 'column',
             justifyContent: 'center',
             padding: '2rem',
-            backgroundColor: '#d4e3df',
+            backgroundColor: ' #DAEAED',
             height: '400px', // Uniform height for all sections
             boxSizing: 'border-box',
         },
@@ -53,7 +53,7 @@ const FullScreenCards = () => {
             marginBottom: '0.5rem',
         },
         listIcon: {
-            color: '#cda67e',
+            color: '#eab085',
         },
         backgroundImage: {
             backgroundSize: 'cover',

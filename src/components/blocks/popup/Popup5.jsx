@@ -77,8 +77,8 @@ const styles = {
   },
   button: {
     color:'',
-    backgroundColor: 'rgb(38, 108, 102)',
-    color: 'white',
+    backgroundColor: '#0e5d6E',
+    color: ' #eab085',
     border: 'none',
     padding: '10px 10px',
     fontSize: '15px',

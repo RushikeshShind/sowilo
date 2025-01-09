@@ -1,13 +1,13 @@
 /* Desktop styles */
 .aboutSection {
   display: flex;
-  height: 650px;
+  height: 630px;
   background-color: white;
 }
 
 .aboutImageContainer {
   position: relative;
-  background-color: #9cbfbc;
+  background-color:  #DAEAED;
   padding: 4rem 1rem;
   width: 500px;
   font-family: 'sinclair';
@@ -34,7 +34,7 @@
 
 .aboutTitle {
   font-family: 'sinclair';
-  color: #9cbfbc;
+  color:  #DAEAED;
   font-size: 60px;
 }
 

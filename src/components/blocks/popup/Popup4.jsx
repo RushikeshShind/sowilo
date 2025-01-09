@@ -98,8 +98,8 @@ const styles = {
   },
   button: {
     color:'',
-    backgroundColor: 'rgb(38, 108, 102)',
-    color: 'white',
+    backgroundColor: ' #0e5d6E',
+    color: '#eab085',
     border: 'none',
     padding: '10px 10px',
     fontSize: '15px',
@@ -121,7 +121,7 @@ const styles = {
     zIndex: 1000,
   },
   popup: {
-    backgroundColor: '#9FC3C6',
+    backgroundColor: '#0e5d6E',
     padding: '20px',
     borderRadius: '8px',
     width: '800px',

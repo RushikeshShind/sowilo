@@ -14,7 +14,7 @@ const Portfolio4 = () => {
         justifyContent: 'center',
         padding: '2rem 3rem',
         
-        backgroundColor: '#508C9B', // Light background
+        backgroundColor: ' #0e5d6E', // Light background
       }}
     >
       {/* Container */}
@@ -58,6 +58,8 @@ const Portfolio4 = () => {
                 left: '-50%',
                 width: '100%',
                 height: '100%',
+                backgroundColor: ' #0e5d6E'
+
               }}
             ><img src="/img/photos/shiitalbg.png" alt="" style={{height:'105%', bottom:'10%'}}/></div>
 
@@ -86,19 +88,20 @@ const Portfolio4 = () => {
             color: '#333',
           }}
         >
-          <h2
+          <h2 className='mb-1'
             style={{
-              fontSize: '3rem',
+              fontSize: '40px',
               marginBottom: '2rem',
               fontFamily:'sinclair',
+              color:'#0e5d6E'
             }}
           >
             HEY, I'M SHIITAL
           </h2>
           <p
             style={{
-              fontSize:'25px',
-              lineHeight: '1.0',
+              fontSize:'20px',
+              lineHeight: '0.9',
               marginBottom: '1rem',
               fontFamily: 'Cormorant',
             }}
@@ -110,7 +113,7 @@ const Portfolio4 = () => {
           </p>
           <p
             style={{
-              fontSize:'25px',
+              fontSize:'20px',
               lineHeight: '1.0',
               marginBottom: '1rem',
               fontFamily: 'Cormorant',
@@ -125,7 +128,7 @@ const Portfolio4 = () => {
           </p>
           <p
             style={{
-              fontSize:'25px',
+              fontSize:'20px',
               lineHeight: '1.2',
               marginBottom: '1rem',
               fontFamily: 'Cormorant',
@@ -138,11 +141,11 @@ const Portfolio4 = () => {
           </p>
           <h3
             style={{
-              fontSize:'25px',
+              fontSize:'20px',
               lineHeight: '1.0',
               marginBottom: '1rem',
               fontFamily: 'Cormorant',
-              color: '#C8A17E',
+              color: ' #eab085',
             }}
           >
             I firmly believe that lifelong mental health challenges can be
@@ -151,7 +154,7 @@ const Portfolio4 = () => {
           </h3>
           <ul
             style={{
-              fontSize:'25px',
+              fontSize:'20px',
               lineHeight: '1.0',
               listStyleType: 'none',
               padding: 0,
@@ -161,14 +164,13 @@ const Portfolio4 = () => {
             <li
               style={{
                 
-                fontSize:'25px',
+                fontSize:'20px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '1.0rem',
                 fontFamily: 'Cormorant',
               }}
-            >
-           <span style={{ color: '#cda67e' }}>✔ </span>This approach emphasizes the vital role of embodied experience
+            ><span style={{ color: '#eab085' }}>✔</span>This approach emphasizes the vital role of embodied experience
               in fostering psychological growth, healing, and overall
               well-being, which inspires my current efforts.
             </li>
@@ -176,14 +178,14 @@ const Portfolio4 = () => {
             <li
               style={{
                 
-                fontSize:'25px',
+                fontSize:'20px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '0.7rem',
+                gap: '1.0rem',
                 fontFamily: 'Cormorant',
               }}
             >
-           <span style={{ color: '#cda67e' }}>✔ </span>  I am collaborating with the Bodynamic International global team
+           <span style={{ color: '#eab085' }}>✔ </span>I am collaborating with the Bodynamic International global team
               to bring Bodynamic Training and Workshops to the United States
               and contribute to the growth and cohesion of the global Bodynamic
               community.

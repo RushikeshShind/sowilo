@@ -45,7 +45,7 @@ const TestimonialSlider = () => {
   return (
     <section
   style={{
-    backgroundColor: "#9FC3C6",
+    backgroundColor: " #b4e3ed",
     padding: "70px 0",
     display: "flex",
     justifyContent: "center",
@@ -53,11 +53,11 @@ const TestimonialSlider = () => {
     flexDirection: "column",
   }}
 >
-  <h1 className="display-1"style={{fontFamily:'sinclair'}}>  Course Testimonials</h1>
+  <h1 className="display-2"style={{fontFamily:'sinclair'}}>  Course Testimonials</h1>
 
   {/* Updated box width and padding */}
   <div className="text-center" style={{ width: "90%", maxWidth: "1100px", backgroundColor: "#fff", padding: "60px" }}>
-    <h2 style={{ color: "#333", marginBottom: "20px", fontFamily:'sinclair' }}>
+    <h2 style={{ color: "#333", marginBottom: "20px", fontFamily:'Cormorant', fontSize:'20px' }}>
   "What they're saying about the course"
   </h2>
     <div key={currentIndex}> {/* Key forces re-render */}
@@ -90,7 +90,7 @@ const TestimonialSlider = () => {
       <button
         onClick={handlePrev}
         style={{
-          background: "#cda67e",
+          background: "#eab085",
           color: "#fff",
           padding: "10px 15px",
           fontSize: "14px",
@@ -105,7 +105,7 @@ const TestimonialSlider = () => {
       <button
         onClick={handleNext}
         style={{
-          background: "#cda67e",
+          background: "#eab085",
           color: "#fff",
           padding: "10px 20px",
           fontSize: "16px",

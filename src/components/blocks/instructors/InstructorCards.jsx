@@ -50,14 +50,14 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
   return (
     <section
     style={{
-      background: "linear-gradient(to top,rgb(198, 230, 222) 50%, #9CBFBC 50%)",
+      background: "linear-gradient(to top, #DAEAED 50%, #b4e3ed 50%)",
       padding: "50px",
       fontFamily: "Cormorant",
       height: "auto", // Ensures the section covers the full viewport height
       margin: 0, // Removes default margin for consistent layout
     }}
   >
-      <h1 className="text-center display-1 mb-12" style={{fontFamily:'sinclair'}}>
+      <h1 className="text-center display-2 mb-12" style={{fontFamily:'sinclair'}}>
         
         TRAINERS
       
@@ -126,7 +126,7 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
                 />
                 <h2
                   style={{
-                    fontSize: "1.4rem",
+                    fontSize: "28px",
                     color: "rgb(0, 127, 127)",
                     marginBottom: "10px",
                     fontFamily:'sinclair'

@@ -102,10 +102,10 @@ const styles = {
   container: {
     fontFamily: 'Cormorant',
     padding: '40px 0',
-    backgroundColor: '#E7EAD8',
+    backgroundColor: ' #fffbf4',
   },
   heading: {
-    fontSize: '2rem',
+    fontSize: '40px',
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: '40px',
@@ -113,7 +113,7 @@ const styles = {
     color: '#2E2E2E',
   },
   highlight: {
-    color: '#cda67e',
+    color: '#eab085',
   },
   cardContainer: {
     display: 'flex',
@@ -136,14 +136,14 @@ const styles = {
   separator: {
     height: '4px',
     width: '100%',
-    backgroundColor: '#cda67e',
+    backgroundColor: '#eab085',
   },
   textContent: {
     flex: 1,
     paddingRight: '20px',
   },
   cardTitle: {
-    fontSize: '1.2rem',
+    fontSize: '28px',
     marginBottom: '10px',
     fontWeight: 'bold',
     fontFamily:'sinclair',
@@ -155,12 +155,12 @@ const styles = {
     color: '#555',
   },
   list: {
-    fontSize: '0.9rem',
+    fontSize: '20px',
     listStyleType: 'none',
     padding: 0,
   },
   listIcon: {
-    color: '#cda67e',
+    color: '#eab085',
     marginRight: '10px',
   },
   imageContainer: {

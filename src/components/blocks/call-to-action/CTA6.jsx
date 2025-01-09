@@ -3,7 +3,7 @@ const CTA6 = () => {
     backgroundImage: 'url(/img/waters-3102729_1280.jpg)', height:'auto',
     
   }}> 
-<div>  <h1 className="display-1"
+<div>  <h1 className="display-2"
       style={{
         fontFamily: 'sinclair',
         color:'rgb(37, 216, 204)',
@@ -27,7 +27,7 @@ const CTA6 = () => {
       className=" fw-bold mb-1" 
       style={{
         fontFamily: "sinclair",
-        fontSize: "1.8rem",
+        fontSize: "28px",
         color: "#333",
         
       }}
@@ -38,7 +38,7 @@ const CTA6 = () => {
       className="mb-2"
       style={{
         fontFamily: "Cormorant",
-        fontSize: "1rem",
+        fontSize: "20px",
         lineHeight: "1.8",
         color: "#555",
       }}
@@ -50,7 +50,7 @@ const CTA6 = () => {
       className="fw-bold mt-5 mb-4" 
       style={{
         fontFamily: "sinclair",
-        fontSize: "1.8rem",
+        fontSize: "28px",
         color: "#333",
       }}
     >
@@ -60,7 +60,7 @@ const CTA6 = () => {
       className="mb-4"
       style={{
         fontFamily: "Cormorant",
-        fontSize: "1rem",
+        fontSize: "20px",
         lineHeight: "1.8",
         color: "#555",
       }}
@@ -72,7 +72,7 @@ const CTA6 = () => {
       className="fw-bold mt-5 mb-4" 
       style={{
         fontFamily: "sinclair",
-        fontSize: "1.8rem",
+        fontSize: "28px",
         color: "#333",
       }}
     >
@@ -82,7 +82,7 @@ const CTA6 = () => {
       className="mb-4"
       style={{
         fontFamily: "Cormorant",
-        fontSize: "1rem",
+        fontSize: "20px",
         lineHeight: "1.8",
         color: "#555",
       }}
@@ -91,11 +91,11 @@ const CTA6 = () => {
     </p>
 
     <button 
-      className="btn text-white rounded-pill" 
+      className="btn text-white " 
       style={{
-        backgroundColor: "#b68d60",
+        backgroundColor: " #eab085",
         padding: "10px 20px",
-        fontSize: "1rem",
+        fontSize: "20px",
         letterSpacing: "1px",
         fontWeight: "600",
       }}
