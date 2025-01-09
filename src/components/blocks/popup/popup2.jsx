@@ -20,7 +20,7 @@ const Popup2 = () => {
 
       {/* Use PopupModal instead of Popup to avoid name conflict */}
       <PopupModal isOpen={isPopupOpen} onClose={togglePopup}>
-        <h6 className='display-5 text-center'style={{color:'white'}}>Contact</h6>
+        <h6 className='display-5 text-center'style={{color: 'black'}}>Contact</h6>
         <ul style={{color:'black'}}>
           
      

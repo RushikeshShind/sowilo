@@ -12,16 +12,16 @@ const Popup = () => {
   return (
     <div>
       <div style={styles.banner}>
-        <h1 className='display-1 text-center' style={{ fontFamily: 'Cormorant', fontSize: '14px' }}>To know more about the Seven Developmental Stages!</h1>
-        <button onClick={togglePopup} style={styles.button}>
+        <h1 className='' style={{ fontFamily: 'Cormorant', fontSize: '20px' }}>To know more about the Seven Developmental Stages! <button onClick={togglePopup} style={styles.button}>
           Click here
-        </button>
+        </button></h1>
+        
       </div>
 
       {/* Use PopupModal instead of Popup to avoid name conflict */}
       <PopupModal isOpen={isPopupOpen} onClose={togglePopup}>
-        <h6 className='display-5 text-center' style={{ color: 'white', fontSize: '18px' }}>The Seven Developmental Phases</h6>
-        <ul>
+        <h6 className='display-5 text-center' style={{ color: 'black', fontSize: '18px' }}>The Seven Developmental Phases</h6>
+        <ul style={{ color:'black'}}>
           <strong>1. Existence (2nd trimester → 3 months):</strong>
           <li style={{ fontSize: '14px' }}>
             This stage focuses on the basic imprint of one’s right to exist and the sense of being alive, starting from the womb life to early infancy. Disruptions in this stage can lead to either withdrawal from connection or anxiousness about potential loss of connection. Key themes include sensations, emotions, contact, mirroring, and the distinction between the ‘Me’ and the ‘I’ (Ego).
@@ -70,19 +70,19 @@ const PopupModal = ({ isOpen, onClose, children }) => {
 
 const styles = {
   banner: {
-    backgroundColor: 'white',
+    backgroundColor: '#DAEAED',
     color: 'black',
     padding: '1px', // Reduced padding
-    textAlign: 'center',
+    textAlign: 'left',
     fontFamily: 'Cormorant',
   },
   button: {
     color: 'White',
-    backgroundColor: '#fff',
-    color: '#9FC3C6',
+    backgroundColor: '#DAEAED',
+    color: '#eab085',
     border: 'none',
     padding: '5px 5px', // Reduced padding
-    fontSize: '12px', // Reduced font size
+    fontSize: '20px', // Reduced font size
     cursor: 'pointer',
     borderRadius: '5px',
     marginTop: '1px', // Reduced margin
@@ -101,14 +101,15 @@ const styles = {
     zIndex: 1000,
   },
   popup: {
-    backgroundColor: '#9FC3C6',
+    backgroundColor:  ' #DAEAED',
     padding: '15px', // Reduced padding
     borderRadius: '8px',
-    width: '600px', // Reduced width
+    width: '800px', // Reduced width
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     position: 'relative',
     maxHeight: '70vh', // Adjusted height
     overflow: 'hidden',
+   
   },
   closeButton: {
     position: 'absolute',

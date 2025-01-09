@@ -36,17 +36,25 @@ const Footer9 = () => {
             </div>
 
             {/* Logo */}
-            <div className="col-md-4 d-flex flex-column align-items-center">
-              <img
-                src="/img/sowilo1.png"
-                alt="hello"
-                style={{
-                  width: "200px",
-                  background: "none",
-                  border: "none",
-                }}
-              />
-            </div>
+             
+            <div
+  className="col-md-4 d-flex flex-column align-items-center"
+  style={{ cursor: "pointer" }}
+  onClick={() => {
+    document.getElementById("sowilo").scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  <img
+    src="/img/sowilo1.png"
+    alt="logo"
+    style={{
+      width: "200px",
+      background: "none",
+      border: "none",
+    }}
+  />
+</div>
+
 
             {/* Contact Us */}
             <div className="col-md-4 d-flex flex-column align-items-center">
@@ -77,5 +85,6 @@ const Footer9 = () => {
     </>
   );
 };
+
 
 export default Footer9;

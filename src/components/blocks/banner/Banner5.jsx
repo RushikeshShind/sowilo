@@ -27,7 +27,7 @@ const Banner5 = () => {
           </div>
           <div style={styles.imageContainer}>
             <img
-              src="/img/photos/7878.jpg"
+              src="/img/photos/module1.jpg"
               alt="Module 1"
               style={styles.image}
             />
@@ -47,7 +47,7 @@ const Banner5 = () => {
           </div>
           <div style={styles.imageContainer}>
             <img
-              src="/img/photos/section2 (2).jpg"
+              src="/img/photos/child-playing-1005898_1280.jpg"
               alt="Module 2"
               style={styles.image}
             />
@@ -103,6 +103,7 @@ const styles = {
     fontFamily: 'Cormorant',
     padding: '40px 0',
     backgroundColor: ' #fffbf4',
+    margin: '10px 0',
   },
   heading: {
     fontSize: '40px',
@@ -127,10 +128,10 @@ const styles = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '20px',
+    padding: '18px',
    
     borderRadius: '10px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    
     minHeight: '250px', // Ensures a consistent box size
   },
   separator: {
@@ -150,7 +151,7 @@ const styles = {
     color: '#2E2E2E',
   },
   cardDescription: {
-    fontSize: '1rem',
+    fontSize: '20px',
     marginBottom: '20px',
     color: '#555',
   },
@@ -169,9 +170,9 @@ const styles = {
     justifyContent: 'center',
   },
   image: {
-    width: '50%',  // Let the width adjust based on the aspect ratio
+    width: '100%',  // Let the width adjust based on the aspect ratio
     height: '100%', // Fill the container height
-    borderRadius: '10px',
+    borderRadius: '1px',
     objectFit: 'cover', // Maintains aspect ratio
   },
 };

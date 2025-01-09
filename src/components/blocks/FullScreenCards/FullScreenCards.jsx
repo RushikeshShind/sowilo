@@ -6,8 +6,7 @@ const FullScreenCards = () => {
         wrapper: {
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gridTemplateRows: 'auto',
-            gap: '20px',
+            gap: '0', // Remove spacing between sections
             fontFamily: 'Cormorant',
             overflow: 'hidden',
         },
@@ -16,38 +15,42 @@ const FullScreenCards = () => {
             flexDirection: 'column',
             justifyContent: 'center',
             padding: '2rem',
-            backgroundColor: ' #DAEAED',
-            height: '400px', // Uniform height for all sections
+            backgroundColor: '#DAEAED',
+            minHeight: '400px',
             boxSizing: 'border-box',
+            margin: '0', // Remove margin
         },
         image: {
             width: '100%',
-            height: '400px',
+            height: '510px',
             objectFit: 'cover',
             objectPosition: 'center',
+            margin: '0', // Remove margin
+            padding: '0', // Remove padding
         },
         heading: {
-            color: '#55B9A6',
-            fontSize: '1.5rem', // Adjusted for responsive font sizes
-            letterSpacing: '2px',
-            marginBottom: '1rem',
+            color: '#0e5d6E',
+            fontSize: 'clamp(24px, 2.5vw, 32px)',
+            letterSpacing: '1px',
             fontFamily: 'sinclair',
+            marginBottom: '1rem',
         },
         subHeading: {
-            fontSize: '1rem', // Adjusted for smaller font sizes
+            fontSize: 'clamp(18px, 2vw, 24px)',
             fontWeight: '700',
             marginBottom: '1rem',
         },
         text: {
             color: '#444',
-            fontSize: '0.8rem', // Smaller font size for responsive views
-            marginBottom: '1.5rem',
+            fontSize: 'clamp(14px, 1.5vw, 18px)',
+            marginBottom: '1.1rem',
         },
         list: {
             listStyle: 'none',
             padding: '0',
+            margin: '0', // Remove margin
             color: '#444',
-            fontSize: '0.7rem', // Smaller list font size
+            fontSize: 'clamp(12px, 1.2vw, 16px)',
         },
         listItem: {
             marginBottom: '0.5rem',
@@ -58,10 +61,10 @@ const FullScreenCards = () => {
         backgroundImage: {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '400px',
+            minHeight: '400px',
+            margin: '0', // Remove margin
         },
     };
-
     // Add responsive styles using a media query
     const responsiveStyles = `
         @media (max-width: 768px) {
@@ -91,21 +94,14 @@ const FullScreenCards = () => {
             <div style={sectionStyles.wrapper}>
                 {/* Section 1 */}
                 <div style={sectionStyles.contentSection}>
-                    <h4 style={sectionStyles.heading}>Foundation Training:</h4>
+                    <h4 style={sectionStyles.heading}>The Foundation Training - </h4>
                     <h2 style={sectionStyles.subHeading}>
-                        The Foundation Training is a comprehensive one-year introductory program in the Bodynamic System.
+                    Discover the Power of the Bodynamic System
                     </h2>
                     <p style={sectionStyles.text}>
-                        This foundational course explores character structures, character positions, and the fundamental concepts underlying contact and communication within the system.
+                    The 20-day Foundation Training, divided into four modules, is a comprehensive introduction to the Bodynamic System—a pioneering approach that connects psychology, physiology, and human development.
                     </p>
-                    <ul style={sectionStyles.list}>
-                        <li style={sectionStyles.listItem}>
-                            <span style={sectionStyles.listIcon}>➤</span> The training provides a detailed analysis of childhood developmental phases, highlighting central developmental challenges.
-                        </li>
-                        <li>
-                            <span style={sectionStyles.listIcon}>➤</span> Through this program, you will refine your professional skills, cultivating greater presence and effectiveness in your work.
-                        </li>
-                    </ul>
+                   <p style={sectionStyles.text}>This course explores character structures, positions, childhood developmental stages, and the interplay between body and behavior. You’ll also explore the fundamental concepts of communication, such as mutual connection, dignity, boundaries, centering, and grounding while sharpening your professional skills to cultivate greater presence and depth in your work</p>
                     <Popup />
                 </div>
                 <img src="/img/photos/section1.jpg" alt="section image" style={sectionStyles.image} />
@@ -114,52 +110,38 @@ const FullScreenCards = () => {
                 <div
                     style={{
                         ...sectionStyles.backgroundImage,
-                        backgroundImage: 'url("/img/photos/section2b.jpg")',
+                        backgroundImage: 'url("/img/photos/medium-shot-people-learning-together-office.jpg")',
                     }}
                 ></div>
                 <div style={sectionStyles.contentSection}>
                     <h4 style={sectionStyles.heading}>What will we cover in this training?</h4>
                     <h2 style={sectionStyles.subHeading}>
-                        This 20-day training, divided into four modules, offers a comprehensive exploration of the psychological and physiological development and their interconnection.
+                    This training delves into psychological and physiological development, focusing on character structure formation and its impact on the body. You'll explore the origins of your preferences, biases, and defenses, understanding their benefits and challenges.
                     </h2>
                     <p style={sectionStyles.text}>
-                        The program will help you understand how your character shapes your body and uncover the roots of your unique preferences and biases.
-                    </p>
-                    <ul style={sectionStyles.list}>
-                        <li style={sectionStyles.listItem}>
-                            <span style={sectionStyles.listIcon}>➤</span> Introduction to various Bodynamic techniques designed to support behavioral change across all age groups.
-                        </li>
-                        <li>
-                            <span style={sectionStyles.listIcon}>➤</span> Includes the Bodyknot technique—a practical tool for maintaining dignity and mutual connection in challenging situations.
-                        </li>
-                    </ul>
+                    The training offers Bodynamic techniques that support behavioral change for all ages and refine your ability to analyze the physiological body in psychological terms. By developing this skill set, you’ll gain fresh perspectives on engaging with others effectively and choosing actions that foster meaningful interactions.
+                    </p >
+                    <p style={sectionStyles.text}>Additionally, you’ll learn the short version of the Bodyknot technique—a practical tool for maintaining dignity and mutual connection in difficult situations. This approach aids conflict resolution and strengthens the observing ego, promoting self-awareness and relational harmony. </p>
                 </div>
 
                 {/* Section 3 */}
                 <div style={sectionStyles.contentSection}>
                     <h4 style={sectionStyles.heading}>Why should I take Bodynamic training?</h4>
-                    <h2 style={sectionStyles.subHeading}>
-                        The Bodynamic System emphasizes the profound connection between the body, psychology, and human development from inception.
-                    </h2>
                     <p style={sectionStyles.text}>
-                        As one of the first schools to holistically integrate the body, brain, and behavior, it offers tools and techniques to enhance self-awareness and understanding of others.
+                    The Bodynamic System, with over 40 years of research and development, is a Somatic Developmental Psychology system—a groundbreaking paradigm of empirically researched psychology focusing on practical application. What truly makes this system unique is its distinctive ability to make psychological processes measurableom inception.
                     </p>
-                    <ul style={sectionStyles.list}>
-                        <li style={sectionStyles.listItem}>
-                            <span style={sectionStyles.listIcon}>➤</span> Exceptional range of tools to enhance self-awareness and deepen understanding of others.
-                        </li>
-                        <li>
-                            <span style={sectionStyles.listIcon}>➤</span> Makes psychological progress measurable, benefiting both personal growth and professional practice.
-                        </li>
-                    </ul>
+                    <p style={sectionStyles.text}>
+                    With a global reach, Bodynamic International offers comprehensive training programs, empowering individuals and professionals worldwide to deepen their understanding of embodiment, self-awareness, and interpersonal dynamics.
+                    </p>
+                    
                 </div>
-                <img src="/img/photos/section3.jpg" alt="section image" style={sectionStyles.image} />
+                <img src="/img/photos/worldwide-6064090_1280.jpg" alt="section image" style={sectionStyles.image} />
 
                 {/* Section 4 */}
                 <div
                     style={{
                         ...sectionStyles.backgroundImage,
-                        backgroundImage: 'url("/img/photos/section4.jpg")',
+                        backgroundImage: 'url("/img/photos/section.4.jpg")',
                     }}
                 ></div>
                 <div style={sectionStyles.contentSection}>
@@ -167,8 +149,8 @@ const FullScreenCards = () => {
                     <div
                         style={{
                             display: 'flex',
-                            justifyContent: 'space-between',
-                            gap: '20px',
+                            justifyContent: 'left',
+                            gap: '100px',
                         }}
                     >
                         <ul style={sectionStyles.list}>

@@ -61,7 +61,7 @@ const Portfolio4 = () => {
                 backgroundColor: ' #0e5d6E'
 
               }}
-            ><img src="/img/photos/shiitalbg.png" alt="" style={{height:'105%', bottom:'10%'}}/></div>
+            ><img src="/img/photos/sheetalbg.png" alt="" style={{height:'105%', bottom:'10%'}}/></div>
 
             {/* Image */}
             <img

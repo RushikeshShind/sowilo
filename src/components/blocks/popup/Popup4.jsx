@@ -14,13 +14,13 @@ const Popup4 = () => {
       
         
         <button onClick={togglePopup} style={styles.button }>
-        Privacy Policy & Terms and Condition
+      Terms and Condition
         </button>
      
 
       {/* Use PopupModal instead of Popup to avoid name conflict */}
       <PopupModal isOpen={isPopupOpen} onClose={togglePopup}>
-        <h6 className='display-5 text-center'style={{color:'white'}}> <strong>  SOWILO LLC, <br />
+        <h6 className='display-5 text-center'style={{color:'black'}}> <strong>  SOWILO LLC, <br />
 3705 SW 27TH ST <br />
 APT 1011 <br />
 GAINESVILLE, FL 32608</strong></h6>
@@ -121,7 +121,7 @@ const styles = {
     zIndex: 1000,
   },
   popup: {
-    backgroundColor: '#0e5d6E',
+    backgroundColor: ' #9FC3C6',
     padding: '20px',
     borderRadius: '8px',
     width: '800px',
