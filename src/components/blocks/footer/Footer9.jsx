@@ -70,12 +70,12 @@ const Footer9 = () => {
             <div className="col-12 text-center" style={{color:'#eab085', fontFamily:'byutih', fontSize:'20px', fontWeight: 'bold'}}>
               <p className="mb-0" >© 2024 sowilo. All rights reserved.</p>
               <p>
-                Developed  & Maintained by{" "}
+                Developed & Maintained by{" "}
                 <a
                   href=""
                   style={{ color: "#eab085", textDecoration: "none" }}
                 >
-                 THE CHAPTER LOST
+                 TheChapterLost
                 </a>
               </p>
             </div>
