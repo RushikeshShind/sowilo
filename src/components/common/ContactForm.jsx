@@ -3,13 +3,13 @@ const ContactForm = () => {
     <div className="mb-12" style={{  padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
       {/* Main Heading */}
      
-            <h1  className=" display-2 text-center" style={{ fontFamily:'sinclair',color:' #eab085' }}>
-            Registration form
+            <h1  className=" display-2 text-center" style={{ fontFamily:'byutih',color:' #eab085' }}>
+            Registration Form
       </h1>
       {/* Form */}
-      <form>
+      <form style={{fontFamily:'cormorant'}}>
         {/* Email Address */}
-        <label style={{color:'black', marginBottom: '10px' , fontSize:'20px' }}>
+        <label style={{color:'black', marginBottom: '10px' , fontSize:'20px', fontFamily:'cormorant'}}>
         Full name <span style={{ color: 'black' }}>*</span> 
         </label>
         <input

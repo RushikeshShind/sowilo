@@ -13,14 +13,14 @@ const CTA6 = () => {
         <h1
           className="display-2 mb-2" // Reduced spacing
           style={{
-            fontFamily: 'sinclair',
+            fontFamily: 'byutih',
             color: 'rgb(50, 50, 50)',
             border: '1px',
             marginBottom: '10px', // Added custom margin to reduce spacing
           }}
         >
           <br />
-          Enrollment Section
+          Enrollment
         </h1>
       </div>
       <div
@@ -41,7 +41,7 @@ const CTA6 = () => {
           <h2
             className="fw-bold mb-1"
             style={{
-              fontFamily: "sinclair",
+              fontFamily: "byutih",
               fontSize: "28px",
               color: "#333",
             }}
@@ -64,7 +64,7 @@ const CTA6 = () => {
           <h3
             className="fw-bold mt-5 mb-4"
             style={{
-              fontFamily: "sinclair",
+              fontFamily: "byutih",
               fontSize: "28px",
               color: "#333",
             }}
@@ -88,7 +88,7 @@ const CTA6 = () => {
           <h3
             className="fw-bold mt-5 mb-4"
             style={{
-              fontFamily: "sinclair",
+              fontFamily: "byutih",
               fontSize: "28px",
               color: "#333",
             }}
@@ -117,6 +117,7 @@ const CTA6 = () => {
     fontSize: "20px",
     letterSpacing: "1px",
     fontWeight: "600",
+    fontFamily:'cormorant'
   }}
   onClick={() => {
     document.getElementById("registration").scrollIntoView({ behavior: "smooth" });

@@ -15,7 +15,7 @@ const Banner5 = () => {
         <div style={styles.separator}></div>
         <div style={styles.card}>
           <div style={styles.textContent}>
-            <h2 style={styles.cardTitle}>Module 1: April 1 – 5, 2025</h2>
+            <h2 style={styles.cardTitle}>Module 1 : April 7-11, 2025</h2>
             <p style={styles.cardDescription}>Instructor: James Nicholas</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Bodynamic System Overview</li>
@@ -38,7 +38,7 @@ const Banner5 = () => {
         <div style={styles.separator}></div>
         <div style={styles.card}>
           <div style={styles.textContent}>
-            <h2 style={styles.cardTitle}>Module 2: June 3 – 7, 2025</h2>
+            <h2 style={styles.cardTitle}>Module 2 :  June 2-6, 2025</h2>
             <p style={styles.cardDescription}>Instructor: Mar Barroso</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Need Developmental Phase</li>
@@ -58,7 +58,7 @@ const Banner5 = () => {
         <div style={styles.separator}></div>
         <div style={styles.card}>
           <div style={styles.textContent}>
-            <h2 style={styles.cardTitle}>Module 3: Sep 2 – 6, 2025</h2>
+            <h2 style={styles.cardTitle}>Module 3 : September 8-12, 2025</h2>
             <p style={styles.cardDescription}>Instructor: James Nicholas</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Will Developmental Phase</li>
@@ -78,7 +78,7 @@ const Banner5 = () => {
         <div style={styles.separator}></div>
         <div style={styles.card}>
           <div style={styles.textContent}>
-            <h2 style={styles.cardTitle}>Module 4: Oct 28 – Nov 1, 2025</h2>
+            <h2 style={styles.cardTitle}>Module 4 : November 3-7, 2025</h2>
             <p style={styles.cardDescription}>Instructor: Mar Barroso</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Opinion Developmental Phase</li>
@@ -110,7 +110,7 @@ const styles = {
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: '40px',
-    fontFamily:'sinclair',
+    fontFamily:'byutih',
     color: '#2E2E2E',
   },
   highlight: {
@@ -147,8 +147,10 @@ const styles = {
     fontSize: '28px',
     marginBottom: '10px',
     fontWeight: 'bold',
-    fontFamily:'sinclair',
+    fontFamily:'byutih',
     color: '#2E2E2E',
+    letterSpacing: '1px', // Adds spacing between letters
+    wordSpacing: '4px',   // Adds spacing between words
   },
   cardDescription: {
     fontSize: '20px',

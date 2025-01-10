@@ -45,7 +45,7 @@ const TestimonialSlider = () => {
   return (
     <section
   style={{
-    backgroundColor: " #b4e3ed",
+    backgroundColor: " #FFFBF4",
     padding: "70px 0",
     display: "flex",
     justifyContent: "center",
@@ -53,7 +53,7 @@ const TestimonialSlider = () => {
     flexDirection: "column",
   }}
 >
-  <h1 className="display-2"style={{fontFamily:'sinclair'}}>  Course Testimonials</h1>
+  <h1 className="display-2"style={{fontFamily:'byutih'}}>  Course Testimonials</h1>
 
   {/* Updated box width and padding */}
   <div className="text-center" style={{ width: "90%", maxWidth: "1100px", backgroundColor: "#fff", padding: "60px" }}>
@@ -95,7 +95,8 @@ const TestimonialSlider = () => {
           padding: "10px 15px",
           fontSize: "14px",
           border: "none",
-          borderRadius: "4px"
+          borderRadius: "4px",
+          fontFamily:'cormorant'
         }}
       >
         Prev
@@ -105,12 +106,13 @@ const TestimonialSlider = () => {
       <button
         onClick={handleNext}
         style={{
-          background: "#eab085",
+          background: " #eab085",
           color: "#fff",
           padding: "10px 20px",
           fontSize: "16px",
           border: "none",
-          borderRadius: "4px"
+          borderRadius: "4px",
+          fontFamily:'cormorant'
         }}
       >
         Next

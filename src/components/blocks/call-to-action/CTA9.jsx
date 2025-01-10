@@ -8,8 +8,8 @@ const CTA9 = () => {
       <div className="container py-12 py-md-15  text-center ">
         <div className="row">
           <div className="col-xl-10 col-xxl-8 mx-auto text-center">
-            <i className="icn-flower text-white fs-30 opacity-50"style={{color:'#eab085'}} />
-            <h2 className="text-white mt-1 mb-5" style={{fontFamily:'Cormorant', fontSize:'36px'}}>
+          
+            <h2 className="text-white mt-1 mb-5" style={{fontFamily:'byutih', fontSize:'36px'}}>
             I am here to support individuals on their journey of transformation and creating a lasting foundation for resilience and fulfillment.
             </h2>
             <Popup2/>

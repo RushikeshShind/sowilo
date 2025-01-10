@@ -61,8 +61,8 @@
   font-display: block; /* Ensures optimal font loading */
 }
 @font-face {
-  font-family: 'Sinclaire';
-  src: url('Sinclaire-Bold.ttf') format('ttf');
+  font-family: 'byutihe';
+  src: url('byutihe-Bold.ttf') format('ttf');
   font-style: normal;
   font-display: block;
 }
@@ -73,6 +73,10 @@
   font-display: block;
 }
 @font-face {
-  font-family: 'sinclair';
-  src: url('Sinclair.woff2')format('woff2');
+  font-family: 'byutih';
+  src: url('byutih.woff2')format('woff2');
+}
+@font-face {
+  font-family: 'byutih';
+  src: url('Byutih-Regular.woff')format('woff');
 }

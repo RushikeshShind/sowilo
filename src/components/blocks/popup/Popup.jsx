@@ -87,6 +87,8 @@ const styles = {
     borderRadius: '5px',
     marginTop: '1px', // Reduced margin
     fontFamily: 'Cormorant',
+    fontWeight: 'bold'
+
   },
   overlay: {
     position: 'fixed',

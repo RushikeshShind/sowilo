@@ -22,7 +22,7 @@ const FullScreenCards = () => {
         },
         image: {
             width: '100%',
-            height: '510px',
+            height: '100%',
             objectFit: 'cover',
             objectPosition: 'center',
             margin: '0', // Remove margin
@@ -32,7 +32,7 @@ const FullScreenCards = () => {
             color: ' #0e5d6E',
             fontSize: 'clamp(24px, 2.5vw, 32px)',
             letterSpacing: '1px',
-            fontFamily: 'sinclair',
+            fontFamily: 'byutih',
             marginBottom: '1rem',
         },
         subHeading: {
@@ -179,11 +179,12 @@ const FullScreenCards = () => {
                             <li>
                                 <span style={sectionStyles.listIcon}>➤</span> Trainers
                             </li>
-                            <li>
-                                <span style={sectionStyles.listIcon}>➤</span> Salespeople
-                            </li>
+                            
                         </ul>
                         <ul style={sectionStyles.list}>
+                        <li>
+                                <span style={sectionStyles.listIcon}>➤</span> Salespeople
+                            </li>
                            
                             <li>
                                 <span style={sectionStyles.listIcon}>➤</span> Psychiatrists
@@ -206,11 +207,11 @@ const FullScreenCards = () => {
                             <li>
                                 <span style={sectionStyles.listIcon}>➤</span> Teachers
                             </li>
-                            <li>
-                                <span style={sectionStyles.listIcon}>➤</span> And of course, parents!
-                            </li>
                         </ul>
+                        
                     </div>
+                    <br />
+                    <p style={sectionStyles.text}>If you're a parent, caregiver, or someone dedicated to personal growth, this training offers a unique opportunity to explore how our earliest experiences shape us and discover ways to transform these patterns for a more fulfilling life.</p>
                 </div>
             </div>
         </section>

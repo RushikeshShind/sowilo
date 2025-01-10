@@ -46,10 +46,10 @@ const Demo23 = () => {
     />
   </svg>
   </button>
-  <div className="collapse navbar-collapse" id="navbarNav">
-  <ul className="navbar-nav me-auto text-start" style={{color: '#eab085'}}>
+  <div className="collapse navbar-collapse" id="navbarNav" style={{fontSize:'20px'}}>
+  <ul className="navbar-nav me-auto text-start " style={{color: '#eab085', fontFamily: 'byutih' , fontWeight: 'bold'}}>
     <li className="nav-item" style={{color: '#eab085'}}>
-      <a className="nav-link " style={{color: '#eab085'}}href="#home">Home</a>
+      <a className="nav-link " style={{color: '#eab085' }}href="#home">Home</a>
     </li>
     <li className="nav-item">
       <a className="nav-link "style={{color: '#eab085'}} href="#sowilo">Sowilo</a>
@@ -86,14 +86,14 @@ const Demo23 = () => {
       </header>
 
       {/* ========== Main Content ========== */}
-      <main className="content-wrapper" style={{ width: '100vw', margin: 0, padding: 0, fontFamily:'Cormorant' }}>
+      <main className="content-wrapper" style={{ width: '100vw', margin: 0, padding: 0, fontFamily:'byutih' }}>
         <section id="">
           <About24 />
         </section>
         <section id="sowilo">
           <Testimonial18 />
         </section>
-        <section id="shiital">
+        <section id="shiital" style={{background:'#FFFBF4'}}>
           <Portfolio4 />
         </section>
         <section id="contact">
@@ -102,30 +102,52 @@ const Demo23 = () => {
 
         <section
   style={{
-    fontFamily:'Cormorant',
+    fontFamily: 'Cormorant',
     display: "flex",
-    flexDirection: "column", // Stack content vertically for mobile
+    flexDirection: "row", // Place images and content in a row
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-between", // Distribute items across the section
     padding: "20px",
-    backgroundColor: " #DAEAED", // Light teal background
+    backgroundColor: "#DAEAED", // Light teal background
     color: "#000", // Black font color
   }}
 >
+  {/* Left Image */}
   <div
     style={{
-      width: "100%",
-      maxWidth: "600px", // Restrict width on larger screens
-      textAlign: "center", // Center-align content for mobile
-      marginBottom: "20px", // Add spacing below the text
+      flex: "1",
+      display: "flex",
+      justifyContent: "flex-end", // Move image closer to center
+      alignItems: "center",
+      paddingRight: "100px", // Add spacing towards the center
+    }}
+  >
+    <img
+      src="/img/photos/B-Logo6 BIG (1).png"
+      alt="Website Checklist"
+      style={{
+        width: "150px", // Adjust the size of the image
+        height: "auto",
+        objectFit: "contain",
+        boxShadow: "0 4px 8px rgba(57, 57, 57, 0.2)",
+      }}
+    />
+  </div>
+
+  {/* Center Content */}
+  <div
+    style={{
+      flex: "2",
+      textAlign: "center", // Center-align the content
+      padding: "0 20px", // Add spacing between content and images
     }}
   >
     <h2
       style={{
-        fontSize: "1.8rem", // Scaled font size for smaller screens
+        fontSize: "40px", // Scaled font size for smaller screens
         marginBottom: "10px",
-        fontFamily: 'sinclair',
-        color:' #0e5d6E'
+        fontFamily: 'byutih',
+        color: '#0e5d6E',
       }}
     >
       Bodynamic Foundation Training
@@ -134,46 +156,42 @@ const Demo23 = () => {
       style={{
         fontSize: "28px",
         marginBottom: "20px",
-        fontFamily: 'sinclair'
+        fontFamily: 'byutih',
+        color: '#0e5d6E',
       }}
     >
       Orlando, USA
     </p>
-    <button 
-      className="btn text-white " 
-      style={{
-        backgroundColor: " #eab085",
-        padding: "10px 20px",
-        fontSize: "20px",
-       
-        
-      }}
+    <a
+      href="https://www.bodynamic.com/"
+      style={{ color: '#eab085', fontSize: '20px' }}
     >
-    <a href="https://www.bodynamic.com/" style={{color:'rgb(255, 255, 255)' , fontSize:'20px'}}>Bodaynamic International</a></button>
+      Bodaynamic International
+    </a>
   </div>
+
+  {/* Right Image */}
   <div
     style={{
-      width: "100%",
-      maxWidth: "400px", // Restrict image size on mobile
+      flex: "1",
       display: "flex",
-      justifyContent: "center",
+      justifyContent: "flex-start", // Move image closer to center
       alignItems: "center",
+      paddingLeft: "100px", // Add spacing towards the center
     }}
   >
     <img
-      src="/img/photos/B-Logo5-SMALL.png"
-      alt="Website Checklist"
+      src="/img/sowilo1.png"
+      alt="Sowilo Logo"
       style={{
-        width: "100%", // Make image responsive to parent width
-        maxWidth: "500px", // Restrict maximum width for smaller devices
+        width: "180px", // Adjust the size of the image
         height: "auto",
-        objectFit: "contain",
-        boxShadow: "0 4px 8px rgba(57, 57, 57, 0.2)",
-        transform: "translate(0, 0)", // Remove floating effect on mobile
       }}
     />
   </div>
 </section>
+
+
 
 
 

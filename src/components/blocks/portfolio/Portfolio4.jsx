@@ -92,11 +92,11 @@ const Portfolio4 = () => {
             style={{
               fontSize: '40px',
               marginBottom: '2rem',
-              fontFamily:'sinclair',
+              fontFamily:'byutih',
               color:'#0e5d6E'
             }}
           >
-            HEY, I'M SHIITAL
+            Hey, I’m Shiital
           </h2>
           <p
             style={{
@@ -170,7 +170,7 @@ const Portfolio4 = () => {
                 gap: '1.0rem',
                 fontFamily: 'Cormorant',
               }}
-            ><span style={{ color: '#eab085' }}>✔</span>This approach emphasizes the vital role of embodied experience
+            >This approach emphasizes the vital role of embodied experience
               in fostering psychological growth, healing, and overall
               well-being, which inspires my current efforts.
             </li>
@@ -185,7 +185,7 @@ const Portfolio4 = () => {
                 fontFamily: 'Cormorant',
               }}
             >
-           <span style={{ color: '#eab085' }}>✔ </span>I am collaborating with the Bodynamic International global team
+           I am collaborating with the Bodynamic International global team
               to bring Bodynamic Training and Workshops to the United States
               and contribute to the growth and cohesion of the global Bodynamic
               community.

@@ -16,9 +16,9 @@ const About24 = () => {
 
       {/* Text Section */}
       <div className={styles.aboutTextContainer}>
-        <h1 className='display-2' style={{fontFamily:'sinclair' , color:'#0e5d6e', fontsize: '40px'}}>Bodynamic Foundation Training</h1>
+        <h1 className='display-2' style={{fontFamily:'byutih' , color:'#0e5d6e', fontsize: '40px'}}>Bodynamic Foundation Training</h1>
         
-        <h5 className='display-6' style={{fontsize: '20px' ,fontFamily: 'sinclair'}}>Embark on a Journey of Somatic Developmental Psychology</h5> 
+        <h5 className='display-6' style={{fontsize: '20px' ,fontFamily: 'byutih'}}>Embark on a Journey of Somatic Developmental Psychology</h5> 
        
         <h7 className={styles.aboutDescription}>
         Embark on a transformative journey with the Bodynamic system, integrating body awareness and developmental psychology to deepen self-awareness, healing, and relational dynamics in your personal and professional life.

@@ -10,7 +10,7 @@
   background-color:  #DAEAED;
   padding: 4rem 1rem;
   width: 500px;
-  font-family: 'sinclair';
+  font-family: 'byutih';
   font-weight: 500;
   font-size: 0.9rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -33,13 +33,13 @@
 }
 
 .aboutTitle {
-  font-family: 'sinclair';
+  font-family: 'byutih';
   color:  #DAEAED;
   font-size: 60px;
 }
 
 .aboutSubtitle {
-  font-family: 'sinclair';
+  font-family: 'byutih';
   font-size: 20px;
 }
 
