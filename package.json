@@ -10,6 +10,7 @@
     "sass": "sass --no-source-map src/assets/scss:public/css"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@nextui-org/navbar": "^2.0.37",
     "@nextui-org/react": "^2.4.8",
     "@popperjs/core": "^2.11.8",
