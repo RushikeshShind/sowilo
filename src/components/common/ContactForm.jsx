@@ -23,35 +23,61 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = "service_xf4ir8d";
-    const confirmTemplateID = "template_0m2agjk";
-    const userID = "gkHe0DL-JzXd3GVfY";
+    const serviceID = "service_xf4ir8d"; // Replace with your EmailJS service ID
+    const confirmTemplateID = "template_0m2agjk"; // Replace with your confirmation email template ID
+    const adminTemplateID = "template_m90q7lf"; // Replace with your admin email template ID
+    const userID = "gkHe0DL-JzXd3GVfY"; // Replace with your EmailJS user ID
 
     // Validate email
     if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
-        alert("Please enter a valid email address.");
-        return;
+      alert("Please enter a valid email address.");
+      return;
     }
 
-    // Confirmation Email Data
+    // Data for the confirmation email to the user
     const confirmationEmailData = {
-        to_email: formData.email, // Matches {to_email} in the template
-        participant_name: formData.fullName, // Matches {participant_name} in the template
+      to_email: formData.email, // Matches {to_email} in the template
+      participant_name: formData.fullName, // Matches {participant_name} in the template
     };
 
-    // Send confirmation email
+    // Data for the admin email (to you)
+    const adminEmailData = {
+      to_email: "rushikeshshinde5732@gmail.com", // Your email address
+      fullName: formData.fullName,
+      email: formData.email,
+      company: formData.company,
+      industry: formData.industry,
+      referral: formData.referral,
+      reason: formData.reason,
+      bodynamicTherapist: formData.bodynamicTherapist,
+      additionalNote: formData.additionalNote,
+    };
+
+    // Send confirmation email to the user
     emailjs.send(serviceID, confirmTemplateID, confirmationEmailData, userID)
-        .then(
-            (result) => {
-                console.log("Confirmation Email Sent Successfully:", result.text);
-                setIsSubmitted(true);
-            },
-            (error) => {
-                console.error("Error sending confirmation email:", error.text);
-                alert("Failed to send confirmation email. Please try again.");
-            }
-        );
-};
+      .then(
+        (result) => {
+          console.log("Confirmation Email Sent Successfully:", result.text);
+
+          // Send admin email with user details
+          emailjs.send(serviceID, adminTemplateID, adminEmailData, userID)
+            .then(
+              (result) => {
+                console.log("Admin Email Sent Successfully:", result.text);
+                setIsSubmitted(true); // Show thank you message
+              },
+              (error) => {
+                console.error("Error sending admin email:", error.text);
+                alert("Failed to send admin email. Please try again.");
+              }
+            );
+        },
+        (error) => {
+          console.error("Error sending confirmation email:", error.text);
+          alert("Failed to send confirmation email. Please try again.");
+        }
+      );
+  };
 
   return (
     <form
@@ -254,7 +280,7 @@ const ContactForm = () => {
       >
         Submit
       </button>
-      {isSubmitted && (
+       {isSubmitted && (
         <p style={{ color: "green", marginTop: "20px", fontFamily: "cormorant" }}>
           Thank you for your submission! A confirmation email has been sent to your email address.
         </p>
