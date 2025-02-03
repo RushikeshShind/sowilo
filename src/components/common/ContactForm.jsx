@@ -13,71 +13,58 @@ const ContactForm = () => {
     additionalNote: "",
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false); // To show the thank you message
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const serviceID = "service_xf4ir8d"; // Replace with your EmailJS service ID
-    const confirmTemplateID = "template_0m2agjk"; // Replace with your confirmation email template ID
-    const adminTemplateID = "template_m90q7lf"; // Replace with your admin email template ID
-    const userID = "gkHe0DL-JzXd3GVfY"; // Replace with your EmailJS user ID
-
-    // Validate email
-    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
-      alert("Please enter a valid email address.");
+    setErrorMessage("");
+  
+    if (!formData.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      setErrorMessage("Please enter a valid email address.");
       return;
     }
-
-    // Data for the confirmation email to the user
-    const confirmationEmailData = {
-      to_email: formData.email, // Matches {to_email} in the template
-      participant_name: formData.fullName, // Matches {participant_name} in the template
-    };
-
-    // Data for the admin email (to you)
-    const adminEmailData = {
-      to_email: "rushikeshshinde5732@gmail.com", // Your email address
-      fullName: formData.fullName,
-      email: formData.email,
-      company: formData.company,
-      industry: formData.industry,
-      referral: formData.referral,
-      reason: formData.reason,
-      bodynamicTherapist: formData.bodynamicTherapist,
-      additionalNote: formData.additionalNote,
-    };
-
-    // Send confirmation email to the user
-    emailjs.send(serviceID, confirmTemplateID, confirmationEmailData, userID)
-      .then(
-        (result) => {
-          console.log("Confirmation Email Sent Successfully:", result.text);
-
-          // Send admin email with user details
-          emailjs.send(serviceID, adminTemplateID, adminEmailData, userID)
-            .then(
-              (result) => {
-                console.log("Admin Email Sent Successfully:", result.text);
-                setIsSubmitted(true); // Show thank you message
-              },
-              (error) => {
-                console.error("Error sending admin email:", error.text);
-                alert("Failed to send admin email. Please try again.");
-              }
-            );
-        },
-        (error) => {
-          console.error("Error sending confirmation email:", error.text);
-          alert("Failed to send confirmation email. Please try again.");
-        }
-      );
+  
+    try {
+      const serviceID = "service_xf4ir8d";
+      const userID = "gkHe0DL-JzXd3GVfY"; // Your EmailJS Public Key
+      const templateToSelf = "template_m90q7lf"; // Sends data to YOU
+      const templateToUser = "template_0m2agjk"; // Auto-response to user
+  
+      // Step 1: Send user details to yourself (Rushikesh)
+      await emailjs.send(serviceID, templateToSelf, {
+        fullName: formData.fullName,  
+        email: formData.email,
+        company: formData.company,
+        industry: formData.industry,
+        referral: formData.referral,
+        reason: formData.reason,
+        bodynamicTherapist: formData.bodynamicTherapist,
+        additionalNote: formData.additionalNote,
+        to_email: "rushikeshshinde57323@gmail.com" // Your email
+      }, userID);
+  
+      // Step 2: Send confirmation email to the user
+      await emailjs.send(serviceID, templateToUser, {
+        fullName: formData.fullName,
+        email: formData.email,
+        reply_to: "rushikeshshinde57323@gmail.com", // Your email (reply-to)
+        to_email: formData.email // User's email (recipient)
+      }, userID);
+  
+      setIsSubmitted(true);
+    } catch (error) {
+      setErrorMessage("Failed to send the email. Please try again.");
+      console.error("Error sending email:", error);
+    }
   };
+  
+  
 
   return (
     <form
