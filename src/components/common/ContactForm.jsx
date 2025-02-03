@@ -46,14 +46,14 @@ const ContactForm = () => {
         reason: formData.reason,
         bodynamicTherapist: formData.bodynamicTherapist,
         additionalNote: formData.additionalNote,
-        to_email: "rushikeshshinde57323@gmail.com" // Your email
+        to_email: "connect@sowilosoul.com" // Your email
       }, userID);
   
       // Step 2: Send confirmation email to the user
       await emailjs.send(serviceID, templateToUser, {
         fullName: formData.fullName,
         email: formData.email,
-        reply_to: "rushikeshshinde57323@gmail.com", // Your email (reply-to)
+        reply_to: "connect@sowilosoul.com", // Your email (reply-to)
         to_email: formData.email // User's email (recipient)
       }, userID);
   
