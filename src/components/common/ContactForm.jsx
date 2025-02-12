@@ -7,7 +7,9 @@ const ContactForm = () => {
     email: "",
     company: "",
     industry: "",
-    referral: "",
+    otherIndustry: "",
+    referralSource: "",
+    referralName: "",
     reason: "",
     bodynamicTherapist: "",
     additionalNote: "",
@@ -32,39 +34,45 @@ const ContactForm = () => {
   
     try {
       const serviceID = "service_xf4ir8d";
-      const userID = "gkHe0DL-JzXd3GVfY"; // Your EmailJS Public Key
-      const templateToSelf = "template_m90q7lf"; // Sends data to YOU
-      const templateToUser = "template_0m2agjk"; // Auto-response to user
-  
-      // Step 1: Send user details to yourself (Rushikesh)
+      const userID = "gkHe0DL-JzXd3GVfY";
+      const templateToSelf = "template_m90q7lf";
+      const templateToUser = "template_0m2agjk";
+
+      // Process industry data
+      const industryValue = formData.industry === "Others" 
+        ? formData.otherIndustry 
+        : formData.industry;
+
+      // Process referral data
+      const referralValue = formData.referralSource === "Referral"
+        ? `Referral from: ${formData.referralName}`
+        : formData.referralSource;
+
       await emailjs.send(serviceID, templateToSelf, {
-        fullName: formData.fullName,  
+        fullName: formData.fullName,
         email: formData.email,
         company: formData.company,
-        industry: formData.industry,
-        referral: formData.referral,
+        industry: industryValue,
+        referral: referralValue,
         reason: formData.reason,
         bodynamicTherapist: formData.bodynamicTherapist,
         additionalNote: formData.additionalNote,
-        to_email: "connect@sowilosoul.com" // Your email
+        to_email: "connect@sowilosoul.com"
       }, userID);
-  
-      // Step 2: Send confirmation email to the user
+
       await emailjs.send(serviceID, templateToUser, {
         fullName: formData.fullName,
         email: formData.email,
-        reply_to: "connect@sowilosoul.com", // Your email (reply-to)
-        to_email: formData.email // User's email (recipient)
+        reply_to: "connect@sowilosoul.com",
+        to_email: formData.email
       }, userID);
-  
+
       setIsSubmitted(true);
     } catch (error) {
       setErrorMessage("Failed to send the email. Please try again.");
       console.error("Error sending email:", error);
     }
   };
-  
-  
 
   return (
     <form
@@ -126,69 +134,111 @@ const ContactForm = () => {
         }}
       />
 
-      <label
-        style={{ color: "black", display: "block", marginBottom: "10px" , fontFamily: "cormorant" }}
-      >
-        Name of your Company <span style={{ color: "black" }}>*</span>
+<label style={{color: "black", display: "block", marginBottom: "10px", fontFamily: "cormorant"}}>
+        Name of your company (if applicable)
       </label>
       <input
         type="text"
         name="company"
         value={formData.company}
         onChange={handleChange}
-        style={{
-          width: "100%",
+        style={{width: "100%",
           padding: "10px",
           marginBottom: "20px",
           border: "1px solid #ccc",
           borderRadius: "4px",
-          fontFamily: "cormorant"
-        }}
+          fontFamily: "cormorant"}}
       />
 
-      <label
-        style={{ color: "black", display: "block", marginBottom: "10px", fontFamily: "cormorant" }}
-      >
-        What industry are you in? <span style={{ color: "black" }}>*</span>
+      <label style={{color: "black", display: "block", marginBottom: "10px", fontFamily: "cormorant"}}>
+        What industry are you in? *
       </label>
-      <input
-        type="text"
+      <select
         name="industry"
         value={formData.industry}
         onChange={handleChange}
         required
-        style={{
-          width: "100%",
+        style={{width: "100%",
           padding: "10px",
           marginBottom: "20px",
           border: "1px solid #ccc",
           borderRadius: "4px",
-          fontFamily: "cormorant"
-        }}
-      />
-
-      <label
-        style={{ color: "black", display: "block", marginBottom: "10px", fontFamily: "cormorant" }}
+          fontFamily: "cormorant"}}
       >
-        How did you hear about Bodynamic International?{" "}
-        <span style={{ color: "black" }}>*</span>
+        <option value="">Select an option</option>
+        <option value="Therapists">Therapists</option>
+        <option value="Mental Health Counsellors">Mental Health Counsellors</option>
+        <option value="Doctors">Doctors</option>
+        <option value="physiotherapists"> Physiotherapists</option>
+        <option value="Occupational Therapists">Occupational Therapists</option>
+        <option value=" Massage Therapists"> Massage Therapists</option>
+        <option value="Psychiatrists">Psychiatrists</option>
+        <option value="Osteopaths">Osteopaths</option>
+        <option value="Naturopaths">Naturopaths</option>
+        <option value="Cranio-sacral specialists>">Cranio-sacral specialists</option>
+        <option value="Yoga Teachers">Yoga Teachers</option>
+        <option value="Dance Therapists">Dance Therapists</option>
+          <option value="Trainers">Trainers</option>
+        <option value="Coaches">Coaches</option>
+        <option value="Educators">Educators</option> 
+        <option value="Social Workers">Social Workers</option>
+        <option value="Pedagogues">Pedagogues</option>    
+        <option value="Students">Students</option>                                                                        
+        <option value="Others">Others (please specify)</option>
+      </select>
+      {formData.industry === "Others" && (
+        <input
+          type="text"
+          name="otherIndustry"
+          value={formData.otherIndustry}
+          onChange={handleChange}
+          required
+          placeholder="Please specify your industry"
+          style={{width: "100%",
+            padding: "10px",
+            marginBottom: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            fontFamily: "cormorant"}}
+        />
+      )}
+
+      <label style={{color: "black", display: "block", marginBottom: "10px", fontFamily: "cormorant"}}>
+        How did you hear about Bodynamic International? *
       </label>
-      <input
-        type="text"
-        name="referral"
-        value={formData.referral}
+      <select
+        name="referralSource"
+        value={formData.referralSource}
         onChange={handleChange}
         required
-        style={{
-          width: "100%",
+        style={{width: "100%",
           padding: "10px",
           marginBottom: "20px",
           border: "1px solid #ccc",
           borderRadius: "4px",
-          fontFamily: "cormorant"
-        }}
-      />
-
+          fontFamily: "cormorant"}}
+      >
+        <option value="">Select an option</option>
+        <option value="Bodynamic website">Bodynamic website</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Referral">Referral</option>
+      </select>
+      {formData.referralSource === "Referral" && (
+        <input
+          type="text"
+          name="referralName"
+          value={formData.referralName}
+          onChange={handleChange}
+          placeholder="Who referred you?"
+          style={{width: "100%",
+            padding: "10px",
+            marginBottom: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "4px",
+            fontFamily: "cormorant"}}
+        />
+      )}
       <label
         style={{ color: "black", display: "block", marginBottom: "10px", fontFamily: "cormorant" }}
       >

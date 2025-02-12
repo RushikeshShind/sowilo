@@ -181,7 +181,7 @@ const Demo23 = () => {
     }}
   >
     <img
-      src="/img/sowilo1.png"
+      src="\img\sowiloblue.jpeg"
       alt="Sowilo Logo"
       style={{
         width: "180px", // Adjust the size of the image

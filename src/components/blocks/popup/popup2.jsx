@@ -17,7 +17,7 @@ const Popup2 = () => {
 
       <PopupModal isOpen={isPopupOpen} onClose={togglePopup}>
         <h6 className="display-5 text-center" style={{ color: 'black' }}>Contact</h6>
-        <ul style={{ color: 'black' }}>
+        <ul style={{ color: 'black', fontFamily: 'Cormorant' }}>
           I can be reached at <strong>24shiital@gmail.com</strong> (preferred) and <strong>+1 781 929 0606</strong> <br />
           (iMessage and WhatsApp; calls with appointments, please).
         </ul>

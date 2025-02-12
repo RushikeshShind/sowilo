@@ -65,7 +65,7 @@ If the Practitioner intends to revise their policies and procedures, they must d
  <br />
  <br />
 V. Questions and Complaints If you have questions about this notice, disagree with a decision your provider makes about access to your records, or have other concerns about your privacy rights, you may contact them at the above contact information. If you believe that your privacy rights have been violated and wish to file a complaint with, you may send your written complaint to the above contact address. You may also send a written complaint to the Secretary of the U.S. Department of Health and Human Services. We can provide you with the appropriate address upon request. You have specific rights under the Privacy Rule. We will not retaliate against you for exercising your right to file a complaint.
- <br />
+ <br /> <br />
 VI. Effective Date, Restrictions and Changes to Privacy Policy We reserve the right to change the terms of this notice and to make the new notice provisions effective for all PHI that we maintain. We will provide you with a revised notice and will welcome discussion of any revisions
 .
        

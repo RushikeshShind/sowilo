@@ -29,7 +29,7 @@ She lives in Portugal, is married, and is the mother of two amazing teenagers. S
     {
       id: 2,
       name: "James Nicholas",
-      image: "/img/photos/james-nicholas.jpeg",
+      image: "/img/James-Nicholas.png",
       contact: "James@Bodynamic.com",
       info: `James Nicholas is a certified Bodynamic® therapist and Bodynamic® analyst serving Southern California and is one of the North American training coordinators for Bodynamic® International. He is an attorney and member in good standing of the California Bar and an associate clinical social worker licensed in California. He received his B.A. in philosophy and history from UCLA, J.D. from Northwestern University, and M.S.W. from USC.
 
