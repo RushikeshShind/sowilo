@@ -33,10 +33,10 @@ const ContactForm = () => {
     }
   
     try {
-      const serviceID = "service_xf4ir8d";
+      const serviceID = "service_tj4iznk";
       const userID = "gkHe0DL-JzXd3GVfY";
-      const templateToSelf = "template_m90q7lf";
-      const templateToUser = "template_0m2agjk";
+      const templateToSelf = "template_djjbdkk";
+      const templateToUser = "template_anw7y4j";
 
       // Process industry data
       const industryValue = formData.industry === "Others" 
