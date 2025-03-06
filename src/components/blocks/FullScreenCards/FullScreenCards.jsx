@@ -129,7 +129,7 @@ const FullScreenCards = () => {
                 <div style={sectionStyles.contentSection}>
                     <h4 style={sectionStyles.heading}>Why should I take Bodynamic training?</h4>
                     <p style={sectionStyles.text}>
-                    The Bodynamic System, with over 40 years of research and development, is a Somatic Developmental Psychology system—a groundbreaking paradigm of empirically researched psychology focusing on practical application. What truly makes this system unique is its distinctive ability to make psychological processes measurableom inception.
+                    The Bodynamic System, with over 40 years of research and development, is a Somatic Developmental Psychology system—a groundbreaking paradigm of empirically researched psychology focusing on practical application. What truly makes this system unique is its distinctive ability to make psychological processes measurable.
                     </p>
                     <p style={sectionStyles.text}>
                     With a global reach, Bodynamic International offers comprehensive training programs, empowering individuals and professionals worldwide to deepen their understanding of embodiment, self-awareness, and interpersonal dynamics.

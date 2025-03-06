@@ -162,6 +162,15 @@ const Demo23 = () => {
     >
       Orlando, USA
     </p>
+    <h2
+      style={{
+        fontSize: "25px", // Scaled font size for smaller screens
+        marginBottom: "10px",
+        fontFamily: 'byutih',
+        color: 'rgb(0, 0, 0)',
+        letterSpacing: "1px",
+      }}
+    >Cost $5000</h2>
     <a
       href="https://www.bodynamic.com/"
       style={{ color: '#eab085', fontSize: '20px' }}
