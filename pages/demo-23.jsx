@@ -184,16 +184,16 @@ const Demo23 = () => {
     style={{
       flex: "1",
       display: "flex",
-      justifyContent: "flex-start", // Move image closer to center
+      justifyContent: "flex-start", 
       alignItems: "center",
-      paddingLeft: "100px", // Add spacing towards the center
+      paddingLeft: "100px", 
     }}
   >
     <img
       src="\img\sowiloblue.jpeg"
       alt="Sowilo Logo"
       style={{
-        width: "180px", // Adjust the size of the image
+        width: "180px", 
         height: "auto",
       }}
     />
