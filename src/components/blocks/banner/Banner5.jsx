@@ -16,7 +16,7 @@ const Banner5 = () => {
         <div style={styles.card}>
           <div style={styles.textContent}>
             <h2 style={styles.cardTitle}>Module 1 : June 2-6, 2025</h2>
-            <p style={styles.cardDescription}>Instructor: James Nicholas</p>
+            <p style={styles.cardDescription}>Instructor: Mar Boroso</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Bodynamic System Overview</li>
               <li><span style={styles.listIcon}>✔</span> Bodyknot</li>
@@ -39,7 +39,7 @@ const Banner5 = () => {
         <div style={styles.card}>
           <div style={styles.textContent}>
             <h2 style={styles.cardTitle}>Module 2 :  September 8-12, 2025</h2>
-            <p style={styles.cardDescription}>Instructor: Mar Barroso</p>
+            <p style={styles.cardDescription}>Instructor: James Nicholas</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Need Developmental Phase</li>
               <li><span style={styles.listIcon}>✔</span> Autonomy Developmental Phase</li>
@@ -59,7 +59,7 @@ const Banner5 = () => {
         <div style={styles.card}>
           <div style={styles.textContent}>
             <h2 style={styles.cardTitle}>Module 3 : November 3-7, 2025</h2>
-            <p style={styles.cardDescription}>Instructor: James Nicholas</p>
+            <p style={styles.cardDescription}>Instructor: Mar Boroso</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Will Developmental Phase</li>
               <li><span style={styles.listIcon}>✔</span> Love/Sexuality Developmental Phase</li>
@@ -79,7 +79,7 @@ const Banner5 = () => {
         <div style={styles.card}>
           <div style={styles.textContent}>
             <h2 style={styles.cardTitle}>Module 4 : January 12-16, 2026</h2>
-            <p style={styles.cardDescription}>Instructor: Mar Barroso</p>
+            <p style={styles.cardDescription}>Instructor: James Nicholas</p>
             <ul style={styles.list}>
               <li><span style={styles.listIcon}>✔</span> Opinion Developmental Phase</li>
               <li><span style={styles.listIcon}>✔</span> Performance/Solidarity Developmental Phase</li>
