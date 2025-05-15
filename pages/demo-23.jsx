@@ -170,7 +170,7 @@ const Demo23 = () => {
         color: 'rgb(0, 0, 0)',
         letterSpacing: "1px",
       }}
-    >Cost $5000</h2>
+    >Cost $3000</h2>
     <a
       href="https://www.bodynamic.com/"
       style={{ color: '#eab085', fontSize: '20px' }}
