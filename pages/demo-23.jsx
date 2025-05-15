@@ -160,7 +160,7 @@ const Demo23 = () => {
         color: '#0e5d6E',
       }}
     >
-      Orlando, USA
+      Online
     </p>
     <h2
       style={{
