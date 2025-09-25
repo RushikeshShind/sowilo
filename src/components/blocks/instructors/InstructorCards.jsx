@@ -10,22 +10,8 @@ function InstructorCards() {
     }));
   };
 
+  // Only James Nicholas remains
   const instructors = [
-    {
-      id: 1,
-      name: "Mar Barroso",
-      image: "/img/photos/Mar-Barroso.webp",
-      contact: "@ www.somatic.pt e. info@somatic.pt m. +351915680076",
-      info: `Mar Barroso has a master’s degree in clinical and health psychology, a bachelor’s in psychology, and a bachelor’s in human resources with an associate in training management.
-
-She has more than 13 years of experience in clinical practice. Mar is a Bodynamic® educational therapist and part of the international training team of Bodynamic International®. She teaches Foundation Training, Practitioner Training, and Shock Trauma Training in Portugal, Spain, and Turkey.
-
-Mar is the founder and CEO of SOMATIC School of Body Psychotherapies (est. 2014), the senior assistant and official representative for Somatic Experiencing® in Portugal, and the Trainer for Bodynamic International® in Portugal and Spain, with more than 600 enrolled students. She is also an assistant teacher with Ditte Marcher for shock trauma.
-
-Additionally, she is trained in other areas, such as Cognitive Behavioral Therapy (CBT), Children's Shock Trauma with Maggie Klein, Developing Trauma and Somatic Experiencing with Peter Levine, Clinical Case Studies with Stephen Porges, Spirituality, and Reorienting Birth with Lisbeth Marcher.
-
-She lives in Portugal, is married, and is the mother of two amazing teenagers. She loves people, nature, and dancing.`,
-    },
     {
       id: 2,
       name: "James Nicholas",
@@ -40,7 +26,7 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
   return (
     <section
       style={{
-        background: " #DAEAED ",
+        background: "#DAEAED",
         padding: "50px",
         fontFamily: "Cormorant",
         height: "auto",
@@ -54,10 +40,9 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
       </h1>
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "40px",
-          justifyItems: "center",
+          display: "flex",
+          justifyContent: "center", // Center James' card
+          alignItems: "center",
         }}
       >
         {instructors.map((instructor, index) => (
@@ -120,37 +105,33 @@ James has a background in massage therapy, Chua Ka, Tai Chi, cranial-sacral tech
                 >
                   {instructor.name}
                 </h2>
-               
               </div>
 
               {/* Back Side */}
               <div
-  style={{
-    position: "absolute",
-    width: "100%",
-    height: "100%",
-    backfaceVisibility: "hidden",
-    backgroundColor: "#f9f9f9",
-    borderRadius: "15px",
-    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.15)",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "flex-start", // Start from the top
-    transform: "rotateY(180deg)",
-    padding: "20px",
-    textAlign: "center",
-    overflow: "auto", // Allow scrolling if content overflows
-    boxSizing: "border-box", // Ensure padding is included in height
-  }}
->
-<p style={{ fontSize: "20px", color: "#555555" }}>
-                 
-                </p>
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  backfaceVisibility: "hidden",
+                  backgroundColor: "#f9f9f9",
+                  borderRadius: "15px",
+                  boxShadow: "0 6px 12px rgba(0, 0, 0, 0.15)",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  transform: "rotateY(180deg)",
+                  padding: "20px",
+                  textAlign: "center",
+                  overflow: "auto",
+                  boxSizing: "border-box",
+                }}
+              >
                 <p style={{ fontSize: "20px", color: "#555555" }}>
                   {instructor.info}
-                 <br /><strong>Contact:</strong> 
-                  {instructor.contact}
+                  <br />
+                  <strong>Contact:</strong> {instructor.contact}
                 </p>
               </div>
             </div>
